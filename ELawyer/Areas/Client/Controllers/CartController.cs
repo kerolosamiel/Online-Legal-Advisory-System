@@ -164,12 +164,37 @@ namespace ELawyer.Areas.Client.Controllers
             _unitOfWork.Save();
 
 
+             _unitOfWork.serviceOrder.Add(new ServiceOrders()
+ {
+     PaymentID = payment.Id,
+     ServiceID = lawyer.Service.ID,
+     CreatedAt = DateTime.Now,
+     ScheduledAt = DateTime.Now.AddDays(2),
+     ClientID = payment.ClientID,
+     LawyerID = payment.lawyerID,
+     Amount = payment.Amount
+ });
+ _unitOfWork.Save();
+
+
 
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
             var Client = _unitOfWork.Client.Get(l => l.ID == user.ClientID);
            
+  var serviceOrder = _unitOfWork.serviceOrder.Get(s => s.PaymentID == payment.Id);
+  _unitOfWork.invoice.Add(new Invoice()
+  {
+      Amount = payment.Amount,
+      ServiceOrderID = serviceOrder.ID,
+      CreatedAt = DateTime.Now,
+      paymentID = payment.Id,
+      clientID = Client.ID,
+     
+  });
+
+  _unitOfWork.Save();
             
             string emailBody = $@"
     <p>مرحبًا {Client.FirstName},</p>
@@ -391,6 +416,24 @@ namespace ELawyer.Areas.Client.Controllers
 
             return View(response);
         }
+
+
+
+ public  IActionResult ShowInvoices()
+ {
+     var claimsIdentity = (ClaimsIdentity)User.Identity;
+     var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+     var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
+     var Client = _unitOfWork.Client.Get(l => l.ID == user.ClientID);
+     var Invocies = _unitOfWork.invoice.GetAll(i=>i.clientID== Client.ID );
+     return View(Invocies);
+ }
+
+ public IActionResult ShowServieOrders()
+ {
+     var servicesorders = _unitOfWork.serviceOrder.GetAll();
+     return View(servicesorders);
+ }
 
 
         public IActionResult Download(string fileName)
