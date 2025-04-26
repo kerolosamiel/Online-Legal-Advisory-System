@@ -1,0 +1,57 @@
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.deps.json
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.runtimeconfig.json
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer..FF5E73A4.Up2Date
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\refint\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.genruntimeconfig.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.DataAccess\obj\Debug\net8.0\ref\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.deps.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.runtimeconfig.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer..FF5E73A4.Up2Date
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\refint\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.genruntimeconfig.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.DataAccess\obj\Debug\net8.0\ref\ELawyer.DataAccess.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.deps.json
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.runtimeconfig.json
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Models.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\bin\Debug\net8.0\ELawyer.Utility.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.AssemblyReference.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfoInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.AssemblyInfo.cs
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.csproj.CoreCompileInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer..FF5E73A4.Up2Date
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\refint\ELawyer.DataAccess.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ELawyer.DataAccess.genruntimeconfig.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.DataAccess\obj\Debug\net8.0\ref\ELawyer.DataAccess.dll

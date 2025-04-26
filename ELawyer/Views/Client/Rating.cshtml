@@ -1,0 +1,84 @@
+﻿@model ELawyer.Models.Rating
+
+@{
+    ViewData["Title"] = "Rating";
+}
+
+<h1 class="mb-4">Submit a Rating</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="RatingPost" asp-route-id="@Model.lawyerID">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" name="id" value="@Model.lawyerID" />
+            <div class="form-group mb-3">
+                <label asp-for="Comment" class="form-label"></label>
+                <input asp-for="Comment" class="form-control" />
+                <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label">Your Rating</label>
+                <div class="star-rating mb-2">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <span class="star" data-value="@i">&#9733;</span>
+                    }
+                </div>
+                <input asp-for="Rate" type="hidden" />
+                <span asp-validation-for="Rate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Rating" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        const stars = document.querySelectorAll('.star-rating .star');
+        const rateInput = document.querySelector('input[name="Rate"]');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.getAttribute('data-value');
+                rateInput.value = rating;
+
+                stars.forEach(s => {
+                    s.classList.remove('selected');
+                    if (s.getAttribute('data-value') <= rating) {
+                        s.classList.add('selected');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .star-rating .star {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .star-rating .star.selected {
+            color: #ffc107;
+        }
+
+        .star-rating .star:hover,
+        .star-rating .star:hover ~ .star {
+            color: #ffdb70;
+        }
+    </style>
+}

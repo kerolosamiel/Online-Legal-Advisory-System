@@ -1,0 +1,36 @@
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.deps.json
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\refint\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer.Utility\obj\Debug\net8.0\ref\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.deps.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\refint\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Utility\obj\Debug\net8.0\ref\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.deps.json
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\bin\Debug\net8.0\ELawyer.Utility.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.AssemblyReference.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfoInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.AssemblyInfo.cs
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.csproj.CoreCompileInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\refint\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ELawyer.Utility.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Utility\obj\Debug\net8.0\ref\ELawyer.Utility.dll

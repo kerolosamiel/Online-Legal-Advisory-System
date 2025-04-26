@@ -1,0 +1,229 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj": {}
+  },
+  "projects": {
+    "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj",
+        "projectName": "ELawyer.DataAccess",
+        "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Express\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Express\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj": {
+                "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj"
+              },
+              "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj": {
+                "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj",
+        "projectName": "ELawyer.Models",
+        "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj",
+        "packagesPath": "C:\\Users\\Express\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Express\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj",
+        "projectName": "ELawyer.Utility",
+        "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj",
+        "packagesPath": "C:\\Users\\Express\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Express\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,924 @@
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\appsettings.Development.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\appsettings.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.staticwebassets.runtime.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.staticwebassets.endpoints.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.exe
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.deps.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.runtimeconfig.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Azure.Core.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Azure.Identity.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Humanizer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Build.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Common.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Configuration.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Frameworks.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.LibraryModel.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Packaging.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.ProjectModel.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Protocol.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\NuGet.Versioning.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.ClientModel.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.CodeDom.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Memory.Data.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\af\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ar\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\az\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\bg\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\da\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\el\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fa\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\he\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\hr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\hu\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\hy\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\id\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\is\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ku\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\lv\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\mt\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\nb\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\nl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ro\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\sk\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\sl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\sr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\sv\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\uk\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\vi\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.Models.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.Models.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cs
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cs
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\scopedcss\bundle\ELawyer.styles.css
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\scopedcss\projectbundle\ELawyer.bundle.scp.css
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets.build.json
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets.development.json
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.build.ELawyer.props
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ELawyer.props
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ELawyer.props
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets.pack.json
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.csproj.Up2Date
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\refint\ELawyer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.pdb
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.genruntimeconfig.cache
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ref\ELawyer.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\Eng-Mohamed Saad\CV\ELawyer\obj\Debug\net8.0\ELawyer.sourcelink.json
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\SendGrid.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\StarkbankEcdsa.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+F:\Eng-Mohamed Saad\CV\ELawyer\bin\Debug\net8.0\Stripe.net.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\appsettings.Development.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\appsettings.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.staticwebassets.endpoints.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.staticwebassets.runtime.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.exe
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.deps.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.runtimeconfig.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Azure.Core.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Azure.Identity.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Humanizer.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Build.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Newtonsoft.Json.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Common.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Configuration.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Frameworks.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.LibraryModel.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Packaging.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.ProjectModel.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Protocol.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\NuGet.Versioning.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\SendGrid.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\StarkbankEcdsa.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\Stripe.net.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.ClientModel.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.CodeDom.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Composition.Convention.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Composition.Hosting.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Composition.Runtime.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Composition.TypedParts.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Memory.Data.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Runtime.Caching.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\af\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ar\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\az\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\bg\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\da\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\el\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fa\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\he\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\hr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\hu\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\hy\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\id\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\is\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ku\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\lv\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\mt\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\nb\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\nl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ro\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\sk\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\sl\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\sr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\sv\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\uk\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\vi\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.DataAccess.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.Models.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.Utility.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.Models.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\bin\Debug\net8.0\ELawyer.Utility.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.csproj.AssemblyReference.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.AssemblyInfoInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.AssemblyInfo.cs
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.csproj.CoreCompileInputs.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cs
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cs
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\scopedcss\bundle\ELawyer.styles.css
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\scopedcss\projectbundle\ELawyer.bundle.scp.css
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets.build.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets.development.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.build.ELawyer.props
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ELawyer.props
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ELawyer.props
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets.pack.json
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.csproj.Up2Date
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\refint\ELawyer.dll
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.pdb
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ELawyer.genruntimeconfig.cache
+F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer\obj\Debug\net8.0\ref\ELawyer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.csproj.AssemblyReference.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.AssemblyInfoInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.AssemblyInfo.cs
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.csproj.CoreCompileInputs.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cs
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.MvcApplicationPartsAssemblyInfo.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.RazorAssemblyInfo.cs
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\refint\ELawyer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\appsettings.Development.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\appsettings.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.staticwebassets.runtime.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.exe
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.deps.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.runtimeconfig.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Azure.Core.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Azure.Identity.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Humanizer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Build.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Common.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Configuration.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Frameworks.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.LibraryModel.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Packaging.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.ProjectModel.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Protocol.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\NuGet.Versioning.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\SendGrid.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\StarkbankEcdsa.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\Stripe.net.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.ClientModel.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.CodeDom.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Memory.Data.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\af\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ar\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\az\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\bg\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\da\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\el\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fa\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\he\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\hr\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\hu\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\hy\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\id\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\is\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ku\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\lv\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\mt\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\nb\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\nl\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ro\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\sk\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\sl\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\sr\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\sv\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\uk\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\vi\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.DataAccess.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.Models.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.Utility.dll
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.DataAccess.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.Models.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\bin\Debug\net8.0\ELawyer.Utility.pdb
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets.build.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets.development.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets\msbuild.build.ELawyer.props
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ELawyer.props
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ELawyer.props
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\scopedcss\bundle\ELawyer.styles.css
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\scopedcss\projectbundle\ELawyer.bundle.scp.css
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.csproj.Up2Date
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ELawyer.genruntimeconfig.cache
+E:\Project\LawyerPlatform\ELawyerPlatform\Elawyer\obj\Debug\net8.0\ref\ELawyer.dll

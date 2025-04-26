@@ -1,0 +1,103 @@
+﻿@model ELawyer.Models.ViewModels.LawyerEditViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Lawyer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@Model.Lawyer.ID" />
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.FirstName" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.FirstName" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.LastName" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.LastName" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.ImageUrl" class="control-label"> </label>
+                <input asp-for="@Model.Lawyer.ImageUrl" class="form-control" type="file" name="file" />
+                <span asp-validation-for="@Model.Lawyer.ImageUrl" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.About" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.About" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.About" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.Address" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.Address" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.CreatedAt" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.CreatedAt" class="form-control" disabled />
+                <span asp-validation-for="@Model.Lawyer.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.LastLogin" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.LastLogin" class="form-control" disabled />
+                <span asp-validation-for="@Model.Lawyer.LastLogin" class="text-danger"></span>
+            </div>
+          
+
+           
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.UserStatus" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.UserStatus" class="form-control" disabled />
+                <span asp-validation-for="@Model.Lawyer.UserStatus" class="text-danger"></span>
+            </div>
+      
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.ExperienceYears" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.ExperienceYears" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.ExperienceYears" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.Linkedin" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.Linkedin" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.Linkedin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Lawyer.ConsultationFee" class="control-label"></label>
+                <input asp-for="@Model.Lawyer.ConsultationFee" class="form-control" />
+                <span asp-validation-for="@Model.Lawyer.ConsultationFee" class="text-danger"></span>
+            </div>
+         
+
+            <div class="form-group">
+                <label asp-for="SelectedSpecialization" class="form-label mt-4">التخصصات</label>
+                <select class="form-select" asp-for="SelectedSpecialization" asp-items="Model.SpecializationList" multiple>
+                    <option disabled>اختر التخصصات</option>
+                </select>
+                <span asp-validation-for="SelectedSpecialization" class="text-danger"></span>
+            </div>
+
+            
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,132 @@
+﻿@using ELawyer.Models.ViewModels
+@using ELawyer.Utility
+@model ClientLawyerRating
+
+@{
+    ViewData["Title"] = "cart";
+}
+
+<h1>cart</h1>
+
+<h4>Lawyer</h4>
+<div class="col-md-12 mb-4">
+    <div class="card shadow-sm p-3">
+
+        <div class="d-flex justify-content-between">
+          
+            <div class="col-md-8">
+                @if (Model.Lawyer.ImageUrl != null)
+                {
+                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded mb-3" />
+                }
+
+                <div>
+                    <label>Name: @Model.Lawyer.FirstName</label>
+                </div>
+                <div>
+                    <label>LastName: @Model.Lawyer.LastName</label>
+                </div>
+                <div>
+                    <label>ExperienceYears: @Model.Lawyer.ExperienceYears</label>
+                </div>
+                <div>
+                    <label>LastLogin: @Model.Lawyer.LastLogin</label>
+                </div>
+
+                <div>
+                    @foreach (var item in Model.Lawyer.specializationnews)
+                    {
+                        <div><strong>@item.Specialization.Name</strong></div>
+                        <div>@item.Specialization.Description</div>
+
+                        foreach (var item1 in item.Specialization.SubSpecializations)
+                        {
+                            <div>- @item1.Name</div>
+                        }
+                    }
+                </div>
+
+                @if (Model.Lawyer.Service != null)
+                {
+                    <div>
+                        <label>Title: @Model.Lawyer.Service.Title</label>
+                    </div>
+                
+                    <div>
+                        <label>Description: @Model.Lawyer.Service.Description</label>
+                    </div>
+                    <div>
+                        <label>Status: @Model.Lawyer.Service.Status</label>
+                    </div>
+                    <div>
+                        <label>CreatedAt: @Model.Lawyer.Service.CreatedAt</label>
+                    </div>
+                }
+
+                @if (Model.Lawyer.AverageRateing != null)
+                {
+                    <h3>متوسط التقييم:</h3>
+                    <div class="star-rating">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= Math.Round(Model.Lawyer.AverageRateing ?? 0))
+                            {
+                                <span class="star selected">&#9733;</span>
+                            }
+                            else
+                            {
+                                <span class="star">&#9734;</span>
+                            }
+                        }
+                    </div>
+                }
+
+                <div class="mt-3">
+                    <a asp-controller="Lawyer" asp-action="Index">Back to List</a>
+                </div>
+
+
+                <div class="mt-3">
+                    <a asp-action="Cartitem">show carditem</a>
+                </div>
+            </div>
+
+           
+            <div class="col-md-3 text-center align-self-center">
+                <h5>Consultation Fee</h5>
+                <div class="display-6">@Model.Lawyer.ConsultationFee</div>
+                <h5>total</h5>
+                <div class="display-6">@Model.Payment.Amount</div>
+
+            </div>
+       
+            
+        </div>
+
+        <style>
+            .star-rating .star {
+                font-size: 24px;
+                color: #ccc;
+            }
+
+                .star-rating .star.selected {
+                    color: #ffc107;
+                }
+
+            .star-rating {
+                direction: rtl;
+                display: inline-block;
+            }
+
+            .star {
+                font-size: 1.5rem;
+                color: #ccc;
+            }
+
+                .star.selected {
+                    color: #ffc107;
+                }
+        </style>
+
+    </div>
+</div>

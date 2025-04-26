@@ -1,0 +1,236 @@
+﻿@using ELawyer.Models.ViewModels
+@using ELawyer.Utility
+@model ClientLawyerRating
+
+@{
+    ViewData["Title"] = "Details";
+
+}
+
+<h1>Details</h1>
+
+<h4>Lawyer</h4>
+<div class="col-md-4 mb-4">
+    <div class="card shadow-sm">
+
+        <div class="card-text">
+
+            <div>
+                @if(Model.Lawyer.ImageUrl != null)
+                {
+
+                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded" />
+                }
+
+            </div>
+            <div>
+                <label> Name: @Model.Lawyer.FirstName </label>
+
+            </div>
+            <div>
+                <label>LastName: @Model.Lawyer.LastName</label>
+
+            </div>
+
+
+
+            <div>
+                <label> ConsultationFee: @Model.Lawyer.ConsultationFee</label>
+
+            </div>
+
+            <div>
+                <label>ExperienceYears: @Model.Lawyer.ExperienceYears </label>
+
+            </div>
+            <div>
+                <label>LastLogin: @Model.Lawyer.LastLogin </label>
+
+            </div>
+            <div>
+                <label>NoOfClients: @Model.Lawyer.NoOfClients </label>
+
+            </div>
+
+            <div>
+                @foreach (var item in Model.Lawyer.specializationnews)
+                {
+
+                    <div>@item.Specialization.Name</div>
+                    <div>@item.Specialization.Description</div>
+
+                    foreach (var item1 in item.Specialization.SubSpecializations)
+                    {
+                        <div>@item1.Name</div>
+
+                    }
+
+                }
+            </div>
+
+
+            @if (Model.Lawyer.Service != null)
+            {
+                <div>
+                    <label>Title: @Model.Lawyer.Service.Title </label>
+
+                </div>
+
+                <div>
+                    <label>Description: @Model.Lawyer.Service.Description </label>
+
+                </div>
+                <div>
+                    <label>Status: @Model.Lawyer.Service.Status </label>
+
+                </div>
+                <div>
+                    <label>CreatedAt: @Model.Lawyer.Service.CreatedAt </label>
+
+                </div>
+
+
+            }
+
+        </div>
+
+        @if (Model.Lawyer.AverageRateing != null)
+        {
+            <h3>متوسط التقييم:</h3>
+            <div class="star-rating">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= Math.Round(Model.Lawyer.AverageRateing ?? 0))
+                    {
+                        <span class="star selected">&#9733;</span>
+                    }
+                    else
+                    {
+                        <span class="star">&#9734;</span> 
+                    }
+                }
+            </div>
+            //  }
+            @foreach (var item in Model.Rating)
+            {
+                <div class="rating-item" style="margin-bottom: 1rem;">
+                    <div>
+                        <strong>@item.Client.FirstName</strong>
+                    </div>
+                    <div class="star-rating">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= item.Rate)
+                            {
+                                <span class="star selected">&#9733;</span> 
+                            }
+                            else
+                            {
+                                <span class="star">&#9734;</span> 
+                            }
+                        }
+                    </div>
+                    <div>
+                        @item.Comment
+                    </div>
+                    <div>
+                        @item.CreatedAt
+                    </div>
+                    @if (User.IsInRole(SD.AdminRole))
+                    {
+                        <div class="mt-3">
+                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID" class="btn btn-secondary">Delete</a>
+                        </div>
+                    }
+                    else if (User.IsInRole(SD.ClientRole) && @item.ClientID == Convert.ToInt32(ViewData["ClientId"]))
+                    {
+
+                        <div class="mt-3">
+                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID" class="btn btn-secondary">Delete</a>
+                        </div>
+                        <div class="mt-3">
+                            <a asp-controller="Client" asp-action="EditRating" asp-route-id="@item.ID" class="btn btn-secondary">Edit</a>
+                        </div>
+                    }
+
+
+                </div>
+            }
+
+
+
+
+
+        }
+        else
+        {
+
+            <h3>متوسط التقييم:</h3>
+            <div class="star-rating">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <span class="star">&#9734;</span> <!-- نجمة فارغة ☆ -->
+                }
+            </div>
+
+        }
+        @if(User.IsInRole(SD.ClientRole))
+        {
+
+            <div>
+                <a asp-controller="Client" asp-action="Rating" asp-route-id="@Model.Lawyer.ID">Rating</a>
+
+            </div>
+            @if (ViewBag.pay == 0)
+            {
+                <h1> you should pay or delete item in cart</h1>
+
+            }
+            else
+            {
+                if (@Model.Lawyer.ConsultationFee != null)
+                {
+                    <div>
+                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Lawyer.ID">Add To Cart</a>
+                    </div>
+                }
+
+                  
+                
+               
+              
+            }
+
+        }
+
+       
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+    </div>
+</div>
+<style>
+    .star-rating .star {
+        font-size: 24px;
+        color: #ccc; /* اللون الرمادي للنجوم غير المختارة */
+    }
+
+        .star-rating .star.selected {
+            color: #ffc107; /* اللون الأصفر للنجوم المختارة */
+        }
+
+    .star-rating {
+        direction: rtl;
+        display: inline-block;
+    }
+
+    .star {
+        font-size: 1.5rem;
+        color: #ccc;
+    }
+
+        .star.selected {
+            color: #ffc107; /* لون النجمة الذهبية */
+        }
+</style>

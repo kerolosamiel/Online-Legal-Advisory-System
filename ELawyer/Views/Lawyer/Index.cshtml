@@ -1,0 +1,67 @@
+﻿@model List<Lawyer>
+
+
+@{
+    ViewData["Title"] = "List of Lawyers";
+}
+
+<h2 class="mb-4">Lawyers</h2>
+
+<div class="d-flex justify-content-between">
+    <a asp-action="Search" class="btn btn-danger btn-sm">Search</a>
+</div>
+<div class="row">
+
+    @foreach (var lawyer in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-text">
+                    <div>
+
+                        <img src="@lawyer.ImageUrl" class="card-img-top rounded" />
+
+                    </div>
+                    <div>
+                        <label> Name: @lawyer.FirstName </label>
+
+                    </div>
+                    <div>
+                        <label >LastName: @lawyer.LastName</label>
+
+                    </div>
+                    <div >
+                        <label> ConsultationFee: @lawyer.ConsultationFee</label>
+
+                    </div>
+
+                    <div >
+                        <label >ExperienceYears: @lawyer.ExperienceYears </label>
+
+                    </div>
+                    <div>
+                        @foreach (var item in lawyer.specializationnews)
+                        {
+
+                            <div>@item.Specialization.Name</div>
+                        }
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex justify-content-between">
+
+                
+                    <a asp-action="Details" asp-route-id="@lawyer.ID" class="btn btn-info btn-sm">Details</a>
+                    @if(User.IsInRole(ELawyer.Utility.SD.AdminRole))
+                    {
+                        <a asp-action="Delete" asp-route-id="@lawyer.ID" class="btn btn-danger btn-sm">Delete</a>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+    }
+</div>

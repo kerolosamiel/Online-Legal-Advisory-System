@@ -1,0 +1,50 @@
+﻿@using ELawyer.Models
+@model Lawyer
+
+
+@{
+    ViewData["Title"] = "Lawyer confirmation";
+}
+
+<h2 class="mb-4">Lawyer confirmation</h2>
+
+<div class="row">
+
+    <form method="post" asp-action="Acceptlawyer">
+        <input asp-for="ID" hidden />
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="@Url.Content("~/images/" + Model.FrontCardImage)" class="card-img-top rounded w-100" />
+
+
+                        </div>
+                        <div class="col-md-6">
+                        <img src="@Url.Content("~/images/" + Model.BackCardImage)" class="card-img-top rounded w-100" />
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <p><strong>Name:</strong>@Model.FirstName</p>
+                        <p><strong>Last Name:</strong> @Model.LastName</p>
+
+                    </div>
+                    <div class="mt-3">
+
+
+                        <button type="submit" class="btn btn-primary form-control"> Accept</button>
+
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        </form>
+
+    
+</div>
+
+
+

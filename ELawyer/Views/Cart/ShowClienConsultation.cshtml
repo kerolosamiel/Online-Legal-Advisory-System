@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ELawyer.Models.Consultation>
+
+@{
+    ViewData["Title"] = "ShowClienConsultation";
+}
+
+<h1>ShowClienConsultation</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Title)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+         
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+       
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Attachments))
+                    {
+                        <a href="@Url.Action("Download", "Cart", new { fileName = item.Attachments })" download>
+                            Download
+                        </a>
+                    }
+                </td>
+                <td>
+                   
+                    <a asp-action="ResponseLawyer" asp-route-id="@item.ID">Response</a> |
+                  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
