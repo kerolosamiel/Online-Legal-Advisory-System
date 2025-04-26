@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ELawyer.Models.Invoice>
+
+@{
+    ViewData["Title"] = "ShowInvoices";
+}
+
+<h1>ShowInvoices</h1>
+
+<p>
+    <a asp-action="Index" asp-controller="Lawyer" >Bak To List</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceOrderID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paymentID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+           
+       
+            
+       
+        foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceOrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paymentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+                   
+            
+          
+        </tr>
+            }
+        }
+    </tbody>
+</table>
