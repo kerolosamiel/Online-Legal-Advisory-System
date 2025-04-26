@@ -34,6 +34,9 @@ namespace ELawyer.DataAccess.Data
 
         public DbSet<Consultation> Consultations { get; set; }
 
+         public DbSet<ServiceOrders> ServiceOrders { get; set; }
+ public DbSet<Invoice> Invoices { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -45,33 +48,7 @@ namespace ELawyer.DataAccess.Data
             base.OnModelCreating(modelBuilder);
 
 
-            //modelBuilder.Entity<Rating>()
-            //.HasOne(r => r.Client)
-            //.WithMany(c => c.Rating)
-            //.HasForeignKey(r => r.ClientID)
-            //.OnDelete(DeleteBehavior.Restrict);
-
-            //modelBuilder.Entity<Rating>()
-            //    .HasOne(r => r.Lawyer)
-            //    .WithMany(l => l.Rating)
-            //    .HasForeignKey(r => r.lawyerID)
-            //    .OnDelete(DeleteBehavior.Restrict);
-
-            //     modelBuilder.Entity<Client>()
-            //.HasMany(c => c.Rating)
-            //.WithOne(r => r.Client)
-            //.HasForeignKey(r => r.RatingID)
-            //.OnDelete(DeleteBehavior.Restrict); // أو Cascade حسب احتياجاتك
-
-            //     // علاقة Lawyer-to-Rating (One-to-Many)
-            //     modelBuilder.Entity<Lawyer>()
-            //         .HasMany(l => l.Rating)
-            //         .WithOne(r => r.Lawyer)
-            //         .HasForeignKey(r => r.RatingID)
-            //         .OnDelete(DeleteBehavior.Restrict);
-            //if we add IdentityDbContext we should add OnModelCreating to avoid throw Primary key exception
-
-
+       
 
             modelBuilder.Entity<Specializationnew>().HasData(
                 new Specializationnew { ID = 1, Name = "Criminal Law", Description = "Deals with crimes and legal punishments, representing individuals or the state in cases involving offenses like theft, assault, or murder." },
