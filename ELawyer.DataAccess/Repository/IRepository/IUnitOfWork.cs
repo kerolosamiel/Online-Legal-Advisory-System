@@ -22,6 +22,9 @@ namespace ELawyer.DataAccess.Repository.IRepository
 
         IResponseRepository Response { get; }
         ILawyerSpecializationRepository lawyerSpecialization { get; }
+         IInvoiceRepository invoice { get; }
+
+         IServiceOrderRepository serviceOrder { get; }
         void Save();
     }
 }
