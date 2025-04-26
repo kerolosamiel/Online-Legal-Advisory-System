@@ -45,6 +45,10 @@
                                 <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Create User</a>
                             </li>
 
+ <li class="nav-item">
+     <a class="dropdown-item" asp-area="" asp-controller="Cart" asp-action="ShowServieOrders">ShowServieOrders</a>
+ </li>
+
                         }
                         else if (User.IsInRole(SD.LawyerRole))
                         {
@@ -69,6 +73,11 @@
 
 
                                 </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="ShowInvoices">ShowInvoices</a>
                             </li>
                         }
                        
