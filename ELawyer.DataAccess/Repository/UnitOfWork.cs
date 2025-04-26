@@ -26,8 +26,11 @@ namespace ELawyer.DataAccess.Repository
         public IConsultationRepository Consultation { get; private set; }
         public IResponseRepository Response { get; private set; }
         public ILawyerSpecializationRepository lawyerSpecialization { get; private set; }
+         public IInvoiceRepository invoice { get; private set; }
 
-        public UnitOfWork(ApplicationDbContext context) 
+          public IServiceOrderRepository serviceOrder { get; private set; }
+
+       public UnitOfWork(ApplicationDbContext context) 
         {
             _context = context;
             Admin = new AdminRepository(context);
@@ -41,8 +44,9 @@ namespace ELawyer.DataAccess.Repository
             Payment = new PaymentRepository(context);
             Consultation = new ConsultationRepository(context);
             Response = new ResponseRepository(context);
-
-
+              invoice = new InvoiceRepository(context);
+              serviceOrder = new ServiceOrderRepository(context);
+ 
         }
 
        
