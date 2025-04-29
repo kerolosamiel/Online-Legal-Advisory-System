@@ -1,6 +1,4 @@
-﻿@using ELawyer.Models.ViewModels
-@using ELawyer.Utility
-@model ClientLawyerRating
+﻿@model ELawyer.Models.ViewModels.ClientLawyerRating
 
 @{
     ViewData["Title"] = "cart";
@@ -13,28 +11,29 @@
     <div class="card shadow-sm p-3">
 
         <div class="d-flex justify-content-between">
-          
+
             <div class="col-md-8">
                 @if (Model.Lawyer.ImageUrl != null)
                 {
-                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded mb-3" />
+                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))"
+                         class="card-img-top rounded mb-3"/>
                 }
 
                 <div>
-                    <label>Name: @Model.Lawyer.FirstName</label>
+                    <label>Name: @Model.Lawyer.ApplicationUser.FirstName</label>
                 </div>
                 <div>
-                    <label>LastName: @Model.Lawyer.LastName</label>
+                    <label>LastName: @Model.Lawyer.ApplicationUser.LastName</label>
                 </div>
                 <div>
                     <label>ExperienceYears: @Model.Lawyer.ExperienceYears</label>
                 </div>
                 <div>
-                    <label>LastLogin: @Model.Lawyer.LastLogin</label>
+                    <label>LastLogin: @Model.Lawyer.ApplicationUser.LastLogin</label>
                 </div>
 
                 <div>
-                    @foreach (var item in Model.Lawyer.specializationnews)
+                    @foreach (var item in Model.Lawyer.LawyerSpecializations)
                     {
                         <div><strong>@item.Specialization.Name</strong></div>
                         <div>@item.Specialization.Description</div>
@@ -46,28 +45,36 @@
                     }
                 </div>
 
-                @if (Model.Lawyer.Service != null)
+                @if (Model.Lawyer.Services.Any())
                 {
-                    <div>
-                        <label>Title: @Model.Lawyer.Service.Title</label>
-                    </div>
-                
-                    <div>
-                        <label>Description: @Model.Lawyer.Service.Description</label>
-                    </div>
-                    <div>
-                        <label>Status: @Model.Lawyer.Service.Status</label>
-                    </div>
-                    <div>
-                        <label>CreatedAt: @Model.Lawyer.Service.CreatedAt</label>
-                    </div>
+                    foreach (var service in Model.Lawyer.Services)
+                    {
+                        <div class="service-card">
+                            <label><strong>Title:</strong> @service.Title</label><br/>
+                            <label><strong>Description:</strong> @service.Description</label><br/>
+                            <label><strong>Status:</strong> @service.Status</label><br/>
+                            <label><strong>Created At:</strong> @service.CreatedAt</label><br/>
+
+                            <!-- Button to Add This Service to Cart -->
+                            <form asp-controller="Lawyer" asp-action="PaymentStripe" method="get">
+                                <input type="hidden" name="paymentId" value="@Model.Payment.Id"/>
+                                <input type="hidden" name="serviceId" value="@service.Id"/>
+                                <button type="submit" class="btn btn-primary">Pay for this service</button>
+                            </form>
+                        </div>
+                    }
                 }
+                else
+                {
+                    <p>This lawyer currently has no services available.</p>
+                }
+
 
                 @if (Model.Lawyer.AverageRateing != null)
                 {
                     <h3>متوسط التقييم:</h3>
                     <div class="star-rating">
-                        @for (int i = 1; i <= 5; i++)
+                        @for (var i = 1; i <= 5; i++)
                         {
                             if (i <= Math.Round(Model.Lawyer.AverageRateing ?? 0))
                             {
@@ -91,7 +98,7 @@
                 </div>
             </div>
 
-           
+
             <div class="col-md-3 text-center align-self-center">
                 <h5>Consultation Fee</h5>
                 <div class="display-6">@Model.Lawyer.ConsultationFee</div>
@@ -99,8 +106,8 @@
                 <div class="display-6">@Model.Payment.Amount</div>
 
             </div>
-       
-            
+
+
         </div>
 
         <style>

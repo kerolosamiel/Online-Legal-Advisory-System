@@ -1,33 +1,21 @@
-﻿
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class ApplicationUser : IdentityUser
 {
-    public class ApplicationUser :IdentityUser
-    {
+    [MaxLength(25)] [Required] public string FirstName { get; set; } = "";
+    [MaxLength(25)] [Required] public string LastName { get; set; } = "";
+    [MaxLength(50)] public string? Role { get; set; }
+    public DateTime? CreatedAt { get; set; }
+    public DateTime? LastLogin { get; set; }
+    public int? ClientId { get; set; }
+    public int? LawyerId { get; set; }
+    public int? AdminId { get; set; }
 
-        public string Role { get; set; }
-        public int? ClientID { get; set; }
-        [ForeignKey(nameof(ClientID))]
-
-        public  Client? Client { get; set; } 
-
-        public int? LawyerID { get; set; }
-        [ForeignKey(nameof(LawyerID))]
-
-        public  Lawyer? Lawyer { get; set; }
-
-        public int? AdminID { get; set; }
-        [ForeignKey(nameof(AdminID))]
-
-        public Admin? Admin { get; set; }
-
-
-    }
+    [ForeignKey(nameof(AdminId))] public virtual Admin Admin { get; set; } = new();
+    [ForeignKey(nameof(ClientId))] public virtual Client Client { get; set; } = new();
+    [ForeignKey(nameof(LawyerId))] public virtual Lawyer Lawyer { get; set; } = new();
 }

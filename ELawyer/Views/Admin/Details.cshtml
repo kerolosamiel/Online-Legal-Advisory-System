@@ -1,4 +1,4 @@
-﻿@model ELawyer.Models.Admin
+﻿@model Admin
 
 @{
     ViewData["Title"] = "Details";
@@ -13,27 +13,23 @@
             <div>
                 @if (Model.ImageUrl != null)
                 {
-                    <img src="@Url.Content("~/" + Model.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded" />
-
+                    <img src="@Url.Content("~/" + Model.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded"/>
                 }
             </div>
             <div>
-                <label> Name: @Model.FirstName </label>
+                <label> Name: @Model.ApplicationUser.FirstName </label>
 
             </div>
             <div>
-                <label>LastName: @Model.LastName</label>
+                <label>LastName: @Model.ApplicationUser.LastName</label>
 
             </div>
-           
+
 
             <div>
                 <label>Address: @Model.Address </label>
 
             </div>
-
-
-
 
 
         </div>

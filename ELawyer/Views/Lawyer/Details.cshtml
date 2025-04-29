@@ -1,10 +1,8 @@
-﻿@using ELawyer.Models.ViewModels
-@using ELawyer.Utility
-@model ClientLawyerRating
+﻿@using ELawyer.Utility
+@model ELawyer.Models.ViewModels.ClientLawyerRating
 
 @{
     ViewData["Title"] = "Details";
-
 }
 
 <h1>Details</h1>
@@ -16,80 +14,75 @@
         <div class="card-text">
 
             <div>
-                @if(Model.Lawyer.ImageUrl != null)
+                @if (Model.Lawyer.ImageUrl != null)
                 {
-
-                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded" />
+                    <img src="@Url.Content("~/" + Model.Lawyer.ImageUrl.Replace("\\", "/"))"
+                         class="card-img-top rounded"/>
                 }
-
             </div>
+
             <div>
-                <label> Name: @Model.Lawyer.FirstName </label>
+                <label> Name: @Model.Lawyer.ApplicationUser.FirstName </label>
 
             </div>
+
             <div>
-                <label>LastName: @Model.Lawyer.LastName</label>
-
+                <label>LastName: @Model.Lawyer.ApplicationUser.LastName</label>
             </div>
-
-
 
             <div>
                 <label> ConsultationFee: @Model.Lawyer.ConsultationFee</label>
-
             </div>
 
             <div>
                 <label>ExperienceYears: @Model.Lawyer.ExperienceYears </label>
-
             </div>
+
             <div>
-                <label>LastLogin: @Model.Lawyer.LastLogin </label>
-
+                <label>LastLogin: @Model.Lawyer.ApplicationUser.LastLogin </label>
             </div>
+
             <div>
                 <label>NoOfClients: @Model.Lawyer.NoOfClients </label>
-
             </div>
 
             <div>
-                @foreach (var item in Model.Lawyer.specializationnews)
+                @foreach (var item in Model.Lawyer.LawyerSpecializations)
                 {
-
                     <div>@item.Specialization.Name</div>
                     <div>@item.Specialization.Description</div>
 
                     foreach (var item1 in item.Specialization.SubSpecializations)
                     {
                         <div>@item1.Name</div>
-
                     }
-
                 }
             </div>
 
-
-            @if (Model.Lawyer.Service != null)
+            @if (Model.Lawyer.Services.Any())
             {
-                <div>
-                    <label>Title: @Model.Lawyer.Service.Title </label>
+                @foreach (var service in Model.Lawyer.Services)
+                {
+                    <div>
+                        <label>Title: @service.Title </label>
+                    </div>
 
-                </div>
+                    <div>
+                        <label>Description: @service.Description </label>
+                    </div>
 
-                <div>
-                    <label>Description: @Model.Lawyer.Service.Description </label>
+                    <div>
+                        <label>Status: @service.Status </label>
+                    </div>
 
-                </div>
-                <div>
-                    <label>Status: @Model.Lawyer.Service.Status </label>
-
-                </div>
-                <div>
-                    <label>CreatedAt: @Model.Lawyer.Service.CreatedAt </label>
-
-                </div>
-
-
+                    <div>
+                        <label>CreatedAt: @service.CreatedAt </label>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>This lawyer currently has no services available.</p>
             }
 
         </div>
@@ -98,7 +91,7 @@
         {
             <h3>متوسط التقييم:</h3>
             <div class="star-rating">
-                @for (int i = 1; i <= 5; i++)
+                @for (var i = 1; i <= 5; i++)
                 {
                     if (i <= Math.Round(Model.Lawyer.AverageRateing ?? 0))
                     {
@@ -106,7 +99,7 @@
                     }
                     else
                     {
-                        <span class="star">&#9734;</span> 
+                        <span class="star">&#9734;</span>
                     }
                 }
             </div>
@@ -115,18 +108,18 @@
             {
                 <div class="rating-item" style="margin-bottom: 1rem;">
                     <div>
-                        <strong>@item.Client.FirstName</strong>
+                        <strong>@item.Client?.ApplicationUser.FirstName</strong>
                     </div>
                     <div class="star-rating">
-                        @for (int i = 1; i <= 5; i++)
+                        @for (var i = 1; i <= 5; i++)
                         {
                             if (i <= item.Rate)
                             {
-                                <span class="star selected">&#9733;</span> 
+                                <span class="star selected">&#9733;</span>
                             }
                             else
                             {
-                                <span class="star">&#9734;</span> 
+                                <span class="star">&#9734;</span>
                             }
                         }
                     </div>
@@ -139,71 +132,59 @@
                     @if (User.IsInRole(SD.AdminRole))
                     {
                         <div class="mt-3">
-                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID" class="btn btn-secondary">Delete</a>
+                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID"
+                               class="btn btn-secondary">Delete</a>
                         </div>
                     }
-                    else if (User.IsInRole(SD.ClientRole) && @item.ClientID == Convert.ToInt32(ViewData["ClientId"]))
+                    else if (User.IsInRole(SD.ClientRole) && item.ClientId == Convert.ToInt32(ViewData["ClientId"]))
                     {
-
                         <div class="mt-3">
-                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID" class="btn btn-secondary">Delete</a>
+                            <a asp-controller="Client" asp-action="DeleteRating" asp-route-id="@item.ID"
+                               class="btn btn-secondary">Delete</a>
                         </div>
                         <div class="mt-3">
-                            <a asp-controller="Client" asp-action="EditRating" asp-route-id="@item.ID" class="btn btn-secondary">Edit</a>
+                            <a asp-controller="Client" asp-action="EditRating" asp-route-id="@item.ID"
+                               class="btn btn-secondary">Edit</a>
                         </div>
                     }
 
 
                 </div>
             }
-
-
-
-
-
         }
         else
         {
-
             <h3>متوسط التقييم:</h3>
             <div class="star-rating">
-                @for (int i = 1; i <= 5; i++)
+                @for (var i = 1; i <= 5; i++)
                 {
-                    <span class="star">&#9734;</span> <!-- نجمة فارغة ☆ -->
+                    <span class="star">&#9734;</span>
+                    <!-- نجمة فارغة ☆ -->
                 }
             </div>
-
         }
-        @if(User.IsInRole(SD.ClientRole))
+        @if (User.IsInRole(SD.ClientRole))
         {
-
             <div>
-                <a asp-controller="Client" asp-action="Rating" asp-route-id="@Model.Lawyer.ID">Rating</a>
+                <a asp-controller="Client" asp-action="Rating" asp-route-id="@Model.Lawyer.Id">Rating</a>
 
             </div>
             @if (ViewBag.pay == 0)
             {
                 <h1> you should pay or delete item in cart</h1>
-
             }
             else
             {
-                if (@Model.Lawyer.ConsultationFee != null)
+                if (Model.Lawyer.ConsultationFee != null)
                 {
                     <div>
-                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Lawyer.ID">Add To Cart</a>
+                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Lawyer.Id">Add To Cart</a>
                     </div>
                 }
-
-                  
-                
-               
-              
             }
-
         }
 
-       
+
         <div>
             <a asp-action="Index">Back to List</a>
         </div>

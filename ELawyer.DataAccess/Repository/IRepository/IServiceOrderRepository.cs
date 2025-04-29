@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ELawyer.DataAccess.Repository.IRepository
 {
-    public interface IServiceOrderRepository : IRepository<ServiceOrders>
+    public interface IServiceOrderRepository : IRepository<ServiceOrder>
     {
-        void Update(ServiceOrders obj);
+        void Update(ServiceOrder obj);
     }
 }

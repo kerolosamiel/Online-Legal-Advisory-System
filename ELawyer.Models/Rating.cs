@@ -1,28 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class Rating
 {
-    public class Rating
-    {
-        [Key]
-        public int ID { get; set; }
+    [Key] public int ID { get; set; }
+    [MaxLength(400)] public string? Comment { get; set; }
+    [Required] [Range(0, 5)] public int Rate { get; set; }
+    public DateTime? CreatedAt { get; set; }
+    public int? LawyerId { get; set; }
+    public int? ClientId { get; set; }
 
-       public string? Comment { get; set; }
-       public int? Rate { get; set; }
-
-        public DateTime? CreatedAt { get; set; }
-        public int? lawyerID { get; set; }
-        [ForeignKey("lawyerID")]
-        public Lawyer? Lawyer { get; set; }
-
-        public int? ClientID { get; set; }
-        [ForeignKey("ClientID")]
-        public Client? Client { get; set; }
-    }
+    // Relationship
+    [ForeignKey("ClientID")] public Client Client { get; set; } = new();
+    [ForeignKey("LawyerID")] public Lawyer Lawyer { get; set; } = new();
 }

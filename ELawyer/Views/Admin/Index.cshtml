@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models
-@model List<Admin>
+﻿@model List<Admin>
 
 
 @{
@@ -16,18 +15,18 @@
                 <div class="card-text">
                     <div>
 
-                        <img src="@client.ImageUrl" class="card-img-top rounded" />
+                        <img src="@client.ImageUrl" class="card-img-top rounded"/>
 
                     </div>
                     <div>
-                        <label> Name: @client.FirstName </label>
+                        <label> Name: @client.ApplicationUser.FirstName </label>
 
                     </div>
                     <div>
-                        <label>LastName: @client.LastName</label>
+                        <label>LastName: @client.ApplicationUser.LastName</label>
 
                     </div>
-                   
+
 
                     <div>
                         <label>Address: @client.Address </label>
@@ -42,11 +41,10 @@
                 <div class="d-flex justify-content-between">
 
 
-                    <a asp-action="Details" asp-route-id="@client.ID" class="btn btn-info btn-sm">Details</a>
-                  
+                    <a asp-action="Details" asp-route-id="@client.Id" class="btn btn-info btn-sm">Details</a>
+
                 </div>
             </div>
         </div>
-
     }
 </div>

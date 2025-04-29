@@ -21,7 +21,7 @@ namespace ELawyer.DataAccess.Repository
 
         public void Update(Consultation obj)
         {
-            Consultation Consultation = _context.Consultations.FirstOrDefault(u => u.ID == obj.ID);
+            Consultation Consultation = _context.Consultations.FirstOrDefault(u => u.Id == obj.Id);
             if (Consultation != null)
             {
 

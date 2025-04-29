@@ -2,32 +2,20 @@
 using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ELawyer.DataAccess.Repository
 {
-    public class ServiceOrderRepository : Repository<ServiceOrders>, IServiceOrderRepository
+    public class ServiceOrderRepository(ApplicationDbContext context)
+        : Repository<ServiceOrder>(context), IServiceOrderRepository
     {
+        private readonly ApplicationDbContext _context = context;
 
-
-        private readonly ApplicationDbContext _context;
-
-        public ServiceOrderRepository(ApplicationDbContext context) : base(context)
+        public void Update(ServiceOrder obj)
         {
-            _context = context;
-        }
-
-        public void Update(ServiceOrders obj)
-        {
-            ServiceOrders serviceorder = _context.ServiceOrders.FirstOrDefault(u => u.ID == obj.ID);
-            if (serviceorder != null)
+            var serviceOrder = _context.ServiceOrders.FirstOrDefault(s => s.Id == obj.Id);
+            if (serviceOrder != null)
             {
-
-                serviceorder.ID = obj.ID;
+                serviceOrder.Id = obj.Id;
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿@model List<Lawyer>
+﻿@using ELawyer.Utility
+@model List<Lawyer>
 
 
 @{
@@ -19,30 +20,29 @@
                 <div class="card-text">
                     <div>
 
-                        <img src="@lawyer.ImageUrl" class="card-img-top rounded" />
+                        <img src="@lawyer.ImageUrl" class="card-img-top rounded"/>
 
                     </div>
                     <div>
-                        <label> Name: @lawyer.FirstName </label>
+                        <label> Name: @lawyer.ApplicationUser.FirstName </label>
 
                     </div>
                     <div>
-                        <label >LastName: @lawyer.LastName</label>
+                        <label>LastName: @lawyer.ApplicationUser.LastName</label>
 
                     </div>
-                    <div >
+                    <div>
                         <label> ConsultationFee: @lawyer.ConsultationFee</label>
 
                     </div>
 
-                    <div >
-                        <label >ExperienceYears: @lawyer.ExperienceYears </label>
+                    <div>
+                        <label>ExperienceYears: @lawyer.ExperienceYears </label>
 
                     </div>
                     <div>
-                        @foreach (var item in lawyer.specializationnews)
+                        @foreach (var item in lawyer.LawyerSpecializations)
                         {
-
                             <div>@item.Specialization.Name</div>
                         }
                     </div>
@@ -52,16 +52,15 @@
 
                 <div class="d-flex justify-content-between">
 
-                
-                    <a asp-action="Details" asp-route-id="@lawyer.ID" class="btn btn-info btn-sm">Details</a>
-                    @if(User.IsInRole(ELawyer.Utility.SD.AdminRole))
+
+                    <a asp-action="Details" asp-route-id="@lawyer.Id" class="btn btn-info btn-sm">Details</a>
+                    @if (User.IsInRole(SD.AdminRole))
                     {
-                        <a asp-action="Delete" asp-route-id="@lawyer.ID" class="btn btn-danger btn-sm">Delete</a>
+                        <a asp-action="Delete" asp-route-id="@lawyer.Id" class="btn btn-danger btn-sm">Delete</a>
                     }
                 </div>
 
             </div>
         </div>
-
     }
 </div>

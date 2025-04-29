@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models
-@model Lawyer
+﻿@model Lawyer
 
 
 @{
@@ -11,24 +10,26 @@
 <div class="row">
 
     <form method="post" asp-action="Rejectlawyer">
-        <input asp-for="ID" hidden />
+        <input asp-for="Id" hidden/>
         <div class="col-md-4 mb-4">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="@Url.Content("~/images/" + Model.FrontCardImage)" class="card-img-top rounded w-100" />
+                            <img src="@Url.Content("~/images/" + Model.FrontCardImage)"
+                                 class="card-img-top rounded w-100"/>
 
 
                         </div>
                         <div class="col-md-6">
-                            <img src="@Url.Content("~/images/" + Model.BackCardImage)" class="card-img-top rounded w-100" />
+                            <img src="@Url.Content("~/images/" + Model.BackCardImage)"
+                                 class="card-img-top rounded w-100"/>
                         </div>
                     </div>
 
                     <div class="mt-3">
-                        <p><strong>Name:</strong>@Model.FirstName</p>
-                        <p><strong>Last Name:</strong> @Model.LastName</p>
+                        <p><strong>Name:</strong>@Model.ApplicationUser.FirstName</p>
+                        <p><strong>Last Name:</strong> @Model.ApplicationUser.LastName</p>
 
                     </div>
                     <div class="mt-3">
@@ -38,7 +39,7 @@
 
                     </div>
                 </div>
-              
+
 
             </div>
         </div>

@@ -379,7 +379,7 @@ namespace ELawyer.DataAccess.Migrations
                     b.ToTable("Services");
                 });
 
-            modelBuilder.Entity("ELawyer.Models.Specializationnew", b =>
+            modelBuilder.Entity("ELawyer.Models.Specialization", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -926,7 +926,7 @@ namespace ELawyer.DataAccess.Migrations
                         .WithMany()
                         .HasForeignKey("ServiceID");
 
-                    b.HasOne("ELawyer.Models.Specializationnew", null)
+                    b.HasOne("ELawyer.Models.Specialization", null)
                         .WithMany("Lawyers")
                         .HasForeignKey("SpecializationnewID");
 
@@ -941,7 +941,7 @@ namespace ELawyer.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ELawyer.Models.Specializationnew", "Specialization")
+                    b.HasOne("ELawyer.Models.Specialization", "Specialization")
                         .WithMany()
                         .HasForeignKey("SpecializationId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1018,7 +1018,7 @@ namespace ELawyer.DataAccess.Migrations
 
             modelBuilder.Entity("ELawyer.Models.SubSpecialization", b =>
                 {
-                    b.HasOne("ELawyer.Models.Specializationnew", "Specialization")
+                    b.HasOne("ELawyer.Models.Specialization", "Specialization")
                         .WithMany("SubSpecializations")
                         .HasForeignKey("SpecializationID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1111,7 +1111,7 @@ namespace ELawyer.DataAccess.Migrations
                     b.Navigation("specializationnews");
                 });
 
-            modelBuilder.Entity("ELawyer.Models.Specializationnew", b =>
+            modelBuilder.Entity("ELawyer.Models.Specialization", b =>
                 {
                     b.Navigation("Lawyers");
 

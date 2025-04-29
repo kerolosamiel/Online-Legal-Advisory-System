@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models.ViewModels
-@model ConsultationPaymentViewModel
+﻿@model ELawyer.Models.ViewModels.ConsultationPaymentViewModel
 
 @{
     ViewData["Title"] = "Consultation";
@@ -8,30 +7,30 @@
 <h1>Consultation</h1>
 
 <h4>Consultation</h4>
-<hr />
+<hr/>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="ConsultationPost" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input  type="hidden" asp-for="@Model.Payment.lawyerID" />
+            <input type="hidden" asp-for="@Model.Payment.LawyerId"/>
             <div class="form-group">
                 <label asp-for="@Model.Consultation.Title" class="control-label"></label>
-                <input asp-for="@Model.Consultation.Title" class="form-control" />
+                <input asp-for="@Model.Consultation.Title" class="form-control"/>
                 <span asp-validation-for="@Model.Consultation.Title" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="@Model.Consultation.Description" class="control-label"></label>
-                <input asp-for="@Model.Consultation.Description" class="form-control" />
+                <input asp-for="@Model.Consultation.Description" class="form-control"/>
                 <span asp-validation-for="@Model.Consultation.Description" class="text-danger"></span>
             </div>
-           
+
             <div class="form-group">
                 <label asp-for="@Model.Consultation.Attachments" class="control-label"></label>
-                <input asp-for="@Model.Consultation.Attachments" class="form-control" type="file" name="file" />
+                <input asp-for="@Model.Consultation.Attachments" class="form-control" type="file" name="file"/>
                 <span asp-validation-for="@Model.Consultation.Attachments" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary"/>
             </div>
         </form>
     </div>
@@ -42,5 +41,5 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 }

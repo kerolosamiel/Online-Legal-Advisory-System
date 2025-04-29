@@ -1,30 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class Consultation
 {
-    public class Consultation
-    {
-        public int ID { get; set; }
-        public string? Title { get; set; }
-        public string? Description { get; set; }
+    public int Id { get; set; }
+    [MaxLength(100)] public string? Title { get; set; }
+    [MaxLength(400)] public string? Description { get; set; }
+    [MaxLength(int.MaxValue)] public string? Attachments { get; set; }
+    public int? LawyerId { get; set; }
+    public int? ClientId { get; set; }
+    public int? PaymentId { get; set; }
 
-
-        public int? lawyerID { get; set; }
-        [ForeignKey("lawyerID")]
-        public Lawyer? Lawyer { get; set; }
-
-        public int? ClientID { get; set; }
-        [ForeignKey("ClientID")]
-        public Client? Client { get; set; }
-
-
-        public string? Attachments { get; set; }
-
-        public int?     PaymentId { get; set; }
-    }
+    // Relationship
+    [ForeignKey("LawyerId")] public virtual Lawyer Lawyer { get; set; } = new();
+    [ForeignKey("ClientId")] public virtual Client Client { get; set; } = new();
 }

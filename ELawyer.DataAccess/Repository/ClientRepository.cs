@@ -2,46 +2,36 @@
 using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
-namespace ELawyer.DataAccess.Repository
+namespace ELawyer.DataAccess.Repository;
+
+public class ClientRepository : Repository<Client>, IClientRepository
 {
-    public class ClientRepository : Repository<Client>, IClientRepository
+    private readonly ApplicationDbContext _context;
+
+    public ClientRepository(ApplicationDbContext context) : base(context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
 
-        public ClientRepository(ApplicationDbContext context) : base(context)
+    public void Update(Client obj)
+    {
+        var client = _context.Clients.Include(client => client.ApplicationUser).FirstOrDefault(u => u.Id == obj.Id);
+        if (client != null)
         {
-            _context = context;
+            client.ApplicationUser.FirstName = obj.ApplicationUser.FirstName;
+            client.ApplicationUser.FirstName = obj.ApplicationUser.LastName;
+            client.Address = obj.Address;
+            client.Address = obj.Address;
+            client.FrontCardImage = obj.FrontCardImage;
+            client.BackCardImage = obj.BackCardImage;
+            client.ImageUrl = obj.ImageUrl;
+            client.ApplicationUser.LastLogin = obj.ApplicationUser.LastLogin;
+            client.ClientType = obj.ClientType;
+            client.UserStatus = obj.UserStatus;
+            client.ClientRatingId = obj.ClientRatingId;
+            client.NoOfLawyers = obj.NoOfLawyers;
         }
-
-        public void Update(Client obj)
-        {
-            Client client = _context.Clients.FirstOrDefault(u => u.ID == obj.ID);
-            if (client != null)
-            {
-
-
-                client.FirstName = obj.FirstName;
-                client.LastName = obj.LastName;
-                client.Address = obj.Address;
-                client.Address = obj.Address;
-                client.FrontCardImage = obj.FrontCardImage;
-                client.BackCardImage = obj.BackCardImage;
-                client.ImageUrl = obj.ImageUrl;
-                client.LastLogin = obj.LastLogin;
-                client.ClientType = obj.ClientType;
-                client.UserStatus = obj.UserStatus;
-                client.ClientRatingID = obj.ClientRatingID;
-                client.NoOfLawyers = obj.NoOfLawyers;
-
-
-            }
-        }
-
     }
 }

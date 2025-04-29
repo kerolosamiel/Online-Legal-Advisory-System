@@ -1,28 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public enum ServiceTypes
 {
-    public class Service
-    {
-        [Key]
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string ServiceType { get; set; }
-     
-        public string Status { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public TimeOnly Duration { get; set; }
+    Consultation,
+    LegalService
+}
 
-        public int LawyerID { get; set; }
-        [ForeignKey(nameof(LawyerID))]
-        public Lawyer? Lawyer { get; set; }
+public enum ServiceStatus
+{
+    Available,
+    Inactive
+}
 
-    }
+public class Service
+{
+    [Key] public int Id { get; set; }
+
+    [Required]
+    [StringLength(100, MinimumLength = 10)]
+    public string Title { get; set; } = string.Empty;
+
+    [Required]
+    [StringLength(500, MinimumLength = 50)]
+    public string Description { get; set; } = string.Empty;
+
+    public ServiceTypes ServiceType { get; set; }
+    public ServiceStatus Status { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public TimeOnly Duration { get; set; }
+    public int LawyerId { get; set; }
+
+    // relationship
+    [ForeignKey(nameof(LawyerId))] public virtual Lawyer? Lawyer { get; set; }
+    public virtual ICollection<ServiceOrder> ServiceOrders { get; set; } = new HashSet<ServiceOrder>();
 }

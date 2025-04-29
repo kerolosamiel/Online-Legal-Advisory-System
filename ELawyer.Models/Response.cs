@@ -1,33 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class Response
 {
-    public class Response
-    {
-        public int ID { get; set; }
-       
-        public string Title { get; set; }
-     
-        public string Description { get; set; }
+    public int Id { get; set; }
+    [Required] [MaxLength(100)] public string Title { get; set; } = string.Empty;
 
+    [Required]
+    [StringLength(5, MinimumLength = 400)]
+    public string Description { get; set; } = string.Empty;
 
-        public int? lawyerID { get; set; }
-        [ForeignKey("lawyerID")]
-        public Lawyer? Lawyer { get; set; }
+    [MaxLength(int.MaxValue)] public string? Attachments { get; set; }
+    public int? ClientId { get; set; }
+    public int? LawyerId { get; set; }
+    public int? ConsultationId { get; set; }
 
-        public int? ClientID { get; set; }
-        [ForeignKey("ClientID")]
-        public Client? Client { get; set; }
-
-
-        public string? Attachments { get; set; }
-
-        public int? ConsultationID { get; set; }
-    }
+    // RelationShip
+    [ForeignKey("LawyerID")] public Lawyer? Lawyer { get; set; }
+    [ForeignKey("ClientID")] public Client? Client { get; set; }
 }

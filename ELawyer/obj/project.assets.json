@@ -9708,19 +9708,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Express\\.nuget\\packages\\": {}
+    "/home/perer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\ELawyer.csproj",
+      "projectUniqueName": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/ELawyer.csproj",
       "projectName": "ELawyer",
-      "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\ELawyer.csproj",
-      "packagesPath": "C:\\Users\\Express\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\obj\\",
+      "projectPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/ELawyer.csproj",
+      "packagesPath": "/home/perer/.nuget/packages/",
+      "outputPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Express\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/perer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -9732,14 +9732,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj": {
-              "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.DataAccess\\ELawyer.DataAccess.csproj"
+            "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.DataAccess/ELawyer.DataAccess.csproj": {
+              "projectPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.DataAccess/ELawyer.DataAccess.csproj"
             },
-            "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj": {
-              "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Models\\ELawyer.Models.csproj"
+            "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/ELawyer.Models.csproj": {
+              "projectPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/ELawyer.Models.csproj"
             },
-            "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj": {
-              "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj"
+            "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Utility/ELawyer.Utility.csproj": {
+              "projectPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Utility/ELawyer.Utility.csproj"
             }
           }
         }
@@ -9817,7 +9817,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

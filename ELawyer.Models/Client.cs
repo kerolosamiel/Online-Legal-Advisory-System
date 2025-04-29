@@ -1,40 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public enum CType
 {
-   public class Client
-    {
-        [Key]
-        public int ID { get; set; }
-        
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? ImageUrl { get; set; }
-        public string? Address { get; set; }
-     
-        public int? NoOfLawyers { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? LastLogin { get; set; }
-   
+    Individual,
+    Company
+}
 
-        public string? ClientType { get; set; }
-        public string? FrontCardImage { get; set; }
-        public string? BackCardImage { get; set; }
-        public string? UserStatus { get; set; }
-     
-       
+public class Client
+{
+    [Key] public int Id { get; set; }
+    [StringLength(200, MinimumLength = 2)] public string? ImageUrl { get; set; }
+    [MaxLength(100)] public string? Address { get; set; }
+    public int? NoOfLawyers { get; set; }
+    public CType ClientType { get; set; }
+    [MaxLength(250)] public string? FrontCardImage { get; set; }
+    [MaxLength(250)] public string? BackCardImage { get; set; }
+    [MaxLength(10)] public string? UserStatus { get; set; }
+    public int? ClientRatingId { get; set; }
 
-        public int? ClientRatingID { get; set; }
-        [ForeignKey(nameof(ClientRatingID))]
+    // Relationship
+    public virtual ApplicationUser ApplicationUser { get; set; } = new();
+    public virtual ICollection<Consultation> Consultations { get; set; } = new HashSet<Consultation>();
 
-        public ICollection<Rating>? Rating { get; set; } = new List<Rating>();
-
-
-    }
+    [ForeignKey(nameof(ClientRatingId))] public ICollection<Rating>? Rating { get; set; } = new HashSet<Rating>();
+    public virtual ICollection<Invoice> Invoices { get; set; } = new HashSet<Invoice>();
 }

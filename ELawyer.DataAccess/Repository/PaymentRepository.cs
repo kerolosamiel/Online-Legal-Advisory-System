@@ -2,39 +2,29 @@
 using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.DataAccess.Repository
+namespace ELawyer.DataAccess.Repository;
+
+public class PaymentRepository : Repository<Payment>, IPaymentRepository
 {
-    public class PaymentRepository : Repository<Payment>, IPaymentRepository
+    private readonly ApplicationDbContext _context;
+
+    public PaymentRepository(ApplicationDbContext context) : base(context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
 
-        public PaymentRepository(ApplicationDbContext context) : base(context)
+    public void Update(Payment obj)
+    {
+        var pays = _context.Payments.FirstOrDefault(u => u.Id == obj.Id);
+        if (pays != null)
         {
-            _context = context;
-        }
-
-        public void Update(Payment obj)
-        {
-            Payment pays = _context.Payments.FirstOrDefault(u => u.Id == obj.Id);
-            if (pays != null)
-            {
-
-                pays.ClientID = obj.ClientID;
-                pays.lawyerID = obj.lawyerID;
-                pays.Amount = obj.Amount;
-                if(pays.PaidAt == null)
+            pays.ClientId = obj.ClientId;
+            pays.LawyerId = obj.LawyerId;
+            pays.Amount = obj.Amount;
+            if (pays.PaidAt == null)
                 pays.PaidAt = DateTime.Now;
-                pays.Recievedat = DateTime.Now;
-
-
-
-            }
+            pays.Recievedat = DateTime.Now;
         }
     }
 }

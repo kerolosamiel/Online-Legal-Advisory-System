@@ -1,50 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class Lawyer
 {
-    public class Lawyer
-    {
-        [Key]
-        public int ID { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? ImageUrl { get; set; }
-        public string? About { get; set; }
-        public string? Address { get; set; }
-       
-      public int? NoOfClients { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? LastLogin { get; set; }
-     
-        public string? FrontCardImage { get; set; }
+    [Key] public int Id { get; set; }
+    [StringLength(200, MinimumLength = 5)] public string? ImageUrl { get; set; }
+    [MaxLength(400)] public string? About { get; set; }
+    [MaxLength(100)] public string? Address { get; set; }
+    public int? NoOfClients { get; set; }
+    [MaxLength(int.MaxValue)] public string? FrontCardImage { get; set; }
+    [MaxLength(int.MaxValue)] public string? BackCardImage { get; set; }
+    [MaxLength(10)] public string? UserStatus { get; set; }
 
-        public string? BackCardImage { get; set; }
+    [MaxLength(35)]
+    [Required(ErrorMessage = "License number is required.")]
+    public string LinceseNumber { get; set; } = string.Empty;
 
-        public string? UserStatus { get; set; }
-        public string? LinceseNumber { get; set; }
-        public int?   ExperienceYears { get; set; }
-        public string? Linkedin { get; set; }
-        public int ?  ConsultationFee { get; set; }
-        public double? AverageRateing { get; set; }
-     
-        public ICollection<LawyerSpecialization> specializationnews { get; set; } = new List<LawyerSpecialization>();
+    public int? ExperienceYears { get; set; }
 
-       
+    [MaxLength(500)] public string? LinkedIn { get; set; }
 
-        public int? ServiceID { get; set; }
-        [ForeignKey(nameof(ServiceID))]
-        public Service? Service { get; set; }
+    public int? ConsultationFee { get; set; }
+    public double? AverageRateing { get; set; }
+    public int? ServiceId { get; set; }
+    public int? LawyerRatingId { get; set; }
 
-        public int? LawyerRatingID { get; set; }
-        [ForeignKey(nameof(LawyerRatingID))]
+    // Realationship
+    public virtual ICollection<LawyerSpecialization> LawyerSpecializations { get; set; } =
+        new HashSet<LawyerSpecialization>();
 
-        public ICollection<Rating>? Rating { get; set; } = new List<Rating>();
+    public virtual ApplicationUser ApplicationUser { get; set; } = new();
+    [ForeignKey(nameof(ServiceId))] public virtual ICollection<Service> Services { get; set; } = new HashSet<Service>();
 
-    }
+    [ForeignKey(nameof(LawyerRatingId))]
+    public virtual ICollection<Rating> Rating { get; set; } = new HashSet<Rating>();
 }

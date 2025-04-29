@@ -2,35 +2,28 @@
 using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.DataAccess.Repository
+namespace ELawyer.DataAccess.Repository;
+
+public class RatingRepository : Repository<Rating>, IRatingRepository
 {
-   public class RatingRepository : Repository<Rating>, IRatingRepository
+    private readonly ApplicationDbContext _context;
+
+    public RatingRepository(ApplicationDbContext context) : base(context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
 
-        public RatingRepository(ApplicationDbContext context) : base(context)
+    public void Update(Rating obj)
+    {
+        var rating = _context.Ratings.FirstOrDefault(u => u.ID == obj.ID);
+        if (rating != null)
         {
-            _context = context;
+            rating.Comment = obj.Comment;
+            rating.Rate = obj.Rate;
+            rating.ClientId = obj.ClientId;
+            rating.LawyerId = obj.LawyerId;
+            rating.CreatedAt = DateTime.Now;
         }
-
-        public void Update(Rating obj)
-        {
-            Rating rating = _context.Ratings.FirstOrDefault(u => u.ID == obj.ID);
-            if (rating != null)
-            {
-                rating.Comment = obj.Comment;
-                rating.Rate = obj.Rate;
-                rating.ClientID = obj.ClientID;
-                rating.lawyerID = obj.lawyerID;
-                rating.CreatedAt = DateTime.Now;
-            }
-        }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ELawyer.Models.ServiceOrders>
+﻿@model IEnumerable<ServiceOrder>
 
 @{
     ViewData["Title"] = "ShowServieOrders";
@@ -11,44 +11,45 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ServiceID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PaymentID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ClientID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ScheduledAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Amount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LawyerID)
-            </th>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScheduledAt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service.LawyerId)
+        </th>
 
 
-            <th></th>
-        </tr>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ServiceID)
+                @Html.DisplayFor(modelItem => item.ServiceId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PaymentID)
+                @Html.DisplayFor(modelItem => item.PaymentId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientID)
+                @Html.DisplayFor(modelItem => item.ClientId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedAt)
@@ -59,11 +60,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LawyerID)
-                </td>
-           
+            <td>
+                @Html.DisplayFor(modelItem => item.Service.LawyerId)
+            </td>
+
         </tr>
-}
+    }
     </tbody>
 </table>

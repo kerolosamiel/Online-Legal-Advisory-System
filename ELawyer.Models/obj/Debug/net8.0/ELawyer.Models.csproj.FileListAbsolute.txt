@@ -1,36 +1,49 @@
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.deps.json
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.pdb
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.AssemblyReference.cache
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfoInputs.cache
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfo.cs
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.CoreCompileInputs.cache
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\refint\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.pdb
-F:\Eng-Mohamed Saad\CV\ELawyer.Models\obj\Debug\net8.0\ref\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.deps.json
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.pdb
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.AssemblyReference.cache
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfoInputs.cache
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfo.cs
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.CoreCompileInputs.cache
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\refint\ELawyer.Models.dll
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.pdb
-F:\Eng-Mohamed Saad\My Important Projects\Lawer Project\ELawyer.Models\obj\Debug\net8.0\ref\ELawyer.Models.dll
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.deps.json
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.dll
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\bin\Debug\net8.0\ELawyer.Models.pdb
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.AssemblyReference.cache
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfoInputs.cache
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.AssemblyInfo.cs
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.csproj.CoreCompileInputs.cache
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.dll
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\refint\ELawyer.Models.dll
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ELawyer.Models.pdb
-E:\Project\LawyerPlatform\ELawyerPlatform\ELawyer.Models\obj\Debug\net8.0\ref\ELawyer.Models.dll
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.deps.json
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.pdb
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.AssemblyReference.cache
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfoInputs.cache
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfo.cs
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.CoreCompileInputs.cache
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/refint/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.pdb
+F:/Eng-Mohamed Saad/CV/ELawyer.Models/obj/Debug/net8.0/ref/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.deps.json
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.pdb
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.AssemblyReference.cache
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfoInputs.cache
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfo.cs
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.CoreCompileInputs.cache
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/refint/ELawyer.Models.dll
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.pdb
+F:/Eng-Mohamed Saad/My Important Projects/Lawer Project/ELawyer.Models/obj/Debug/net8.0/ref/ELawyer.Models.dll
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.deps.json
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.dll
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.pdb
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.AssemblyReference.cache
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfoInputs.cache
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfo.cs
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.CoreCompileInputs.cache
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.dll
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/refint/ELawyer.Models.dll
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.pdb
+E:/Project/LawyerPlatform/ELawyerPlatform/ELawyer.Models/obj/Debug/net8.0/ref/ELawyer.Models.dll
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.deps.json
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.dll
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/bin/Debug/net8.0/ELawyer.Models.pdb
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.AssemblyReference.cache
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.GeneratedMSBuildEditorConfig.editorconfig
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfoInputs.cache
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.AssemblyInfo.cs
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.csproj.CoreCompileInputs.cache
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.sourcelink.json
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.dll
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/refint/ELawyer.Models.dll
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ELawyer.Models.pdb
+/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Models/obj/Debug/net8.0/ref/ELawyer.Models.dll

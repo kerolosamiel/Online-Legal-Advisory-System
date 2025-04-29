@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models
-@model List<Lawyer>
+﻿@model List<Lawyer>
 
 
 @{
@@ -16,38 +15,39 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="@Url.Content("~/images/" + lawyer.FrontCardImage)" class="card-img-top rounded w-100" />
-                           
+                            <img src="@Url.Content("~/images/" + lawyer.FrontCardImage)"
+                                 class="card-img-top rounded w-100"/>
+
 
                         </div>
                         <div class="col-md-6">
-                            <img src="@Url.Content("~/images/" + lawyer.BackCardImage)" class="card-img-top rounded w-100" />
+                            <img src="@Url.Content("~/images/" + lawyer.BackCardImage)"
+                                 class="card-img-top rounded w-100"/>
                         </div>
                     </div>
 
                     <div class="mt-3">
-                        <p><strong>Name:</strong> @lawyer.FirstName</p>
-                        <p><strong>Last Name:</strong> @lawyer.LastName</p>
-                       
+                        <p><strong>Name:</strong> @lawyer.ApplicationUser.FirstName</p>
+                        <p><strong>Last Name:</strong> @lawyer.ApplicationUser.LastName</p>
+
                     </div>
                     <div class="mt-3">
 
 
-                        <a asp-action="Acceptlawyer" asp-route-id="@lawyer.ID" class="btn btn-danger btn-sm">Accept</a>
-                  
+                        <a asp-action="Acceptlawyer" asp-route-id="@lawyer.Id" class="btn btn-danger btn-sm">Accept</a>
+
                     </div>
                     <div class="mt-3">
 
 
-                        <a asp-action="Rejectlawyer" asp-route-id="@lawyer.ID" class="btn btn-danger btn-sm">Reject</a>
+                        <a asp-action="Rejectlawyer" asp-route-id="@lawyer.Id" class="btn btn-danger btn-sm">Reject</a>
 
                     </div>
                 </div>
-              
 
-                </div>
+
             </div>
-        
+        </div>
     }
 </div>
 

@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models
-@model List<Client>
+﻿@model List<Client>
 
 
 @{
@@ -16,44 +15,42 @@
                 <div class="card-text">
                     <div>
 
-                        <img src="@client.FrontCardImage" class="card-img-top rounded" />
+                        <img src="@client.FrontCardImage" class="card-img-top rounded"/>
 
                     </div>
                     <div>
 
-                        <img src="@client.BackCardImage" class="card-img-top rounded" />
+                        <img src="@client.BackCardImage" class="card-img-top rounded"/>
 
                     </div>
                     <div>
-                        <label> Name: @client.FirstName </label>
+                        <label> Name: @client.ApplicationUser.FirstName </label>
 
                     </div>
                     <div>
-                        <label>LastName: @client.LastName</label>
+                        <label>LastName: @client.ApplicationUser.LastName</label>
 
                     </div>
 
                     <div class="mt-3">
 
 
-                        <a asp-action="Acceptclient" asp-route-id="@client.ID" class="btn btn-danger btn-sm">Accept</a>
+                        <a asp-action="Acceptclient" asp-route-id="@client.Id" class="btn btn-danger btn-sm">Accept</a>
 
                     </div>
                     <div class="mt-3">
 
 
-                        <a asp-action="Rejectclient" asp-route-id="@client.ID" class="btn btn-danger btn-sm">Reject</a>
+                        <a asp-action="Rejectclient" asp-route-id="@client.Id" class="btn btn-danger btn-sm">Reject</a>
 
                     </div>
-                 
+
 
                 </div>
 
 
-           
             </div>
         </div>
-
     }
 </div>
 

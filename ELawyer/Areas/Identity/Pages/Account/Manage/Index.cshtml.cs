@@ -1,207 +1,181 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
+
 #nullable disable
 
-using System;
 using System.ComponentModel.DataAnnotations;
-using System.Security.Claims;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
 using ELawyer.DataAccess.Repository.IRepository;
+using ELawyer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Security.Claims;
-using ELawyer.Models;
-using ELawyer.Utility;
 
-namespace ELawyer.Areas.Identity.Pages.Account.Manage
+namespace ELawyer.Areas.Identity.Pages.Account.Manage;
+
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
-    {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly IUnitOfWork _unitOfWork;
-        public IndexModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly UserManager<IdentityUser> _userManager;
+
+    public IndexModel(
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager,
         IUnitOfWork unitOfWork)
+    {
+        _userManager = userManager;
+        _signInManager = signInManager;
+        _unitOfWork = unitOfWork;
+    }
+
+    /// <summary>
+    ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+    ///     directly from your code. This API may change or be removed in future releases.
+    /// </summary>
+    public string Username { get; set; }
+
+    /// <summary>
+    ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+    ///     directly from your code. This API may change or be removed in future releases.
+    /// </summary>
+    [TempData]
+    public string StatusMessage { get; set; }
+
+    /// <summary>
+    ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+    ///     directly from your code. This API may change or be removed in future releases.
+    /// </summary>
+    [BindProperty]
+    public InputModel Input { get; set; }
+
+    private async Task LoadAsync(IdentityUser user)
+    {
+        var userName = await _userManager.GetUserNameAsync(user);
+        var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+
+        Username = userName;
+        var User1 = _unitOfWork.ApplicationUser.Get(u => u.Id == user.Id);
+
+        var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == User1.LawyerId);
+        var lawyerService = lawyer != null ? _unitOfWork.service.Get(s => s.Id == lawyer.ServiceId) : null;
+
+
+        var client = _unitOfWork.Client.Get(l => l.Id == User1.ClientId);
+
+
+        // جلب الخدمة الخاصة بالمحامي (خدمة واحدة فقط)
+
+        Input = new InputModel
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _unitOfWork = unitOfWork;
-        }
+            PhoneNumber = phoneNumber,
+            Client = client,
+            Lawyer = lawyer,
+            LawyerService = lawyerService
+        };
+    }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        public string Username { get; set; }
+    public async Task<IActionResult> OnGetAsync()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null) return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+        // specializations
+        //Input = new()
+        //{
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [TempData]
-        public string StatusMessage { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [BindProperty]
-        public InputModel Input { get; set; }
+        //    SpecializationList = _unitOfWork.specializationnew.GetAll().Select(i => new SelectListItem
+        //    {
+        //        Text = i.Name,
+        //        Value = i.ID.ToString()
+        //    }).ToList()
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        public class InputModel
+        //};
+
+
+        //Input = new()
+        //{
+
+        //};
+
+
+        await LoadAsync(user);
+        return Page();
+    }
+
+    public async Task<IActionResult> OnPostAsync()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null) return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+
+        if (!ModelState.IsValid)
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Phone]
-            [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
-
-            //public string FrontCardImage { get; set; }
-
-            //public string BackCardImage { get; set; }
-            ////disabled
-            //public string UserStatus { get; set; }
-            //public string AccountStatus { get; set; }
-
-
-            ////Lawyer
-
-            //public string LinceseNumber { get; set; }
-
-            //public int ExperienceYears { get; set; }
-
-            //public string Linkedin { get; set; }
-
-            //public int ConsultationFee { get; set; }
-
-            //public string About { get; set; }
-
-
-            //// client 
-            //public string ClientType { get; set; }
-
-
-            //public List<int> Specialization { get; set; }
-            //[ValidateNever]
-            //public IEnumerable<SelectListItem> SpecializationList { get; set; } = Enumerable.Empty<SelectListItem>();
-            public ELawyer.Models.Client Client { get; set; }
-            public ELawyer.Models.Lawyer Lawyer { get; set; }
-
-            // خاصية واحدة للخدمة بدلاً من قائمة
-            public Service LawyerService { get; set; }
-
-        }
-
-        private async Task LoadAsync(IdentityUser user)
-        {
-            var userName = await _userManager.GetUserNameAsync(user);
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-         
-            Username = userName;
-            var User1 = _unitOfWork.ApplicationUser.Get(u => u.Id == user.Id);
-          
-                var lawyer = _unitOfWork.Lawyer.Get(l => l.ID == User1.LawyerID);
-                var lawyerService = lawyer != null ? _unitOfWork.service.Get(s => s.ID == lawyer.ServiceID) : null;
-            
-               
-
-            
-        
-            
-                var client = _unitOfWork.Client.Get(l => l.ID == User1.ClientID);
-              
-            
-
-
-
-
-
-
-            // جلب الخدمة الخاصة بالمحامي (خدمة واحدة فقط)
-          
-            Input = new InputModel
-            {
-                PhoneNumber = phoneNumber,
-                Client = client,
-                Lawyer = lawyer,
-                LawyerService = lawyerService,
-
-            };
-        }
-
-        public async Task<IActionResult> OnGetAsync()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
-            }
-            // specializations
-            //Input = new()
-            //{
-
-
-            //    SpecializationList = _unitOfWork.specializationnew.GetAll().Select(i => new SelectListItem
-            //    {
-            //        Text = i.Name,
-            //        Value = i.ID.ToString()
-            //    }).ToList()
-
-            //};
-           
-
-            //Input = new()
-            //{
-               
-            //};
-
-
             await LoadAsync(user);
+
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+        if (Input.PhoneNumber != phoneNumber)
         {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
+            var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
+            if (!setPhoneResult.Succeeded)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                StatusMessage = "Unexpected error when trying to set phone number.";
+                return RedirectToPage();
             }
-
-            if (!ModelState.IsValid)
-            {
-               
-                await LoadAsync(user);
-
-                return Page();
-            }
-
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
-            {
-                var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-                if (!setPhoneResult.Succeeded)
-                {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
-                    return RedirectToPage();
-                }
-            }
-
-            await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
-            return RedirectToPage();
         }
+
+        await _signInManager.RefreshSignInAsync(user);
+        StatusMessage = "Your profile has been updated";
+        return RedirectToPage();
+    }
+
+    /// <summary>
+    ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+    ///     directly from your code. This API may change or be removed in future releases.
+    /// </summary>
+    public class InputModel
+    {
+        /// <summary>
+        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
+        ///     directly from your code. This API may change or be removed in future releases.
+        /// </summary>
+        [Phone]
+        [Display(Name = "Phone number")]
+        public string PhoneNumber { get; set; }
+
+        //public string FrontCardImage { get; set; }
+
+        //public string BackCardImage { get; set; }
+        ////disabled
+        //public string UserStatus { get; set; }
+        //public string AccountStatus { get; set; }
+
+
+        ////Lawyer
+
+        //public string LinceseNumber { get; set; }
+
+        //public int ExperienceYears { get; set; }
+
+        //public string Linkedin { get; set; }
+
+        //public int ConsultationFee { get; set; }
+
+        //public string About { get; set; }
+
+
+        //// client 
+        //public string ClientType { get; set; }
+
+
+        //public List<int> Specialization { get; set; }
+        //[ValidateNever]
+        //public IEnumerable<SelectListItem> SpecializationList { get; set; } = Enumerable.Empty<SelectListItem>();
+        public Models.Client Client { get; set; }
+        public Models.Lawyer Lawyer { get; set; }
+
+        // خاصية واحدة للخدمة بدلاً من قائمة
+        public Service LawyerService { get; set; }
     }
 }

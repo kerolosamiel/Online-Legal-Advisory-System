@@ -1,4 +1,4 @@
-﻿@model ELawyer.Models.Client
+﻿@model Client
 
 @{
     ViewData["Title"] = "Edit";
@@ -7,63 +7,54 @@
 <h1>Edit</h1>
 
 <h4>Client</h4>
-<hr />
+<hr/>
 <div class="row">
-   
-    
+
+
     <div class="col-md-4">
         <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ID" />
+            <input type="hidden" asp-for="Id"/>
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label asp-for="ApplicationUser.FirstName" class="control-label"></label>
+                <input asp-for="ApplicationUser.FirstName" class="form-control"/>
+                <span asp-validation-for="ApplicationUser.FirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
+                <label asp-for="ApplicationUser.LastName" class="control-label"></label>
+                <input asp-for="ApplicationUser.LastName" class="form-control"/>
+                <span asp-validation-for="ApplicationUser.LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-
-
-                    <label asp-for="ImageUrl" class="control-label"> </label>
-                    <input asp-for="ImageUrl" class="form-control" type="file" name="file" />
-                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                
+                <label asp-for="ImageUrl" class="control-label"> </label>
+                <input asp-for="ImageUrl" class="form-control" type="file" name="file"/>
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
+                <input asp-for="Address" class="form-control"/>
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CreatedAt" class="control-label"></label>
-                <input asp-for="CreatedAt" class="form-control" disabled />
-                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+                <label asp-for="ApplicationUser.CreatedAt" class="control-label"></label>
+                <input asp-for="ApplicationUser.CreatedAt" class="form-control" disabled/>
+                <span asp-validation-for="ApplicationUser.CreatedAt" class="text-danger"></span>
             </div>
-           
-           
+
 
             <div class="form-group">
                 <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" type="file" name="file" />
+                <input asp-for="ImageUrl" class="form-control" type="file" name="file"/>
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
-           
+
             <div class="form-group">
                 <label asp-for="ClientType" class="control-label"></label>
-                <input asp-for="ClientType" class="form-control" />
+                <input asp-for="ClientType" class="form-control"/>
                 <span asp-validation-for="ClientType" class="text-danger"></span>
             </div>
-         
-
-
-
-
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary"/>
             </div>
         </form>
     </div>

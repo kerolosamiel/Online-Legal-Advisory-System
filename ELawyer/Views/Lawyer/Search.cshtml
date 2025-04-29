@@ -1,5 +1,4 @@
-﻿@using ELawyer.Models
-@model List<Specializationnew>
+﻿@model List<Specialization>
 
 @{
     ViewData["Title"] = "Edit";
@@ -14,27 +13,27 @@
         <form asp-action="SearchPost">
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        
+
             <div class="form-group">
                 <label class="form-label mt-4">التخصصات</label>
                 <div>
                     @foreach (var specialization in Model)
                     {
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" asp-for="@specialization.ID" value="@specialization.ID" id="specialization_@specialization.ID">
+                            <input class="form-check-input" type="radio" asp-for="@specialization.ID"
+                                   value="@specialization.ID" id="specialization_@specialization.ID">
                             <label class="form-check-label" for="specialization_@specialization.ID">
                                 @specialization.Name
                             </label>
                         </div>
                     }
                 </div>
-      
+
             </div>
 
 
-
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary"/>
             </div>
         </form>
 

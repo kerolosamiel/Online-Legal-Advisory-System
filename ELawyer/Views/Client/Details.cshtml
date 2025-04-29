@@ -1,4 +1,4 @@
-﻿@model ELawyer.Models.Client
+﻿@model Client
 
 @{
     ViewData["Title"] = "Details";
@@ -13,16 +13,15 @@
             <div>
                 @if (Model.ImageUrl != null)
                 {
-                    <img src="@Url.Content("~/" + Model.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded" />
-
+                    <img src="@Url.Content("~/" + Model.ImageUrl.Replace("\\", "/"))" class="card-img-top rounded"/>
                 }
             </div>
             <div>
-                <label> Name: @Model.FirstName </label>
+                <label> Name: @Model.ApplicationUser.FirstName </label>
 
             </div>
             <div>
-                <label>LastName: @Model.LastName</label>
+                <label>LastName: @Model.ApplicationUser.LastName</label>
 
             </div>
             <div>
@@ -33,22 +32,12 @@
                 <label> NoOfLawyers : @Model.NoOfLawyers</label>
 
             </div>
-
-
-
-
-            
-           
-
-           
-             
-
         </div>
 
         <div>
             <a asp-controller="Admin" asp-action="LockUnlock">Lock</a>
         </div>
-    </div>
+
         <div>
             <a asp-action="Index">Back to List</a>
         </div>

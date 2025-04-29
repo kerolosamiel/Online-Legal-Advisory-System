@@ -1,655 +1,655 @@
 {
   "Files": [
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ELawyer.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ELawyer.bundle.scp.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/obj/Debug/net8.0/scopedcss/projectbundle/ELawyer.bundle.scp.css",
+      "PackagePath": "staticwebassets/ELawyer.bundle.scp.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\016e8fad-8300-4ff0-92a4-0c065e1d9d33.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\016e8fad-8300-4ff0-92a4-0c065e1d9d33.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/016e8fad-8300-4ff0-92a4-0c065e1d9d33.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/016e8fad-8300-4ff0-92a4-0c065e1d9d33.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\03cc857a-f311-493b-b8ab-363ce925a39c.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\03cc857a-f311-493b-b8ab-363ce925a39c.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/03cc857a-f311-493b-b8ab-363ce925a39c.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/03cc857a-f311-493b-b8ab-363ce925a39c.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\07b44388-90a9-4e56-a70f-a44242931dfd.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\07b44388-90a9-4e56-a70f-a44242931dfd.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/07b44388-90a9-4e56-a70f-a44242931dfd.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/07b44388-90a9-4e56-a70f-a44242931dfd.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\289d1142-4d8a-4e27-84d7-b29cf330e376.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\289d1142-4d8a-4e27-84d7-b29cf330e376.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/289d1142-4d8a-4e27-84d7-b29cf330e376.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/289d1142-4d8a-4e27-84d7-b29cf330e376.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\48431fe9-ebec-4218-8209-e16fcb7a363b.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\48431fe9-ebec-4218-8209-e16fcb7a363b.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/48431fe9-ebec-4218-8209-e16fcb7a363b.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/48431fe9-ebec-4218-8209-e16fcb7a363b.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\4cb2552b-e988-4608-879c-e9ce6ac65532.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\4cb2552b-e988-4608-879c-e9ce6ac65532.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/4cb2552b-e988-4608-879c-e9ce6ac65532.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/4cb2552b-e988-4608-879c-e9ce6ac65532.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\59f8f641-174d-4b4f-bdd6-290cf7938d9b.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\59f8f641-174d-4b4f-bdd6-290cf7938d9b.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/59f8f641-174d-4b4f-bdd6-290cf7938d9b.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/59f8f641-174d-4b4f-bdd6-290cf7938d9b.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\664720c5-33be-44a1-9dc8-651ea52eb6ed.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\664720c5-33be-44a1-9dc8-651ea52eb6ed.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/664720c5-33be-44a1-9dc8-651ea52eb6ed.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/664720c5-33be-44a1-9dc8-651ea52eb6ed.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\719d78c8-4ace-4d82-af1b-e5b6f7112b55.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\719d78c8-4ace-4d82-af1b-e5b6f7112b55.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/719d78c8-4ace-4d82-af1b-e5b6f7112b55.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/719d78c8-4ace-4d82-af1b-e5b6f7112b55.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\7422e09c-71b1-4c22-9738-351e0c9e54b0.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\7422e09c-71b1-4c22-9738-351e0c9e54b0.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/7422e09c-71b1-4c22-9738-351e0c9e54b0.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/7422e09c-71b1-4c22-9738-351e0c9e54b0.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\7515afd1-42dd-4d63-8fd9-bf38fc644dd2.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\7515afd1-42dd-4d63-8fd9-bf38fc644dd2.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/7515afd1-42dd-4d63-8fd9-bf38fc644dd2.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/7515afd1-42dd-4d63-8fd9-bf38fc644dd2.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\77c4db42-ceb8-4ab2-806e-eab7145e8cf8.jpg",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\77c4db42-ceb8-4ab2-806e-eab7145e8cf8.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/77c4db42-ceb8-4ab2-806e-eab7145e8cf8.jpg",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/77c4db42-ceb8-4ab2-806e-eab7145e8cf8.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\7b3b51b6-1623-4638-a81e-e716c2fb5c73.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\7b3b51b6-1623-4638-a81e-e716c2fb5c73.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/7b3b51b6-1623-4638-a81e-e716c2fb5c73.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/7b3b51b6-1623-4638-a81e-e716c2fb5c73.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\7b3e2c22-fdb6-44a9-b61a-c4abb7a92613.jpg",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\7b3e2c22-fdb6-44a9-b61a-c4abb7a92613.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/7b3e2c22-fdb6-44a9-b61a-c4abb7a92613.jpg",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/7b3e2c22-fdb6-44a9-b61a-c4abb7a92613.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\8324c147-9259-4c5f-ac26-8effd864ae7f.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\8324c147-9259-4c5f-ac26-8effd864ae7f.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/8324c147-9259-4c5f-ac26-8effd864ae7f.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/8324c147-9259-4c5f-ac26-8effd864ae7f.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\8d31a8e3-5783-4512-a09f-ae0b91ba4147.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\8d31a8e3-5783-4512-a09f-ae0b91ba4147.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/8d31a8e3-5783-4512-a09f-ae0b91ba4147.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/8d31a8e3-5783-4512-a09f-ae0b91ba4147.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\9d9b68e9-0bd1-415c-91bd-fe19a6426c31.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\9d9b68e9-0bd1-415c-91bd-fe19a6426c31.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/9d9b68e9-0bd1-415c-91bd-fe19a6426c31.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/9d9b68e9-0bd1-415c-91bd-fe19a6426c31.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\9eb90838-a647-451e-a861-a04aeab7974f.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\9eb90838-a647-451e-a861-a04aeab7974f.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/9eb90838-a647-451e-a861-a04aeab7974f.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/9eb90838-a647-451e-a861-a04aeab7974f.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\a479e47e-3051-497e-bf78-bf3b4595ef3e.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\a479e47e-3051-497e-bf78-bf3b4595ef3e.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/a479e47e-3051-497e-bf78-bf3b4595ef3e.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/a479e47e-3051-497e-bf78-bf3b4595ef3e.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\b722d943-24f4-47f7-802e-e2fb3599e766.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\b722d943-24f4-47f7-802e-e2fb3599e766.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/b722d943-24f4-47f7-802e-e2fb3599e766.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/b722d943-24f4-47f7-802e-e2fb3599e766.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\c8ad1242-3aad-4ebc-810e-b91f887da33e.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\c8ad1242-3aad-4ebc-810e-b91f887da33e.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/c8ad1242-3aad-4ebc-810e-b91f887da33e.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/c8ad1242-3aad-4ebc-810e-b91f887da33e.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\cfb3db4a-5292-48a2-b611-ce066649a91f.jpg",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\cfb3db4a-5292-48a2-b611-ce066649a91f.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/cfb3db4a-5292-48a2-b611-ce066649a91f.jpg",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/cfb3db4a-5292-48a2-b611-ce066649a91f.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\d7ac77de-c997-4501-85fd-4ef2f0050f23.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\d7ac77de-c997-4501-85fd-4ef2f0050f23.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/d7ac77de-c997-4501-85fd-4ef2f0050f23.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/d7ac77de-c997-4501-85fd-4ef2f0050f23.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\e486cb68-7834-48a3-85b0-4f84c0415c50.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\e486cb68-7834-48a3-85b0-4f84c0415c50.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/e486cb68-7834-48a3-85b0-4f84c0415c50.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/e486cb68-7834-48a3-85b0-4f84c0415c50.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\f1b1329c-2d17-4b2a-9003-a39098cace46.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\f1b1329c-2d17-4b2a-9003-a39098cace46.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/f1b1329c-2d17-4b2a-9003-a39098cace46.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/f1b1329c-2d17-4b2a-9003-a39098cace46.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\f9a2792d-9173-4a6a-b0d8-8e392c444543.png",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\f9a2792d-9173-4a6a-b0d8-8e392c444543.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/f9a2792d-9173-4a6a-b0d8-8e392c444543.png",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/f9a2792d-9173-4a6a-b0d8-8e392c444543.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\files\\Lawyer\\Attachments\\fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf",
-      "PackagePath": "staticwebassets\\files\\Lawyer\\Attachments\\fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf",
+      "PackagePath": "staticwebassets/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\06914eba-3926-428f-b263-a4a46479b564.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\06914eba-3926-428f-b263-a4a46479b564.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\0bd93606-cfb8-40a7-9de2-22ce5b534c26.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\0bd93606-cfb8-40a7-9de2-22ce5b534c26.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/0bd93606-cfb8-40a7-9de2-22ce5b534c26.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/0bd93606-cfb8-40a7-9de2-22ce5b534c26.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\125dde2c-fa6a-4acb-8674-23da442f4012.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\125dde2c-fa6a-4acb-8674-23da442f4012.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/125dde2c-fa6a-4acb-8674-23da442f4012.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/125dde2c-fa6a-4acb-8674-23da442f4012.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\3133d29d-68e7-44c8-9928-45d5dd57f9c9.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\3133d29d-68e7-44c8-9928-45d5dd57f9c9.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/3133d29d-68e7-44c8-9928-45d5dd57f9c9.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/3133d29d-68e7-44c8-9928-45d5dd57f9c9.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\5001b0d0-e562-47d7-8d9a-d6f66e571eab.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\5001b0d0-e562-47d7-8d9a-d6f66e571eab.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/5001b0d0-e562-47d7-8d9a-d6f66e571eab.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/5001b0d0-e562-47d7-8d9a-d6f66e571eab.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\565eacc6-e0e5-469b-b13d-75d441c3ed74.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\565eacc6-e0e5-469b-b13d-75d441c3ed74.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/565eacc6-e0e5-469b-b13d-75d441c3ed74.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/565eacc6-e0e5-469b-b13d-75d441c3ed74.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\a36858e7-da80-4644-8f7a-3ec1942b773e.png",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\a36858e7-da80-4644-8f7a-3ec1942b773e.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/a36858e7-da80-4644-8f7a-3ec1942b773e.png",
+      "PackagePath": "staticwebassets/images/Client/Cards/a36858e7-da80-4644-8f7a-3ec1942b773e.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\b62585ad-8030-4215-b8d5-3791c0180a56.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\b62585ad-8030-4215-b8d5-3791c0180a56.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/b62585ad-8030-4215-b8d5-3791c0180a56.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/b62585ad-8030-4215-b8d5-3791c0180a56.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\bb0234d3-dafe-4e35-a413-9769427e2e40.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\bb0234d3-dafe-4e35-a413-9769427e2e40.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/bb0234d3-dafe-4e35-a413-9769427e2e40.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/bb0234d3-dafe-4e35-a413-9769427e2e40.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Cards\\be932659-f557-474d-b2d3-5ffa92d61813.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Cards\\be932659-f557-474d-b2d3-5ffa92d61813.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/be932659-f557-474d-b2d3-5ffa92d61813.jpg",
+      "PackagePath": "staticwebassets/images/Client/Cards/be932659-f557-474d-b2d3-5ffa92d61813.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Profile\\63ee8ed3-4427-4542-a4e9-72ecd08eb540.png",
-      "PackagePath": "staticwebassets\\images\\Client\\Profile\\63ee8ed3-4427-4542-a4e9-72ecd08eb540.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Profile/63ee8ed3-4427-4542-a4e9-72ecd08eb540.png",
+      "PackagePath": "staticwebassets/images/Client/Profile/63ee8ed3-4427-4542-a4e9-72ecd08eb540.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Profile\\6b2869c7-7100-4b8e-b93c-21e59c66fee8.jpeg",
-      "PackagePath": "staticwebassets\\images\\Client\\Profile\\6b2869c7-7100-4b8e-b93c-21e59c66fee8.jpeg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Profile/6b2869c7-7100-4b8e-b93c-21e59c66fee8.jpeg",
+      "PackagePath": "staticwebassets/images/Client/Profile/6b2869c7-7100-4b8e-b93c-21e59c66fee8.jpeg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Profile\\9214536e-c50c-411f-bf38-962c3005ff71.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Profile\\9214536e-c50c-411f-bf38-962c3005ff71.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Profile/9214536e-c50c-411f-bf38-962c3005ff71.jpg",
+      "PackagePath": "staticwebassets/images/Client/Profile/9214536e-c50c-411f-bf38-962c3005ff71.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Client\\Profile\\fecce60f-c487-4483-ba83-29f7cf93aa5c.jpg",
-      "PackagePath": "staticwebassets\\images\\Client\\Profile\\fecce60f-c487-4483-ba83-29f7cf93aa5c.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Profile/fecce60f-c487-4483-ba83-29f7cf93aa5c.jpg",
+      "PackagePath": "staticwebassets/images/Client/Profile/fecce60f-c487-4483-ba83-29f7cf93aa5c.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\06f47e7f-98b5-4044-98a6-96dbc0948809.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\06f47e7f-98b5-4044-98a6-96dbc0948809.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/06f47e7f-98b5-4044-98a6-96dbc0948809.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/06f47e7f-98b5-4044-98a6-96dbc0948809.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\0b42f385-5bcc-4410-9587-66862453d8a5.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\0b42f385-5bcc-4410-9587-66862453d8a5.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/0b42f385-5bcc-4410-9587-66862453d8a5.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/0b42f385-5bcc-4410-9587-66862453d8a5.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\0f39a004-7bac-4bc5-9b7a-8f59e74394a1.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\0f39a004-7bac-4bc5-9b7a-8f59e74394a1.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/0f39a004-7bac-4bc5-9b7a-8f59e74394a1.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/0f39a004-7bac-4bc5-9b7a-8f59e74394a1.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\0ffac656-ea00-4c62-9b74-124de65e996e.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\0ffac656-ea00-4c62-9b74-124de65e996e.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/0ffac656-ea00-4c62-9b74-124de65e996e.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/0ffac656-ea00-4c62-9b74-124de65e996e.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\154e0f25-0a29-48f5-9397-9da082d995be.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\154e0f25-0a29-48f5-9397-9da082d995be.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/154e0f25-0a29-48f5-9397-9da082d995be.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/154e0f25-0a29-48f5-9397-9da082d995be.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\1edc4c91-5bb4-477a-9919-eb7fe29d19e5.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\1edc4c91-5bb4-477a-9919-eb7fe29d19e5.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/1edc4c91-5bb4-477a-9919-eb7fe29d19e5.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/1edc4c91-5bb4-477a-9919-eb7fe29d19e5.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\225c6809-57ec-4ea2-8c60-f721243580f8.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\225c6809-57ec-4ea2-8c60-f721243580f8.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/225c6809-57ec-4ea2-8c60-f721243580f8.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/225c6809-57ec-4ea2-8c60-f721243580f8.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\28f2a742-336d-45da-b88a-74ff607a29ac.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\28f2a742-336d-45da-b88a-74ff607a29ac.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/28f2a742-336d-45da-b88a-74ff607a29ac.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/28f2a742-336d-45da-b88a-74ff607a29ac.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\2c80264f-8bd9-477c-9034-d4c55dc06e62.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\2c80264f-8bd9-477c-9034-d4c55dc06e62.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/2c80264f-8bd9-477c-9034-d4c55dc06e62.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/2c80264f-8bd9-477c-9034-d4c55dc06e62.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\386aa0e6-a2d3-40c9-956b-c383a36a6652.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\386aa0e6-a2d3-40c9-956b-c383a36a6652.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/386aa0e6-a2d3-40c9-956b-c383a36a6652.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/386aa0e6-a2d3-40c9-956b-c383a36a6652.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\392df0c9-0431-4570-9f73-1377955cdef4.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\392df0c9-0431-4570-9f73-1377955cdef4.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/392df0c9-0431-4570-9f73-1377955cdef4.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/392df0c9-0431-4570-9f73-1377955cdef4.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\3c7aea75-3ea9-4a14-9d4a-9065dab0bb34.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\3c7aea75-3ea9-4a14-9d4a-9065dab0bb34.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/3c7aea75-3ea9-4a14-9d4a-9065dab0bb34.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/3c7aea75-3ea9-4a14-9d4a-9065dab0bb34.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\3fe291f5-b3d8-4a18-bd73-b91933541975.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\3fe291f5-b3d8-4a18-bd73-b91933541975.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/3fe291f5-b3d8-4a18-bd73-b91933541975.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/3fe291f5-b3d8-4a18-bd73-b91933541975.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\3ffcadf5-6e0e-42b8-9e0f-a9367e2737c8.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\3ffcadf5-6e0e-42b8-9e0f-a9367e2737c8.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/3ffcadf5-6e0e-42b8-9e0f-a9367e2737c8.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/3ffcadf5-6e0e-42b8-9e0f-a9367e2737c8.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\44d8f978-b003-4254-9622-96137bee8f38.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\44d8f978-b003-4254-9622-96137bee8f38.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/44d8f978-b003-4254-9622-96137bee8f38.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/44d8f978-b003-4254-9622-96137bee8f38.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\487ce140-09f8-41ab-bb55-a744a99972d4.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\487ce140-09f8-41ab-bb55-a744a99972d4.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/487ce140-09f8-41ab-bb55-a744a99972d4.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/487ce140-09f8-41ab-bb55-a744a99972d4.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\4ccf198f-aeff-409a-bfe1-daae68a64c0a.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\4ccf198f-aeff-409a-bfe1-daae68a64c0a.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/4ccf198f-aeff-409a-bfe1-daae68a64c0a.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/4ccf198f-aeff-409a-bfe1-daae68a64c0a.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\5115db1e-675c-4ab0-aa70-83523b7572b9.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\5115db1e-675c-4ab0-aa70-83523b7572b9.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/5115db1e-675c-4ab0-aa70-83523b7572b9.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/5115db1e-675c-4ab0-aa70-83523b7572b9.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\5a5c4764-7bb5-48d2-bac4-3c17faaa3dd4.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\5a5c4764-7bb5-48d2-bac4-3c17faaa3dd4.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/5a5c4764-7bb5-48d2-bac4-3c17faaa3dd4.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/5a5c4764-7bb5-48d2-bac4-3c17faaa3dd4.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\5a65b3cc-3888-43ab-8b6f-ecdb471f5f69.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\5a65b3cc-3888-43ab-8b6f-ecdb471f5f69.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/5a65b3cc-3888-43ab-8b6f-ecdb471f5f69.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/5a65b3cc-3888-43ab-8b6f-ecdb471f5f69.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\5b263ef7-ca09-403a-8682-0b413c1d8f3c.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\5b263ef7-ca09-403a-8682-0b413c1d8f3c.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/5b263ef7-ca09-403a-8682-0b413c1d8f3c.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/5b263ef7-ca09-403a-8682-0b413c1d8f3c.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\5b73ba18-bb2c-4511-94e6-8b1fead12b4a.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\5b73ba18-bb2c-4511-94e6-8b1fead12b4a.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/5b73ba18-bb2c-4511-94e6-8b1fead12b4a.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/5b73ba18-bb2c-4511-94e6-8b1fead12b4a.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\69511ef1-86e2-4067-ae6a-3d7bc27a93ee.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\69511ef1-86e2-4067-ae6a-3d7bc27a93ee.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/69511ef1-86e2-4067-ae6a-3d7bc27a93ee.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/69511ef1-86e2-4067-ae6a-3d7bc27a93ee.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\6c21742d-cfd9-431a-affc-a45260b185d9.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\6c21742d-cfd9-431a-affc-a45260b185d9.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/6c21742d-cfd9-431a-affc-a45260b185d9.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/6c21742d-cfd9-431a-affc-a45260b185d9.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\6c71b2e4-234c-4816-a7fd-55e54fdeff4c.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\6c71b2e4-234c-4816-a7fd-55e54fdeff4c.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/6c71b2e4-234c-4816-a7fd-55e54fdeff4c.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/6c71b2e4-234c-4816-a7fd-55e54fdeff4c.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\6c76bd25-9bdb-406b-b8ad-bf467b8b1091.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\6c76bd25-9bdb-406b-b8ad-bf467b8b1091.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/6c76bd25-9bdb-406b-b8ad-bf467b8b1091.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/6c76bd25-9bdb-406b-b8ad-bf467b8b1091.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\767e1d9f-ae36-47a1-92c2-2d7006c8181a.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\767e1d9f-ae36-47a1-92c2-2d7006c8181a.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/767e1d9f-ae36-47a1-92c2-2d7006c8181a.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/767e1d9f-ae36-47a1-92c2-2d7006c8181a.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\78d2391e-e017-4701-bb80-01455b242ff1.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\78d2391e-e017-4701-bb80-01455b242ff1.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/78d2391e-e017-4701-bb80-01455b242ff1.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/78d2391e-e017-4701-bb80-01455b242ff1.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\7d4b8a17-e8c8-46e1-9772-6c195338c857.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\7d4b8a17-e8c8-46e1-9772-6c195338c857.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/7d4b8a17-e8c8-46e1-9772-6c195338c857.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/7d4b8a17-e8c8-46e1-9772-6c195338c857.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\7ffb72a7-92dc-4f54-9b12-020eacd924a3.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\7ffb72a7-92dc-4f54-9b12-020eacd924a3.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/7ffb72a7-92dc-4f54-9b12-020eacd924a3.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/7ffb72a7-92dc-4f54-9b12-020eacd924a3.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\86738f4a-e2fd-4add-aa6f-869923a407a2.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\86738f4a-e2fd-4add-aa6f-869923a407a2.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/86738f4a-e2fd-4add-aa6f-869923a407a2.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/86738f4a-e2fd-4add-aa6f-869923a407a2.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\88074fd5-c2e1-4a67-a42f-07a8e8a3d7dd.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\88074fd5-c2e1-4a67-a42f-07a8e8a3d7dd.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/88074fd5-c2e1-4a67-a42f-07a8e8a3d7dd.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/88074fd5-c2e1-4a67-a42f-07a8e8a3d7dd.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\8c908845-1389-4c59-a171-e4b852c9f553.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\8c908845-1389-4c59-a171-e4b852c9f553.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/8c908845-1389-4c59-a171-e4b852c9f553.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/8c908845-1389-4c59-a171-e4b852c9f553.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\8d338338-a8d8-4d0c-842d-16c7cace0960.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\8d338338-a8d8-4d0c-842d-16c7cace0960.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/8d338338-a8d8-4d0c-842d-16c7cace0960.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/8d338338-a8d8-4d0c-842d-16c7cace0960.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\911d7a9a-f1e3-4c93-9094-fbf0769b3816.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\911d7a9a-f1e3-4c93-9094-fbf0769b3816.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/911d7a9a-f1e3-4c93-9094-fbf0769b3816.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/911d7a9a-f1e3-4c93-9094-fbf0769b3816.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\a6a51584-323d-43ca-aa2a-1338f909ac51.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\a6a51584-323d-43ca-aa2a-1338f909ac51.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/a6a51584-323d-43ca-aa2a-1338f909ac51.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/a6a51584-323d-43ca-aa2a-1338f909ac51.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\ab1af0f3-ba28-422c-9a03-4397e239350e.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\ab1af0f3-ba28-422c-9a03-4397e239350e.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/ab1af0f3-ba28-422c-9a03-4397e239350e.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/ab1af0f3-ba28-422c-9a03-4397e239350e.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\b1dd0265-7910-49ee-9d88-0f807fd86e08.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\b1dd0265-7910-49ee-9d88-0f807fd86e08.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/b1dd0265-7910-49ee-9d88-0f807fd86e08.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/b1dd0265-7910-49ee-9d88-0f807fd86e08.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\b76130ad-9a63-4a74-a6a9-279809d70be5.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\b76130ad-9a63-4a74-a6a9-279809d70be5.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/b76130ad-9a63-4a74-a6a9-279809d70be5.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/b76130ad-9a63-4a74-a6a9-279809d70be5.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\bd778fdb-203f-4978-95be-ed2360bae9f7.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\bd778fdb-203f-4978-95be-ed2360bae9f7.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/bd778fdb-203f-4978-95be-ed2360bae9f7.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/bd778fdb-203f-4978-95be-ed2360bae9f7.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\bde5e2a8-3cc0-4ef9-af8f-c129376f21a9.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\bde5e2a8-3cc0-4ef9-af8f-c129376f21a9.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/bde5e2a8-3cc0-4ef9-af8f-c129376f21a9.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/bde5e2a8-3cc0-4ef9-af8f-c129376f21a9.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\be2d54ab-ca8a-4edf-b94c-bc6453c7ce74.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\be2d54ab-ca8a-4edf-b94c-bc6453c7ce74.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/be2d54ab-ca8a-4edf-b94c-bc6453c7ce74.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/be2d54ab-ca8a-4edf-b94c-bc6453c7ce74.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\c213a4cc-0c43-4b4a-9ee0-77773dd69e3e.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\c213a4cc-0c43-4b4a-9ee0-77773dd69e3e.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/c213a4cc-0c43-4b4a-9ee0-77773dd69e3e.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/c213a4cc-0c43-4b4a-9ee0-77773dd69e3e.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\c357f45f-910b-4c6e-9373-ac804052e5b6.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\c357f45f-910b-4c6e-9373-ac804052e5b6.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/c357f45f-910b-4c6e-9373-ac804052e5b6.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/c357f45f-910b-4c6e-9373-ac804052e5b6.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\cd3c1618-ba07-409d-b413-d37026b7fa6b.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\cd3c1618-ba07-409d-b413-d37026b7fa6b.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/cd3c1618-ba07-409d-b413-d37026b7fa6b.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/cd3c1618-ba07-409d-b413-d37026b7fa6b.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\cd9a12c8-4425-45a1-9738-a104159d7cbf.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\cd9a12c8-4425-45a1-9738-a104159d7cbf.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/cd9a12c8-4425-45a1-9738-a104159d7cbf.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/cd9a12c8-4425-45a1-9738-a104159d7cbf.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\d14524c0-ccae-4a42-a4ba-b27e23e61e5f.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\d14524c0-ccae-4a42-a4ba-b27e23e61e5f.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/d14524c0-ccae-4a42-a4ba-b27e23e61e5f.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/d14524c0-ccae-4a42-a4ba-b27e23e61e5f.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\d17b31da-1f9e-437d-a560-fe6a5cbac321.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\d17b31da-1f9e-437d-a560-fe6a5cbac321.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/d17b31da-1f9e-437d-a560-fe6a5cbac321.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/d17b31da-1f9e-437d-a560-fe6a5cbac321.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\d4019302-4ebc-48eb-b4aa-9036a25f9145.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\d4019302-4ebc-48eb-b4aa-9036a25f9145.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/d4019302-4ebc-48eb-b4aa-9036a25f9145.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/d4019302-4ebc-48eb-b4aa-9036a25f9145.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\d442cf02-a341-4a56-85b3-fc845321dd4d.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\d442cf02-a341-4a56-85b3-fc845321dd4d.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/d442cf02-a341-4a56-85b3-fc845321dd4d.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/d442cf02-a341-4a56-85b3-fc845321dd4d.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\d805b773-e65b-4497-9f99-521c49a91fc9.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\d805b773-e65b-4497-9f99-521c49a91fc9.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/d805b773-e65b-4497-9f99-521c49a91fc9.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/d805b773-e65b-4497-9f99-521c49a91fc9.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\dbc9c223-9159-4f62-8a32-395c03640d3e.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\dbc9c223-9159-4f62-8a32-395c03640d3e.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/dbc9c223-9159-4f62-8a32-395c03640d3e.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/dbc9c223-9159-4f62-8a32-395c03640d3e.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\dde6f9af-89b0-460f-a1fc-88220234b261.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\dde6f9af-89b0-460f-a1fc-88220234b261.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/dde6f9af-89b0-460f-a1fc-88220234b261.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/dde6f9af-89b0-460f-a1fc-88220234b261.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\e4e10f04-5fb5-4662-8838-72532d6e5ff5.jpg",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\e4e10f04-5fb5-4662-8838-72532d6e5ff5.jpg"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/e4e10f04-5fb5-4662-8838-72532d6e5ff5.jpg",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/e4e10f04-5fb5-4662-8838-72532d6e5ff5.jpg"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\fcc1b6b5-e833-4ece-96d5-18c5b89dfc24.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\fcc1b6b5-e833-4ece-96d5-18c5b89dfc24.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/fcc1b6b5-e833-4ece-96d5-18c5b89dfc24.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/fcc1b6b5-e833-4ece-96d5-18c5b89dfc24.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Cards\\ffd82c83-c621-4a91-a1a4-46a336745050.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Cards\\ffd82c83-c621-4a91-a1a4-46a336745050.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Cards/ffd82c83-c621-4a91-a1a4-46a336745050.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Cards/ffd82c83-c621-4a91-a1a4-46a336745050.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\images\\Lawyer\\Profile\\75af1e03-e2d2-4439-ac5f-94ef4845d81b.png",
-      "PackagePath": "staticwebassets\\images\\Lawyer\\Profile\\75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png",
+      "PackagePath": "staticwebassets/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ELawyer.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ELawyer.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ELawyer.props",
       "PackagePath": "build\\ELawyer.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ELawyer.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ELawyer.props",
       "PackagePath": "buildMultiTargeting\\ELawyer.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ELawyer.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ELawyer.props",
       "PackagePath": "buildTransitive\\ELawyer.props"
     }
   ],

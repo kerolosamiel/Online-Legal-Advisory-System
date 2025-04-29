@@ -902,19 +902,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Express\\.nuget\\packages\\": {}
+    "/home/perer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj",
+      "projectUniqueName": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Utility/ELawyer.Utility.csproj",
       "projectName": "ELawyer.Utility",
-      "projectPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\ELawyer.Utility.csproj",
-      "packagesPath": "C:\\Users\\Express\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\LawyerPlatform\\ELawyerPlatform\\ELawyer.Utility\\obj\\",
+      "projectPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Utility/ELawyer.Utility.csproj",
+      "packagesPath": "/home/perer/.nuget/packages/",
+      "outputPath": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer.Utility/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Express\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/perer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -968,7 +968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

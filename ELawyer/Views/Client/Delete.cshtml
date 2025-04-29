@@ -11,17 +11,17 @@
     </div>
     <div class="card-body p-4">
         <form method="post">
-            <input asp-for="ID" hidden />
+            <input asp-for="Id" hidden/>
             <div class="border p-3 mt-4">
-               
+
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="FirstName" class="form-control border-0 shadow" />
-                    <label asp-for="FirstName" class="ms-2"></label>
+                    <input asp-for="ApplicationUser.FirstName" class="form-control border-0 shadow"/>
+                    <label asp-for="ApplicationUser.FirstName" class="ms-2"></label>
 
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="LastName" class="form-control border-0 shadow" />
-                    <label asp-for="LastName" class="ms-2"></label>
+                    <input asp-for="ApplicationUser.LastName" class="form-control border-0 shadow"/>
+                    <label asp-for="ApplicationUser.LastName" class="ms-2"></label>
 
                 </div>
 
@@ -46,6 +46,7 @@
 </div>
 
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial">
-    }
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial"/>
+}

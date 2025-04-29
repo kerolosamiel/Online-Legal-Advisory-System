@@ -2,32 +2,21 @@
 using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ELawyer.DataAccess.Repository
+namespace ELawyer.DataAccess.Repository;
+
+public class InvoiceRepository : Repository<Invoice>, IInvoiceRepository
 {
-    public class InvoiceRepository : Repository<Invoice>, IInvoiceRepository
+    private readonly ApplicationDbContext _context;
+
+    public InvoiceRepository(ApplicationDbContext context) : base(context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
 
-        public InvoiceRepository(ApplicationDbContext context) : base(context)
-        {
-            _context = context;
-        }
-
-        public void Update(Invoice obj)
-        {
-            Invoice invoice = _context.Invoices.FirstOrDefault(u => u.ID == obj.ID);
-            if (invoice != null)
-            {
-
-                invoice.CreatedAt = DateTime.Now;
-
-            }
-        }
+    public void Update(Invoice obj)
+    {
+        var invoice = _context.Invoices.FirstOrDefault(u => u.Id == obj.Id);
+        if (invoice != null) invoice.PaymentDate = DateTime.Now;
     }
 }

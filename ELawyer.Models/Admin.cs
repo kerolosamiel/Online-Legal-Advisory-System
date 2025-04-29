@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace ELawyer.Models
+namespace ELawyer.Models;
+
+public class Admin
 {
-   public class Admin
-   {
-        public int ID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string? ImageUrl { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? LastLogin { get; set; }
-        public string? Address { get; set; }
+    public int Id { get; set; }
+    [StringLength(200, MinimumLength = 2)] public string? ImageUrl { get; set; }
+    [MaxLength(100)] public string? Address { get; set; }
 
-
-
-      
-    }
+    // Relationship
+    public virtual ApplicationUser ApplicationUser { get; set; } = new();
 }
