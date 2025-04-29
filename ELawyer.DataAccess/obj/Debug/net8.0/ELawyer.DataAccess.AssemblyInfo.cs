@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ELawyer.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cbd41175a84630086937a7cade60aa148516135")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6c8f1c5e4d0d21ea94b9975265606e781270ead")]
 [assembly: System.Reflection.AssemblyProductAttribute("ELawyer.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ELawyer.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

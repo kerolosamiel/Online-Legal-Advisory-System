@@ -27,7 +27,7 @@ public class LawyerController : Controller
     public IActionResult Index()
     {
         var lawyerList = _unitOfWork.Lawyer
-            .GetAll(includeproperties: "Specialization").OrderByDescending(l => l.AverageRateing)
+            .GetAll(includeproperties: "LawyerSpecializations.Specialization").OrderByDescending(l => l.AverageRateing)
             .ToList();
 
 
