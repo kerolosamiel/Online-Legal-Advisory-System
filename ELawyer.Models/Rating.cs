@@ -13,6 +13,6 @@ public class Rating
     public int? ClientId { get; set; }
 
     // Relationship
-    [ForeignKey("ClientID")] public Client Client { get; set; } = new();
-    [ForeignKey("LawyerID")] public Lawyer Lawyer { get; set; } = new();
+    [ForeignKey(nameof(ClientId))] public Client Client { get; set; } = new();
+    [ForeignKey(nameof(LawyerId))] public Lawyer Lawyer { get; set; } = new();
 }

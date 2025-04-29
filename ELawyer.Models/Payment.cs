@@ -12,7 +12,8 @@ public class Payment
     public int ClientId { get; set; }
 
     // Relationship
-    [ForeignKey("ClientID")] public virtual Client? Client { get; set; } = new();
-    [ForeignKey("LawyerID")] public virtual Lawyer Lawyer { get; set; } = new();
-    public virtual ServiceOrder ServiceOrder { get; set; }
+    [ForeignKey(nameof(ClientId))] public virtual Client? Client { get; set; } = new();
+    [ForeignKey(nameof(LawyerId))] public virtual Lawyer Lawyer { get; set; } = new();
+    public virtual ServiceOrder ServiceOrder { get; set; } = new();
+    public virtual Invoice Invoice { get; set; } = new();
 }

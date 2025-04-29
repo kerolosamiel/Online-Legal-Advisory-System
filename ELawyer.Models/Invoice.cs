@@ -10,5 +10,6 @@ public class Invoice
     public int PaymentId { get; set; }
 
     // Relationship
-    public virtual Client Client { get; set; } = new();
+    /*public virtual Client Client { get; set; } = new();*/
+    public virtual Payment Payment { get; set; } = new();
 }

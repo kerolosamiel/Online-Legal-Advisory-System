@@ -4,6 +4,7 @@ using ELawyer.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ELawyer.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250429084529_ModifyAttrs")]
+    partial class ModifyAttrs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -148,8 +151,7 @@ namespace ELawyer.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PaymentId")
-                        .IsUnique();
+                    b.HasIndex("ClientId");
 
                     b.ToTable("Invoices");
                 });
@@ -516,8 +518,7 @@ namespace ELawyer.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SpecializationID")
                         .HasColumnType("int");
@@ -995,13 +996,13 @@ namespace ELawyer.DataAccess.Migrations
 
             modelBuilder.Entity("ELawyer.Models.Invoice", b =>
                 {
-                    b.HasOne("ELawyer.Models.Payment", "Payment")
-                        .WithOne("Invoice")
-                        .HasForeignKey("ELawyer.Models.Invoice", "PaymentId")
+                    b.HasOne("ELawyer.Models.Client", "Client")
+                        .WithMany("Invoices")
+                        .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Payment");
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("ELawyer.Models.LawyerSpecialization", b =>
@@ -1206,6 +1207,8 @@ namespace ELawyer.DataAccess.Migrations
 
                     b.Navigation("Consultations");
 
+                    b.Navigation("Invoices");
+
                     b.Navigation("Rating");
                 });
 
@@ -1223,9 +1226,6 @@ namespace ELawyer.DataAccess.Migrations
 
             modelBuilder.Entity("ELawyer.Models.Payment", b =>
                 {
-                    b.Navigation("Invoice")
-                        .IsRequired();
-
                     b.Navigation("ServiceOrder")
                         .IsRequired();
                 });

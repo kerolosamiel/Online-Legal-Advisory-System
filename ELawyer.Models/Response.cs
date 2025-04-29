@@ -18,6 +18,6 @@ public class Response
     public int? ConsultationId { get; set; }
 
     // RelationShip
-    [ForeignKey("LawyerID")] public Lawyer? Lawyer { get; set; }
-    [ForeignKey("ClientID")] public Client? Client { get; set; }
+    [ForeignKey(nameof(LawyerId))] public Lawyer? Lawyer { get; set; }
+    [ForeignKey(nameof(ClientId))] public Client? Client { get; set; }
 }

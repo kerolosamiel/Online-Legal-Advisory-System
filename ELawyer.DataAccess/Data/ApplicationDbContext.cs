@@ -21,7 +21,7 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     public DbSet<Admin> Admins { get; set; }
     public DbSet<Specialization> Specializations { get; set; }
     public DbSet<SubSpecialization> SubSpecializations { get; set; }
-    public DbSet<LawyerSpecialization> lawyerSpecializations { get; set; }
+    public DbSet<LawyerSpecialization> LawyerSpecializations { get; set; }
     public DbSet<Service> Services { get; set; }
     public DbSet<Rating> Ratings { get; set; }
     public DbSet<Payment> Payments { get; set; }
@@ -35,6 +35,12 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Service>()
+            .HasOne(s => s.Lawyer)
+            .WithMany(l => l.Services)
+            .HasForeignKey(s => s.LawyerId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         //create composite key
         modelBuilder.Entity<LawyerSpecialization>()

@@ -14,6 +14,6 @@ public class Consultation
     public int? PaymentId { get; set; }
 
     // Relationship
-    [ForeignKey("LawyerId")] public virtual Lawyer Lawyer { get; set; } = new();
-    [ForeignKey("ClientId")] public virtual Client Client { get; set; } = new();
+    [ForeignKey(nameof(LawyerId))] public virtual Lawyer Lawyer { get; set; } = new();
+    [ForeignKey(nameof(ClientId))] public virtual Client Client { get; set; } = new();
 }
