@@ -41,6 +41,7 @@ html {
     --danger: #F44336; /* Errors, deletions, or important warnings */
     --warning: #FFC107; /* Pending statuses or alerts */
     --white: #FFFFFF;
+    --dark: #4b5060; /* For Borders or something like this*/
 }
 
 

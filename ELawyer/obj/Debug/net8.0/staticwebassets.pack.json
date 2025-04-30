@@ -133,8 +133,24 @@
       "PackagePath": "staticwebassets/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf"
     },
     {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/capital-market.jpg",
+      "PackagePath": "staticwebassets/images/About/capital-market.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/criminal-law.jpg",
+      "PackagePath": "staticwebassets/images/About/criminal-law.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/employment.jpg",
+      "PackagePath": "staticwebassets/images/About/employment.jpg"
+    },
+    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/handshake.jpg",
       "PackagePath": "staticwebassets/images/About/handshake.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/justice-scale.jpg",
+      "PackagePath": "staticwebassets/images/About/justice-scale.jpg"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l1.jpg",

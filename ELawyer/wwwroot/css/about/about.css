@@ -67,3 +67,22 @@
     color: var(--secondary-text-color);
     min-width: calc((100% - .5rem) / 2);
 }
+
+/*Legal Services Section*/
+.legal-services {
+    border-top: 5px double var(--dark);
+}
+
+.legal-container {
+    width: 90%;
+}
+
+.legal-container .service-box img {
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.legal-container .service-box h2 {
+    color: var(--main-text-color);
+}
