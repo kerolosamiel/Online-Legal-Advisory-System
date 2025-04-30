@@ -1,0 +1,45 @@
+/* About hero section*/
+.hero-container {
+    padding: 7% 10% 0;
+    max-width: 1440px;
+    min-height: 90dvh;
+}
+
+.hero-container h1 {
+    font-size: 5.2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.hero-container p {
+    font-size: 1.6rem;
+    width: 800px;
+}
+
+.hero-container .images {
+    bottom: 0;
+}
+
+.hero-container .images img {
+    border-radius: 1rem;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-container .images img:nth-child(1),
+.hero-container .images img:nth-child(3) {
+    aspect-ratio: 3/2;
+}
+
+.hero-container .images img:nth-child(2),
+.hero-container .images img:nth-child(4) {
+    aspect-ratio: 2/1;
+}
+
+.hero-container .curve {
+    bottom: 0;
+}
+
+/*About us section*/
+
