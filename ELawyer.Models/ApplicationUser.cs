@@ -15,7 +15,7 @@ public class ApplicationUser : IdentityUser
     public int? LawyerId { get; set; }
     public int? AdminId { get; set; }
 
-    [ForeignKey(nameof(AdminId))] public virtual Admin Admin { get; set; } = new();
-    [ForeignKey(nameof(ClientId))] public virtual Client Client { get; set; } = new();
-    [ForeignKey(nameof(LawyerId))] public virtual Lawyer Lawyer { get; set; } = new();
+    [ForeignKey(nameof(AdminId))] public virtual Admin Admin { get; set; }
+    [ForeignKey(nameof(ClientId))] public virtual Client Client { get; set; }
+    [ForeignKey(nameof(LawyerId))] public virtual Lawyer Lawyer { get; set; }
 }

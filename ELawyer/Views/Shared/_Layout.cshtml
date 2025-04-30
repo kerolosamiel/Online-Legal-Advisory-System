@@ -1,4 +1,6 @@
 ﻿@using ELawyer.Utility
+@model Specialization
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,44 +9,45 @@
     <title>@ViewData["Title"] - ELawyer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/normalize.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/public/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/public/normalize.css" asp-append-version="true"/>
     @*<link rel="stylesheet" href="~/ELawyer.styles.css" asp-append-version="true"/>*@
-    
+
     @* This allows individual views to add CSS *@
     @RenderSection("Styles", false)
 </head>
 <body>
+
+@*Navigation Bar*@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ELawyer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ELawyer</a>
+
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <!-- Always Visible -->
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
                     @if (User.IsInRole(SD.AdminRole))
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin"
-                               asp-action="clientconfirmation">ClientConfirmation</a>
+                            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="ClientConifrmation">
+                                ClientConfirmation
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin"
-                               asp-action="Lawyerconfirmation">LawyerConfirmation</a>
+                            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="LawyerConfirmation">
+                                LawyerConfirmation
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Client"
-                               asp-action="Index">Clients</a>
+                            <a class="nav-link" asp-area="" asp-controller="Client" asp-action="Index">
+                                Clients
+                            </a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -60,45 +63,88 @@
                     else if (User.IsInRole(SD.LawyerRole))
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart"
-                               asp-action="ShowClienConsultation">ShowClientConsultation</a>
+                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowClienConsultation">
+                                ShowClientConsultation
+                            </a>
                         </li>
                     }
                     else if (User.IsInRole(SD.ClientRole))
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart"
-                               asp-action="ShowLawyerResponse">ShowLawyerResponse</a>
+                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowLawyerResponse">
+                                ShowLawyerResponse
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Client" asp-controller="Cart" asp-action="Cartitem">
-
-
                                 <i class="bi bi-cart"></i> &nbsp;
-
-
                             </a>
                         </li>
-
-
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="ShowInvoices">ShowInvoices</a>
+                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowInvoices">
+                                ShowInvoices
+                            </a>
                         </li>
                     }
+                }
+                else
+                {
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lawyersDropdown" role="button">
+                            Browse Lawyers
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="lawyersDropdown">
+                            <li class="dropdown">
+
+                                @*<a class="dropdown-toggle" id="specialty-dropdown">Find by Specialty</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="specialty-dropdown">
+                                    @foreach (var specialization in Model.Name)
+                                    {
+                                        <li>
+                                            <a class="dropdown-item" href="#">@specialization</a>
+                                        </li>
+                                    }
+                                </ul>*@
+                            </li>
 
 
-                </ul>
-                <partial name="_LoginPartial"/>
-            </div>
+                            <li>
+                                <a class="dropdown-item" href="#">Top Rated Lawyers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Recently Joined</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            Services
+                        </a>
+                    </li>
+                }
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                </li>
+            </ul>
+            <partial name="_LoginPartial"/>
         </div>
     </nav>
 </header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
 
+@* Render all sections in this element*@
+<main role="main" class="pb-3">
+    @RenderBody()
+</main>
+
+@*Footer*@
 <footer class="border-top footer text-muted">
     <div class="container">
         &copy; 2025 - ELawyer - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -107,7 +153,6 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-
 
 @await RenderSectionAsync("Scripts", false)
 </body>

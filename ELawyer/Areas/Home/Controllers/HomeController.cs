@@ -2,9 +2,8 @@ using System.Diagnostics;
 using ELawyer.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ELawyer.Areas.Client.Controllers;
+namespace ELawyer.Areas.Home.Controllers;
 
-[Route("/home")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -14,17 +13,8 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [Route("/")]
     public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    public IActionResult About()
     {
         return View();
     }

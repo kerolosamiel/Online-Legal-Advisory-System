@@ -275,7 +275,7 @@ public class AdminController : Controller
         return View(viewmodel);
     }
 
-    public IActionResult clientconfirmation()
+    public IActionResult ClientConifrmation()
     {
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
@@ -289,7 +289,7 @@ public class AdminController : Controller
         return View(ConfirmtList);
     }
 
-    public IActionResult Lawyerconfirmation()
+    public IActionResult LawyerConfirmation()
     {
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
@@ -300,7 +300,7 @@ public class AdminController : Controller
         return View(ConfirmtList);
     }
 
-    public IActionResult Acceptlawyer(int? id)
+    public IActionResult AcceptLawyer(int? id)
     {
         if (id == null || id == 0)
             return NotFound();
@@ -315,7 +315,7 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult Acceptlawyer(int id)
+    public IActionResult AcceptLawyer(int id)
     {
         var lawyer = _unitOfWork.Lawyer.Get(c => c.Id == id);
         var claimsIdentity = (ClaimsIdentity)User.Identity;
@@ -330,7 +330,7 @@ public class AdminController : Controller
         return RedirectToAction("Index");
     }
 
-    public IActionResult Rejectlawyer(int? id)
+    public IActionResult RejectLawyer(int? id)
     {
         if (id == null || id == 0)
             return NotFound();
@@ -344,7 +344,7 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult Rejectlawyer(int id)
+    public IActionResult RejectLawyer(int id)
     {
         var wwwRootPath = _webHostEnvironment.WebRootPath;
         var lawyer = _unitOfWork.Lawyer.Get(c => c.Id == id);
@@ -391,7 +391,7 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult Acceptclient(int id)
+    public IActionResult AcceptClient(int id)
     {
         var client = _unitOfWork.Client.Get(c => c.Id == id);
 
@@ -408,7 +408,7 @@ public class AdminController : Controller
         return RedirectToAction("Index");
     }
 
-    public IActionResult Rejectclient(int? id)
+    public IActionResult RejectClient(int? id)
     {
         if (id == null || id == 0)
             return NotFound();
@@ -423,7 +423,7 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult Rejectclient(int id)
+    public IActionResult RejectClient(int id)
     {
         var wwwRootPath = _webHostEnvironment.WebRootPath;
         var client = _unitOfWork.Client.Get(c => c.Id == id);

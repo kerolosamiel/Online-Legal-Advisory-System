@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets/ELawyer.bundle.scp.css"
     },
     {
-      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/about/about.css",
+      "PackagePath": "staticwebassets/css/about/about.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/about/responsive.css",
+      "PackagePath": "staticwebassets/css/about/responsive.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",
+      "PackagePath": "staticwebassets/css/public/normalize.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/site.css",
+      "PackagePath": "staticwebassets/css/public/site.css"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/favicon.ico",
@@ -119,6 +131,22 @@
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf",
       "PackagePath": "staticwebassets/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l1.jpg",
+      "PackagePath": "staticwebassets/images/About/l1.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l2.jpg",
+      "PackagePath": "staticwebassets/images/About/l2.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l3.jpg",
+      "PackagePath": "staticwebassets/images/About/l3.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l4.jpg",
+      "PackagePath": "staticwebassets/images/About/l4.jpg"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg",

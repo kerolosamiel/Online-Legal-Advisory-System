@@ -4,16 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ELawyer.Areas.Home.Controllers;
 
-public class AboutController : Controller
+public class PrivacyController : Controller
 {
-    private readonly ILogger<AboutController> _logger;
+    private readonly ILogger<PrivacyController> _logger;
 
-    public AboutController(ILogger<AboutController> logger)
+    public PrivacyController(ILogger<PrivacyController> logger)
     {
         _logger = logger;
     }
 
-    public IActionResult About()
+    [Route("privacy")]
+    public IActionResult Index()
     {
         return View();
     }

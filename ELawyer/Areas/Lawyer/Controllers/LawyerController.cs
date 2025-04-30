@@ -377,7 +377,7 @@ public class LawyerController : Controller
     }
 
     [HttpPost]
-    public IActionResult SearchPost(Specialization specialization)
+    public IActionResult SearchPost(Models.Specialization specialization)
     {
         var lawyerspecialization = _unitOfWork.lawyerSpecialization.GetAll(l => l.SpecializationId == specialization.ID)
             .ToList();
