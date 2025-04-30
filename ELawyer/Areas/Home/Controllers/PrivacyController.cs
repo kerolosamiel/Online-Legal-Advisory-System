@@ -1,25 +1,19 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using ELawyer.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace ELawyer.Areas.Client.Controllers;
+namespace ELawyer.Areas.Home.Controllers;
 
-public class HomeController : Controller
+public class AboutController : Controller
 {
+    private readonly ILogger<AboutController> _logger;
 
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public AboutController(ILogger<AboutController> logger)
     {
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
+    public IActionResult About()
     {
         return View();
     }

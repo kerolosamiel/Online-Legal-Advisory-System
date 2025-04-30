@@ -40,6 +40,7 @@ html {
     --success: #4CAF50; /* For confirmations, "Online" statuses */
     --danger: #F44336; /* Errors, deletions, or important warnings */
     --warning: #FFC107; /* Pending statuses or alerts */
+    --white: #FFFFFF;
 }
 
 
@@ -75,6 +76,27 @@ h1, h2, h3, h4, h5, h6 {
 img {
     width: 100%;
     height: 100%;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+a, .button {
+    color: white;
+}
+
+.button {
+    background-color: var(--second-color);
+}
+
+.section-muted {
+    background-color: var(--accent);
+}
+
+.text-muted {
+    color: var(--secondary-text-color);
 }
 
 /**
