@@ -87,6 +87,11 @@
     width: 12.5rem;
     height: 12.5rem;
     object-fit: cover;
+    transition: .6s ease;
+}
+
+.legal-container .service-box:hover img {
+    transform: scale(.9);
 }
 
 .legal-container .service-box h2 {
