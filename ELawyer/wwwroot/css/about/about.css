@@ -1,3 +1,20 @@
+/*Shared Style*/
+.about-us-container .head h2,
+.facts-container .head h2 {
+    color: var(--primary-color);
+    line-height: 2.5rem;
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 900;
+}
+
+.line {
+    background: var(--second-color);
+    height: 2px;
+    width: 20%;
+}
+
+
 /* About hero section*/
 .hero-container {
     padding: 7% 10% 0;
@@ -50,17 +67,6 @@
     margin-top: 5rem;
 }
 
-.about-us-container .head h2 {
-    color: var(--primary-color);
-    line-height: 1.5rem;
-}
-
-.about-us-container .head .line {
-    background: var(--second-color);
-    height: 2px;
-    width: 20%;
-}
-
 .about-us-container .content .features li {
     font-size: .75rem;
     font-weight: 900;
@@ -85,4 +91,52 @@
 
 .legal-container .service-box h2 {
     color: var(--main-text-color);
+}
+
+/*Facts Section*/
+
+.facts-container {
+    width: 100%;
+}
+
+.facts-container .content p {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+
+.facts-container .statistics {
+    width: 65%;
+    margin: auto;
+}
+
+.facts-container .statistics .box {
+    box-shadow: 1px 1px 10px var(--dark);
+    border: 2px solid var(--dark);
+    border-radius: 50% 0 50% 0;
+    background: var(--accent);
+    width: 12rem;
+    height: 12rem;
+}
+
+.facts-container .statistics .box:nth-child(2) {
+    background: var(--primary-color);
+    border: 2px solid var(--accent);
+}
+
+.facts-container .statistics .box:nth-child(2) h3 {
+    color: var(--white);
+}
+
+.facts-container .statistics .box p {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    margin: 0;
+}
+
+.facts-container .statistics .box p {
+}
+
+.facts-container .statistics .box h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
 }
