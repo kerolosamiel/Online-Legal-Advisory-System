@@ -8,28 +8,83 @@
     <link rel="stylesheet" href="~/css/about/responsive.css"/>
 }
 
-<section class="about-hero section-muted">
+@*Hero Section*@
+<section class="about-hero section-muted d-flex justify-content-center position-relative">
     <div
-        class="hero-container position-relative d-flex flex-column gap-3 align-items-center text-center">
+        class="hero-container cw position-relative d-flex flex-column gap-3 align-items-center text-center">
         <h1>
             About Us
         </h1>
         <p>
             Empowering clients to connect with trusted legal professionals easily and securely.
         </p>
-
-        <div class="curve position-absolute d-flex w-100 ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#FFFFFF" fill-opacity="1"
-                      d="M0,256L120,240C240,224,480,192,720,192C960,192,1200,224,1320,240L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-            </svg>
-        </div>
-
-        <div class="images position-absolute d-flex w-75 align-items-center justify-content-center gap-3">
+        <div class="images position-absolute d-flex align-items-center justify-content-center gap-3">
             <img src="~/images/About/l1.jpg" alt="About Image"/>
             <img src="~/images/About/l2.jpg" alt="About Image"/>
             <img src="~/images/About/l4.jpg" alt="About Image"/>
             <img src="~/images/About/l3.jpg" alt="About Image"/>
+        </div>
+    </div>
+
+    <div class="curve position-absolute d-flex w-100 ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FFFFFF" fill-opacity="1"
+                  d="M0,256L120,240C240,224,480,192,720,192C960,192,1200,224,1320,240L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+    </div>
+</section>
+
+@*About-Us Section*@
+<section class="about-us d-flex justify-content-center">
+    <div class="about-us-container cw px-5 d-flex flex-column gap-3">
+        <div class="head d-flex flex-column">
+            <h2 class="fw-bold">About Us</h2>
+            <p class="lead text-muted">Trusted Legal Guidance for Every Step of Your Journey</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="content row align-items-center">
+            <!-- Left content -->
+            <div class="left-content col-lg-6">
+                <p class="mb-5">
+                    We believe that access to quality legal support should be simple, transparent, and secure. Our
+                    platform was built to bridge the gap between individuals seeking legal help and experienced
+                    professionals ready to serve. Whether you're facing a personal legal issue, managing business needs,
+                    or simply seeking advice—you deserve to feel confident and informed every step of the way.
+                </p>
+                <p class="mb-2"> With a commitment to integrity and innovation, we make it easier than ever to: </p>
+                <ul class="mb-4">
+
+                    <li>Find and connect with licensed, verified lawyers across various specialties.</li>
+                    <li>Schedule consultations and track progress securely through your account.</li>
+                    <li>Receive clear legal information, without hidden fees or confusion.</li>
+                </ul>
+
+                <ul class="list-unstyled d-flex flex-wrap features">
+                    <li class="mb-2 ">
+                        <i class="fa-solid fa-arrow-right "></i>
+                        Empowering clients through clarity and trust
+                    </li>
+                    <li class="mb-2 ">
+                        <i class="fa-solid fa-arrow-right "></i>
+                        Supporting legal professionals with modern tools
+                    </li>
+                    <li class="mb-2 ">
+                        <i class="fa-solid fa-arrow-right "></i>
+                        Ensuring privacy, security, and confidentiality
+                    </li>
+                    <li class="mb-2 ">
+                        <i class="fa-solid fa-arrow-right "></i>
+                        Promoting fairness and access to justice
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right image -->
+            <div class="col-lg-6 text-center">
+                <img src="~/images/About/handshake.jpg" alt="A handshake between a client and lawyer"
+                     class="img-fluid rounded shadow-sm"/>
+            </div>
         </div>
     </div>
 </section>

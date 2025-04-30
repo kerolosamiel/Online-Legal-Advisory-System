@@ -98,6 +98,11 @@ a, .button {
     color: var(--secondary-text-color);
 }
 
+/* Container max width*/
+.cw {
+    max-width: 1600px;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */

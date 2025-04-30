@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NPRcLsH0JNqvC7hRvMIz/oKVXchvQbPH7jnF015XYDQ=",
+  "Hash": "eSQl0lUedTeG+FT/SOQ3l6rmkDZpP9zFWQhF9Is1urk=",
   "Source": "ELawyer",
   "BasePath": "_content/ELawyer",
   "Mode": "Default",
@@ -1801,6 +1801,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/files/Lawyer/Attachments/fd1099b2-87bd-406d-8fd6-a1de65587d76.pdf"
+    },
+    {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/handshake.jpg",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "images/About/handshake.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/About/handshake.jpg"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l1.jpg",
