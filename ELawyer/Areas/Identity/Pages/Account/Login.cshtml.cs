@@ -120,7 +120,7 @@ public class LoginModel : PageModel
                 return RedirectToPage("./Lockout");
             }
 
-            ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            ModelState.AddModelError(string.Empty, "Invalid username or password.");
             return Page();
         }
 

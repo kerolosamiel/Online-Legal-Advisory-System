@@ -9,6 +9,25 @@
     border-radius: 1rem;
 }
 
+.form-container .not-valid {
+    color: var(--danger);
+}
+
+.form-container .not-valid i {
+    color: var(--danger);
+    font-size: 1.5rem;
+}
+
+.form-container .not-valid ul {
+    list-style: none;
+    margin: 0;
+    padding-left: .5rem;
+}
+
+.form-container .not-valid ul li {
+    font-size: 1.125rem;
+}
+
 .form-container .head h1 {
     font-weight: 900;
     color: var(--primary-color);
