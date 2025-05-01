@@ -221,7 +221,7 @@ public class ExternalLoginModel : PageModel
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
+                        "/account/ConfirmEmail",
                         null,
                         new { area = "Identity", userId, code },
                         Request.Scheme);
@@ -256,7 +256,7 @@ public class ExternalLoginModel : PageModel
         {
             throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
                                                 $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                                                $"override the external login page in /Areas/Identity/Pages/Account/ExternalLogin.cshtml");
+                                                $"override the external login page in /Areas/Identity/Pages/account/ExternalLogin.cshtml");
         }
     }
 

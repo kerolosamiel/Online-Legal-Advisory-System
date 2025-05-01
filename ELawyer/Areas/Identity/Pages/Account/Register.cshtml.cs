@@ -158,7 +158,7 @@ public class RegisterModel : PageModel
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                 var callbackUrl = Url.Page(
-                    "/Account/ConfirmEmail",
+                    "/account/ConfirmEmail",
                     null,
                     new { area = "Identity", userId, code, returnUrl },
                     Request.Scheme);
@@ -175,7 +175,7 @@ public class RegisterModel : PageModel
                     TempData["success"] = "New User Created Successfully";
                 else
                     //await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToPage("/Account/Login");
+                    return RedirectToPage("/account/Login");
 
 
                 return LocalRedirect(returnUrl);
@@ -198,7 +198,7 @@ public class RegisterModel : PageModel
         {
             throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
                                                 $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                                                $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
+                                                $"override the register page in /Areas/Identity/Pages/account/Register.cshtml");
         }
     }
 

@@ -1,28 +1,22 @@
-﻿using ELawyer.DataAccess.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using ELawyer.DataAccess.DbInitilizer;
-using ELawyer.Utility;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.Extensions.DependencyInjection;
-using ELawyer.DataAccess.Repository.IRepository;
-using ELawyer.DataAccess.Repository;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Bulky.DataAccess.Dbinitilizer;
 using Bulky.Utility;
+using ELawyer.DataAccess.Data;
+using ELawyer.DataAccess.DbInitilizer;
+using ELawyer.DataAccess.Repository;
+using ELawyer.DataAccess.Repository.IRepository;
+using ELawyer.Utility;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
 using Stripe;
-using Bulky.DataAccess.Dbinitilizer;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
-option.UseSqlServer(builder.Configuration.GetConnectionString("Legal"))
-
-
+    option.UseSqlServer(builder.Configuration.GetConnectionString("Legal"))
 );
-
 
 
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -40,20 +34,17 @@ option.UseSqlServer(builder.Configuration.GetConnectionString("Legal"))
 
 builder.Services.AddRazorPages();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                   .AddRoles<IdentityRole>()
-                   .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
 
-
-
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = $"/Identity/Account/Login";
-    options.LogoutPath = $"/Identity/Account/Logout";
-    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+    options.LoginPath = "/Identity/account/Login";
+    options.LogoutPath = "/Identity/account/Logout";
+    options.AccessDeniedPath = "/Identity/account/AccessDenied";
     //options.Cookie.SecurePolicy = CookieSecurePolicy.None;
 });
 
@@ -67,11 +58,7 @@ builder.Services.AddAuthentication().AddFacebook(option =>
 });
 
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(100);
-
-});
+builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(100); });
 builder.Services.AddScoped<IDbInitilizer, DbInitializer>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -100,8 +87,8 @@ app.UseSession();
 SeedDatabase();
 app.MapRazorPages();
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Lawyer}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
 
@@ -113,5 +100,3 @@ void SeedDatabase()
         dbInitilizer.Initilalize();
     }
 }
-
-
