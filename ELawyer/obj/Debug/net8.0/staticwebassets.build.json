@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CnUE6pOQX6vN+en/MbYanT9kDcfjTAnu1sTNxPmni4o=",
+  "Hash": "//OKCRG8FHUlltCt377uMxu76mFv2DhsuiuneQo+GAA=",
   "Source": "ELawyer",
   "BasePath": "_content/ELawyer",
   "Mode": "Default",
@@ -1233,6 +1233,25 @@
       "OriginalItemSpec": "wwwroot/css/about/responsive.css"
     },
     {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/forget-password.css",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "css/account/forget-password.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/account/forget-password.css"
+    },
+    {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/login.css",
       "SourceId": "ELawyer",
       "SourceType": "Discovered",
@@ -1271,6 +1290,25 @@
       "OriginalItemSpec": "wwwroot/css/account/register.css"
     },
     {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/responsive-forget.css",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "css/account/responsive-forget.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/account/responsive-forget.css"
+    },
+    {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/responsive-login.css",
       "SourceId": "ELawyer",
       "SourceType": "Discovered",
@@ -1307,6 +1345,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/account/responsive-register.css"
+    },
+    {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/shared.css",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "css/account/shared.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/account/shared.css"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",

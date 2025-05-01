@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/css/about/responsive.css"
     },
     {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/forget-password.css",
+      "PackagePath": "staticwebassets/css/account/forget-password.css"
+    },
+    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/login.css",
       "PackagePath": "staticwebassets/css/account/login.css"
     },
@@ -21,12 +25,20 @@
       "PackagePath": "staticwebassets/css/account/register.css"
     },
     {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/responsive-forget.css",
+      "PackagePath": "staticwebassets/css/account/responsive-forget.css"
+    },
+    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/responsive-login.css",
       "PackagePath": "staticwebassets/css/account/responsive-login.css"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/responsive-register.css",
       "PackagePath": "staticwebassets/css/account/responsive-register.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/shared.css",
+      "PackagePath": "staticwebassets/css/account/shared.css"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",

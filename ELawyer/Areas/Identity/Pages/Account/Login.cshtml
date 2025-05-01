@@ -8,13 +8,13 @@
 @section Styles
 {
     <link rel="stylesheet" href="~/css/account/login.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/account/register.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/account/shared.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/account/responsive-login.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/account/responsive-register.css" asp-append-version="true"/>
 }
 
-<section class="login-section d-flex justify-content-center align-items-center muted-section">
-    <div class="login-container cw px-5 py-3 text-center d-flex flex-column text-center gap-3">
+<section class="login-section form-section d-flex justify-content-center align-items-center section-muted">
+    <div
+        class="login-container form-container cw px-5 py-3 text-center d-flex flex-column text-center gap-3 section-muted">
         <div class="head mb-3">
             <h1>Hello Again!</h1>
         </div>
@@ -22,13 +22,13 @@
         <div class="login-manually">
             <form id="account" method="post" class="d-flex flex-column gap-3">
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="email-input d-flex flex-column">
+                <div class="email-input txt-input d-flex flex-column">
                     <input asp-for="Input.Email" class="email" autocomplete="username" aria-required="true"
                            placeholder="Email"/>
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
 
-                <div class="password-input d-flex flex-column">
+                <div class="password-input txt-input d-flex flex-column">
                     <input asp-for="Input.Password" class="password" autocomplete="current-password"
                            aria-required="true" placeholder="Password"/>
                     <span asp-validation-for="Input.Password" class="text-danger"></span>

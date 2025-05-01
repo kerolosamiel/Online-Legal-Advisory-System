@@ -1,36 +1,4 @@
 /*Login manually*/
-.login-section {
-    min-height: 100dvh;
-    background: var(--accent);
-}
-
-.login-container {
-    background: var(--accent);
-    box-shadow: 15px 15px 30px #bebebe,
-    -15px -15px 30px var(--white);
-    border-radius: 1rem;
-}
-
-.login-container .head h1 {
-    font-weight: 900;
-    color: var(--primary-color);
-    font-size: 2.75rem;
-    letter-spacing: 1px;
-}
-
-.login-container .login-manually form .email-input input,
-.login-container .login-manually form .password-input input {
-    width: 100%;
-    padding: 1rem 2rem;
-    border: 2px solid var(--dark);
-    border-radius: 2rem;
-    background: var(--accent);
-}
-
-.login-container .login-manually form .email-input {
-    width: 25rem;
-}
-
 .login-container .login-manually form .remember-forget label .checkbox-input {
     position: relative;
     appearance: none;

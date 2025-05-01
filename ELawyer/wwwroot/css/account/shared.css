@@ -1,0 +1,36 @@
+/* This style shared between all account forms */
+.form-section {
+    min-height: 100dvh;
+}
+
+.form-section .form-container {
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px var(--white);
+    border-radius: 1rem;
+}
+
+.form-container .head h1 {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-size: 2.75rem;
+    letter-spacing: 1px;
+}
+
+.form-container form .txt-input input,
+.form-container form .txt-input input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 2px solid var(--dark);
+    border-radius: 2rem;
+    background: var(--accent);
+}
+
+.form-container form .txt-input {
+    width: 25rem;
+}
+
+.form-container form .shared-btn {
+    width: 80%;
+    height: 3rem;
+    margin: auto;
+}

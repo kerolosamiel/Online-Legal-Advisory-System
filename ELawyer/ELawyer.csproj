@@ -47,6 +47,9 @@
         <Content Update="wwwroot\css\about\responsive.css">
             <DependentUpon>about.css</DependentUpon>
         </Content>
+        <Content Update="wwwroot\css\account\responsive-forget.css">
+            <DependentUpon>forget-password.css</DependentUpon>
+        </Content>
     </ItemGroup>
 
 </Project>
