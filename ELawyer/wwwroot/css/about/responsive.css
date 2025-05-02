@@ -1,5 +1,6 @@
 /*Write your media queries here*/
 /* Mobile devices */
+
 @media (max-width: 768px) {
     .hero-container {
         padding: 10% 5% 0;
@@ -64,8 +65,10 @@
             text-align: center;
         }
 }
+    
 
 /* Tablets */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero-container {
         padding: 8% 8% 0;
@@ -127,6 +130,7 @@
 }
 
 /* Desktop */
+
 @media (min-width: 1025px) {
     .hero-container {
         padding: 7% 10% 0;
