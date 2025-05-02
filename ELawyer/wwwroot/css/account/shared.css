@@ -36,7 +36,8 @@
 }
 
 .form-container form .txt-input input,
-.form-container form .txt-input input {
+.form-container form .txt-input input,
+.form-container form .txt-input select {
     width: 100%;
     padding: 1rem 2rem;
     border: 2px solid var(--dark);
@@ -50,6 +51,66 @@
 
 .form-container form .shared-btn {
     width: 80%;
+    max-width: 20rem;
     height: 3rem;
     margin: auto;
+}
+
+/*Another way login*/
+.form-container .another-way .another-way-text .line {
+    width: 5rem;
+    height: .1rem;
+    background: var(--second-color);
+}
+
+.form-container .another-way .another-way-text p {
+    margin: 0;
+}
+
+.provider-login {
+    width: 2.8rem;
+    max-width: 10rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 0 0 4px rgba(180, 160, 255, 0.253);
+    transition-duration: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+i {
+    width: 12px;
+    transition-duration: 0.3s;
+    color: var(--white);
+}
+
+.provider-login:hover {
+    width: 50%;
+    max-width: 10rem;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: var(--second-color);
+}
+
+.provider-login:hover i {
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.provider-login::before {
+    content: "Facebook";
+    position: absolute;
+    bottom: -20%;
+    color: var(--white);
+    font-size: 0;
+    opacity: 0;
+}
+
+.provider-login:hover::before {
+    font-size: 1rem;
+    opacity: 1;
+    bottom: unset;
+    transition-duration: 0.3s;
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1tFhtWgtKzoet6n9BHv1z0NdtG2kIHFUN8ZOPiMISu4=",
+  "Hash": "6pKdtHdJOFSVveHTVBjRNA7v630qy5Q27EmjDNvDl3s=",
   "Source": "ELawyer",
   "BasePath": "_content/ELawyer",
   "Mode": "Default",
@@ -2145,12 +2145,12 @@
       "OriginalItemSpec": "wwwroot/images/About/l4.jpg"
     },
     {
-      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Account/sentmail.png",
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Account/sent-email.png",
       "SourceId": "ELawyer",
       "SourceType": "Discovered",
       "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
       "BasePath": "_content/ELawyer",
-      "RelativePath": "images/Account/sentmail.png",
+      "RelativePath": "images/Account/sent-email.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2161,7 +2161,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Account/sentmail.png"
+      "OriginalItemSpec": "wwwroot/images/Account/sent-email.png"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg",

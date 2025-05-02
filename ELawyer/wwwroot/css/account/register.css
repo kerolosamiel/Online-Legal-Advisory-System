@@ -1,0 +1,9 @@
+.register-container form .txt-input select {
+    appearance: none; /* Standard */
+    -webkit-appearance: none; /* Safari/Chrome */
+    -moz-appearance: none; /* Firefox */
+}
+
+.register-container .manually form {
+    max-width: 900px;
+}

@@ -205,8 +205,8 @@
       "PackagePath": "staticwebassets/images/About/l4.jpg"
     },
     {
-      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Account/sentmail.png",
-      "PackagePath": "staticwebassets/images/Account/sentmail.png"
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Account/sent-email.png",
+      "PackagePath": "staticwebassets/images/Account/sent-email.png"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg",
