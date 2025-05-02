@@ -1,1 +1,190 @@
 /*Write your media queries here*/
+/* Mobile devices */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 10% 5% 0;
+        text-align: center;
+    }
+
+        .hero-container h1 {
+            font-size: 2.5rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-container p {
+            font-size: 1.2rem;
+            width: 90%;
+            margin: auto;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-container .images {
+            position: static !important;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+            z-index: 1;
+        }
+
+            .hero-container .images img {
+                width: 100%;
+                max-width: none;
+                border-radius: 1rem;
+            }
+
+    .about-us-container .head h2 {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .about-us-container .content .features li {
+        min-width: 100%;
+        font-size: .75rem;
+    }
+
+    .about-us .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us .left-content {
+        margin-bottom: 2rem;
+    }
+
+    .facts-container .statistics {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        .facts-container .statistics .box {
+            width: 100%;
+            text-align: center;
+        }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-container {
+        padding: 8% 8% 0;
+        text-align: center;
+    }
+
+        .hero-container h1 {
+            font-size: 3.5rem;
+        }
+
+        .hero-container p {
+            font-size: 1.4rem;
+            width: 80%;
+            margin: auto;
+        }
+
+        .hero-container .images {
+            position: static !important;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+            .hero-container .images img {
+                width: 45%;
+                max-width: none;
+            }
+
+    .about-us-container .head h2 {
+        font-size: 1.8rem;
+        width: 80%;
+    }
+
+    .about-us-container .content .features li {
+        font-size: .8rem;
+        min-width: 45%;
+    }
+
+    .about-us .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us .left-content {
+        margin-bottom: 2rem;
+    }
+
+    .facts-container .statistics {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        .facts-container .statistics .box {
+            width: 100%;
+            text-align: center;
+        }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .hero-container {
+        padding: 7% 10% 0;
+        position: relative;
+    }
+
+        .hero-container h1 {
+            font-size: 5.2rem;
+        }
+
+        .hero-container p {
+            font-size: 1.6rem;
+            width: 800px;
+        }
+
+        .hero-container .images {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            width: 85%;
+            z-index: 1;
+        }
+
+            .hero-container .images img {
+                max-width: 250px;
+                height: auto;
+                object-fit: cover;
+            }
+
+    .about-us-container .head h2 {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    .about-us-container .content .features li {
+        font-size: .75rem;
+        min-width: calc((100% - .5rem) / 2);
+    }
+
+    .about-us .content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-us .left-content {
+        margin-bottom: 0;
+    }
+
+    .facts-container .statistics {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+        .facts-container .statistics .box {
+            width: auto;
+            text-align: center;
+        }
+}
