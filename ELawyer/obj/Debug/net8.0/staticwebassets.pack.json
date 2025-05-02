@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/css/about/responsive.css"
     },
     {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/forget-c-responsive.css",
+      "PackagePath": "staticwebassets/css/account/forget-c-responsive.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/forget-confirmation.css",
+      "PackagePath": "staticwebassets/css/account/forget-confirmation.css"
+    },
+    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/account/forget-password.css",
       "PackagePath": "staticwebassets/css/account/forget-password.css"
     },
@@ -195,6 +203,10 @@
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/About/l4.jpg",
       "PackagePath": "staticwebassets/images/About/l4.jpg"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Account/sentmail.png",
+      "PackagePath": "staticwebassets/images/Account/sentmail.png"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Client/Cards/06914eba-3926-428f-b263-a4a46479b564.jpg",

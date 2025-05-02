@@ -50,6 +50,9 @@
         <Content Update="wwwroot\css\account\responsive-forget.css">
             <DependentUpon>forget-password.css</DependentUpon>
         </Content>
+        <Content Update="wwwroot\css\account\forget-c-responsive.css">
+            <DependentUpon>forget-confirmation.css</DependentUpon>
+        </Content>
     </ItemGroup>
 
 </Project>
