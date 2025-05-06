@@ -5,6 +5,7 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+using System.Text.RegularExpressions;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Utility;
 using Microsoft.AspNetCore.Authentication;
@@ -19,10 +20,13 @@ public class LoginModel : PageModel
     private readonly ILogger<LoginModel> _logger;
     private readonly SignInManager<IdentityUser> _signInManager;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger, IUnitOfWork unitOfWork)
+    public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger, IUnitOfWork unitOfWork,
+        UserManager<IdentityUser> userManager)
     {
         _signInManager = signInManager;
+        _userManager = userManager;
         _logger = logger;
         _unitOfWork = unitOfWork;
     }
@@ -71,54 +75,79 @@ public class LoginModel : PageModel
     public async Task<IActionResult> OnPostAsync(string returnUrl = null)
     {
         returnUrl ??= Url.Content("~/");
-
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
         if (ModelState.IsValid)
         {
-            // This doesn't count login failures towards account lockout
-            // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-            var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, false);
-            if (result.Succeeded)
+            // Find user by email or username
+            var user = await _userManager.FindByEmailAsync(Input.LoginIdentifier)
+                       ?? await _userManager.FindByNameAsync(Input.LoginIdentifier);
+
+            // Add manual format validation
+            if (!IsValidLoginIdentifier(Input.LoginIdentifier))
             {
-                _logger.LogInformation("User logged in.");
-
-
-                // Handling Last Login
-                var claimsIdentity = (ClaimsIdentity)User.Identity;
-                var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                var user = _unitOfWork.ApplicationUser.Get(a => a.Id == userId, "Lawyer,Admin,Client");
-                if (User.IsInRole(SD.AdminRole))
-                {
-                    user.Admin.ApplicationUser.LastLogin = DateTime.Now;
-                    _unitOfWork.Admin.Update(user.Admin);
-                }
-
-                if (User.IsInRole(SD.ClientRole))
-                {
-                    user.Client.ApplicationUser.LastLogin = DateTime.Now;
-                    _unitOfWork.Client.Update(user.Client);
-                }
-
-                if (User.IsInRole(SD.LawyerRole))
-                {
-                    user.Lawyer.ApplicationUser.LastLogin = DateTime.Now;
-                    _unitOfWork.Lawyer.Update(user.Lawyer);
-                }
-
-                _unitOfWork.Save();
-
-
-                return LocalRedirect(returnUrl);
+                ModelState.AddModelError("Input.LoginIdentifier", "Invalid username or email format");
+                return Page();
             }
 
-            if (result.RequiresTwoFactor)
-                return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, Input.RememberMe });
-            if (result.IsLockedOut)
+
+            if (user == null)
             {
-                _logger.LogWarning("User account locked out.");
-                return RedirectToPage("./Lockout");
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                return Page();
             }
+
+            if (user != null)
+            {
+                // Use the actual username for sign-in (required by Identity)
+                var result = await _signInManager.PasswordSignInAsync(
+                    user?.UserName ?? "", // Must use UserName here
+                    Input.Password,
+                    Input.RememberMe,
+                    false);
+
+                if (result.Succeeded)
+                {
+                    _logger.LogInformation("User logged in.");
+
+
+                    // Your existing last login tracking code
+                    var claimsIdentity = (ClaimsIdentity)User.Identity;
+                    var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+                    var userFromDb = _unitOfWork.ApplicationUser.Get(a => a.Id == userId, "Lawyer,Admin,Client");
+                    if (User.IsInRole(SD.AdminRole))
+                    {
+                        userFromDb.Admin.ApplicationUser.LastLogin = DateTime.Now;
+                        _unitOfWork.Admin.Update(userFromDb.Admin);
+                    }
+
+                    if (User.IsInRole(SD.ClientRole))
+                    {
+                        userFromDb.Client.ApplicationUser.LastLogin = DateTime.Now;
+                        _unitOfWork.Client.Update(userFromDb.Client);
+                    }
+
+                    if (User.IsInRole(SD.LawyerRole))
+                    {
+                        userFromDb.Lawyer.ApplicationUser.LastLogin = DateTime.Now;
+                        _unitOfWork.Lawyer.Update(userFromDb.Lawyer);
+                    }
+
+                    _unitOfWork.Save();
+
+                    return LocalRedirect(returnUrl);
+                }
+
+                if (result.RequiresTwoFactor)
+                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, Input.RememberMe });
+
+                if (result.IsLockedOut)
+                {
+                    _logger.LogWarning("User account locked out.");
+                    return RedirectToPage("./Lockout");
+                }
+            }
+
 
             ModelState.AddModelError(string.Empty, "Invalid username or password.");
             return Page();
@@ -128,19 +157,22 @@ public class LoginModel : PageModel
         return Page();
     }
 
+    private bool IsValidLoginIdentifier(string input)
+    {
+        var emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+        var usernameRegex = new Regex(@"^[a-zA-Z0-9_]{3,20}$");
+        return emailRegex.IsMatch(input) || usernameRegex.IsMatch(input);
+    }
+
     /// <summary>
     ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
     ///     directly from your code. This API may change or be removed in future releases.
     /// </summary>
     public class InputModel
     {
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "Please enter your username or email")]
+        [Display(Name = "Username or Email")]
+        public string LoginIdentifier { get; set; }
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

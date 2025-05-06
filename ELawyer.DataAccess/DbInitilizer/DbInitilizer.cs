@@ -1,4 +1,5 @@
-﻿using ELawyer.DataAccess.Data;
+﻿using System.Diagnostics;
+using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.DbInitilizer;
 using ELawyer.Models;
 using ELawyer.Utility;
@@ -35,6 +36,9 @@ public class DbInitializer : IDbInitilizer
         }
         catch (Exception ex)
         {
+            // Log the exception
+            Trace.WriteLine($"Migration failed: {ex.Message}");
+            return;
         }
 
 
@@ -46,32 +50,49 @@ public class DbInitializer : IDbInitilizer
             _roleManager.CreateAsync(new IdentityRole(SD.AdminRole)).GetAwaiter().GetResult();
 
 
-            var admin = new Admin
-                {
-                    ApplicationUser = new ApplicationUser
-                    {
-                        FirstName = "Mohamed",
-                        LastName = "Saad",
-                        CreatedAt = DateTime.Now
-                    }
-                }
-                ;
-
-            _db.Admins.Add(admin);
-            _db.SaveChanges();
-
-            //if roles are not created, then we will create admin user as well
-            _userManager.CreateAsync(new ApplicationUser
+            // Create admin user
+            var adminUser = new ApplicationUser
             {
-                UserName = "mohameds3add@gmail.com",
-                Email = "mohameds3add@gmail.com",
-                EmailConfirmed = true,
-                AdminId = 1
-            }, "Admin123#").GetAwaiter().GetResult();
+                UserName = "admin",
+                Email = "admin@admin.com",
+                FirstName = "admin",
+                LastName = "admin",
+                CreatedAt = DateTime.Now,
+                EmailConfirmed = true
+            };
 
+            var result = _userManager.CreateAsync(adminUser, "Admin123#").GetAwaiter().GetResult();
 
-            var user = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "mohameds3add@gmail.com");
-            _userManager.AddToRoleAsync(user, SD.AdminRole).GetAwaiter().GetResult();
+            if (result.Succeeded)
+            {
+                // Create admin record linked to this user
+                var admin = new Admin
+                {
+                    ApplicationUser = adminUser
+                };
+
+                _db.Admins.Add(admin);
+                _db.SaveChanges();
+
+                // Update the user with AdminId
+                adminUser.AdminId = admin.Id;
+                _userManager.UpdateAsync(adminUser).GetAwaiter().GetResult();
+
+                // Assign admin role
+                var roleResult = _userManager.AddToRoleAsync(adminUser, SD.AdminRole).GetAwaiter().GetResult();
+
+                if (!roleResult.Succeeded)
+                {
+                    Trace.WriteLine("Failed to assign admin role:");
+                    foreach (var error in roleResult.Errors) Console.WriteLine(error.Description);
+                }
+            }
+            else
+            {
+                // Log errors
+                Trace.WriteLine("Failed to create admin user:");
+                foreach (var error in result.Errors) Trace.WriteLine(error.Description);
+            }
         }
     }
 }

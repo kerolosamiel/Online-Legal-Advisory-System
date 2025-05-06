@@ -20,14 +20,19 @@
         </div>
 
         <div class="login-manually">
-            <form id="account" method="post" class="d-flex flex-column gap-3">
+            <form id="account" method="post" class="login-form d-flex flex-column gap-3">
                 <div asp-validation-summary="ModelOnly" class="not-valid d-flex align-items-center" role="alert">
                     <i class="fa-solid fa-exclamation"></i>
                 </div>
-                <div class="email-input txt-input d-flex flex-column">
-                    <input asp-for="Input.Email" class="email" autocomplete="username" aria-required="true"
-                           placeholder="Email"/>
-                    <span asp-validation-for="Input.Email" class="not-valid"></span>
+                <div class="username-input txt-input d-flex flex-column">
+                    <input asp-for="Input.LoginIdentifier" class="user-email"
+                           data-val="true"
+                           data-val-loginformat="Please enter a valid username or email"
+                           data-val-required="Username or email is required"
+                           autocomplete="username"
+                           aria-required="true"
+                           placeholder="Email or Username"/>
+                    <span asp-validation-for="Input.LoginIdentifier" class="not-valid"></span>
                 </div>
 
                 <div class="password-input txt-input d-flex flex-column">

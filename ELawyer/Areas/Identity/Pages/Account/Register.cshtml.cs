@@ -101,7 +101,7 @@ public class RegisterModel : PageModel
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         if (ModelState.IsValid)
         {
-            var user = CreateUser();
+            var user = await CreateUserAsync();
 
             await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
             await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -188,11 +188,17 @@ public class RegisterModel : PageModel
         return Page();
     }
 
-    private ApplicationUser CreateUser()
+    private async Task<ApplicationUser> CreateUserAsync()
     {
         try
         {
-            return Activator.CreateInstance<ApplicationUser>();
+            var user = Activator.CreateInstance<ApplicationUser>();
+
+            // Generate unique username
+            Input.UserName = await GenerateUniqueUsername(Input.FirstName, Input.LastName);
+            await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
+
+            return user;
         }
         catch
         {
@@ -209,12 +215,29 @@ public class RegisterModel : PageModel
         return (IUserEmailStore<IdentityUser>)_userStore;
     }
 
+    private async Task<string> GenerateUniqueUsername(string firstName, string lastName)
+    {
+        var baseUsername = $"{firstName.ToLower()}_{lastName.ToLower()}";
+        var username = baseUsername;
+        var counter = 1;
+
+        while (await _userManager.FindByNameAsync(username) != null)
+        {
+            username = $"{baseUsername}{counter}";
+            counter++;
+        }
+
+        return username;
+    }
+
     /// <summary>
     ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
     ///     directly from your code. This API may change or be removed in future releases.
     /// </summary>
     public class InputModel
     {
+        [Display(Name = "Username")] public string UserName { get; set; }
+
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.

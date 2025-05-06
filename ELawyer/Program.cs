@@ -33,9 +33,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 
 
 builder.Services.AddRazorPages();
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+    options.User.RequireUniqueEmail = false; // Remove email uniqueness requirement
+    options.User.AllowedUserNameCharacters =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+"; // Allow emails in usernames
+}).AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
@@ -63,7 +68,9 @@ builder.Services.AddScoped<IDbInitilizer, DbInitializer>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddScoped<IEmailSender, EmailSender>();
+/*builder.Services.AddScoped<IEmailSender, EmailSender>();*/
+
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 

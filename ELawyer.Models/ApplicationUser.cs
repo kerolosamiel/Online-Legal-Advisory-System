@@ -7,7 +7,11 @@ namespace ELawyer.Models;
 public class ApplicationUser : IdentityUser
 {
     [MaxLength(25)] [Required] public string FirstName { get; set; } = "";
+
     [MaxLength(25)] [Required] public string LastName { get; set; } = "";
+
+    // Remove email-related validation
+    public override string? Email { get; set; }
     [MaxLength(50)] public string? Role { get; set; }
     public DateTime? CreatedAt { get; set; }
     public DateTime? LastLogin { get; set; }
