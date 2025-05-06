@@ -11,10 +11,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("26120ce7-35cb-426b-8f64-9724c1f9497e")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45c46b872439bb294e3440cd1ab122e3a13d1fcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb0895a94c9451455f3d6a6d7534e4d9811a829d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
