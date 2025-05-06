@@ -69,7 +69,6 @@ builder.Services.AddScoped<IDbInitilizer, DbInitializer>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 /*builder.Services.AddScoped<IEmailSender, EmailSender>();*/
-
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
