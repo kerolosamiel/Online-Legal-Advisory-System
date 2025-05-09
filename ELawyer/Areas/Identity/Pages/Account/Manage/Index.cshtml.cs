@@ -56,11 +56,11 @@ public class IndexModel : PageModel
         Username = userName;
         var User1 = _unitOfWork.ApplicationUser.Get(u => u.Id == user.Id);
 
-        var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == User1.LawyerId);
-        var lawyerService = lawyer != null ? _unitOfWork.service.Get(s => s.Id == lawyer.ServiceId) : null;
+        var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == User1.Lawyer.Id);
+        var lawyerService = lawyer != null ? _unitOfWork.Service.Get(s => s.Id == lawyer.ServiceId) : null;
 
 
-        var client = _unitOfWork.Client.Get(l => l.Id == User1.ClientId);
+        var client = _unitOfWork.Client.Get(l => l.Id == User1.Client.Id);
 
 
         // جلب الخدمة الخاصة بالمحامي (خدمة واحدة فقط)

@@ -27,7 +27,7 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity!;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
 
         var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == id,
@@ -61,7 +61,7 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity!;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
         var payment = _unitOfWork.Payment.Get(p => p.ClientId == client.Id && p.PaidAt == null, "Lawyer,Client");
 
@@ -76,7 +76,7 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity!;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
 
         var payment = _unitOfWork.Payment.Get(p => p.ClientId == client.Id && p.PaidAt == null);
@@ -144,7 +144,7 @@ public class CartController : Controller
         _unitOfWork.Save();
 
 
-        _unitOfWork.serviceOrder.Add(new ServiceOrder
+        _unitOfWork.ServiceOrder.Add(new ServiceOrder
         {
             PaymentId = payment.Id,
             ServiceId = selectedService.Id,
@@ -159,10 +159,10 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
-        var serviceOrder = _unitOfWork.serviceOrder.Get(s => s.PaymentId == payment.Id);
-        _unitOfWork.invoice.Add(new Invoice
+        var serviceOrder = _unitOfWork.ServiceOrder.Get(s => s.PaymentId == payment.Id);
+        _unitOfWork.Invoice.Add(new Invoice
         {
             Amount = payment.Amount,
             ServiceOrderId = serviceOrder.Id,
@@ -241,7 +241,7 @@ public class CartController : Controller
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-            var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+            var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
             var lawyer = _unitOfWork.Lawyer.Get(Lawyer => Lawyer.Id == consultationPayment.Payment.LawyerId);
 
             consultation1.Title = consultationPayment.Consultation.Title;
@@ -253,7 +253,7 @@ public class CartController : Controller
             _unitOfWork.Consultation.Add(consultation1);
             _unitOfWork.Save();
 
-            var user2 = _unitOfWork.ApplicationUser.Get(u => u.LawyerId == lawyer.Id);
+            var user2 = _unitOfWork.ApplicationUser.Get(u => u.Lawyer.Id == lawyer.Id);
 
             _emailSender.SendEmailAsync(user2.Email, "New Consultation- ELawyer", "<P> You Have new Consultation</P>");
         }
@@ -266,7 +266,7 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
         var consultation = _unitOfWork.Consultation.GetAll(c => c.LawyerId == Lawyer.Id, "Client");
 
 
@@ -324,7 +324,7 @@ public class CartController : Controller
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-            var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+            var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
             var client = _unitOfWork.Client.Get(Lawyer => Lawyer.Id == responseConsultation.Consultation.ClientId);
 
             response.Title = responseConsultation.Response.Title;
@@ -361,7 +361,7 @@ public class CartController : Controller
             _unitOfWork.Payment.Update(payment);
             _unitOfWork.Save();
 
-            var user2 = _unitOfWork.ApplicationUser.Get(u => u.ClientId == client.Id);
+            var user2 = _unitOfWork.ApplicationUser.Get(u => u.Client.Id == client.Id);
             _emailSender.SendEmailAsync(user2.Email, "Payment- ELawyer", "<p> Alawyer has been respond<p/>");
         }
 
@@ -374,7 +374,7 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
         var response = _unitOfWork.Response.GetAll(c => c.ClientId == Client.Id, "Lawyer");
 
         return View(response);
@@ -386,14 +386,14 @@ public class CartController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
-        var Invocies = _unitOfWork.invoice.GetAll(i => i.ClientId == Client.Id);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
+        var Invocies = _unitOfWork.Invoice.GetAll(i => i.ClientId == Client.Id);
         return View(Invocies);
     }
 
     public IActionResult ShowServieOrders()
     {
-        var servicesorders = _unitOfWork.serviceOrder.GetAll();
+        var servicesorders = _unitOfWork.ServiceOrder.GetAll();
         return View(servicesorders);
     }
 

@@ -75,7 +75,7 @@ public class DbInitializer : IDbInitilizer
                 _db.SaveChanges();
 
                 // Update the user with AdminId
-                adminUser.AdminId = admin.Id;
+                adminUser.Admin.Id = admin.Id;
                 _userManager.UpdateAsync(adminUser).GetAwaiter().GetResult();
 
                 // Assign admin role

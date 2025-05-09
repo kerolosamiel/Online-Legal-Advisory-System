@@ -26,12 +26,14 @@ public class Lawyer
     public double? AverageRateing { get; set; }
     public int? ServiceId { get; set; }
     public int? LawyerRatingId { get; set; }
+    public string? UserId { get; set; }
+
 
     // Realationship
     public virtual ICollection<LawyerSpecialization> LawyerSpecializations { get; set; } =
         new HashSet<LawyerSpecialization>();
 
-    public virtual ApplicationUser ApplicationUser { get; set; } = new();
+    [ForeignKey(nameof(UserId))] public virtual ApplicationUser ApplicationUser { get; set; }
     [ForeignKey(nameof(ServiceId))] public virtual ICollection<Service> Services { get; set; } = new HashSet<Service>();
 
     [ForeignKey(nameof(LawyerRatingId))]

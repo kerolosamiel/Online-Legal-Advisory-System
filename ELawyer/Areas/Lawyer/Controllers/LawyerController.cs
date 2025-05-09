@@ -42,7 +42,7 @@ public class LawyerController : Controller
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-            var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+            var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
             var paymentfromdb =
                 _unitOfWork.Payment.Get(p => p.ClientId == Client.Id && p.PaidAt == null, "Lawyer,Client");
@@ -75,7 +75,7 @@ public class LawyerController : Controller
 
     public IActionResult Edit()
     {
-        var SpecializationList = _unitOfWork.specializationnew.GetAll().Select(i => new SelectListItem
+        var SpecializationList = _unitOfWork.Specializationnew.GetAll().Select(i => new SelectListItem
         {
             Text = i.Name,
             Value = i.ID.ToString()
@@ -84,7 +84,7 @@ public class LawyerController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
 
         var lawyerEdit = new LawyerEditViewModel
         {
@@ -191,15 +191,15 @@ public class LawyerController : Controller
                 .Select(d => new LawyerSpecialization { SpecializationId = d }).ToList();
 
 
-            _unitOfWork.lawyerSpecialization.RemoveRange(
-                _unitOfWork.lawyerSpecialization.GetAll()
+            _unitOfWork.LawyerSpecialization.RemoveRange(
+                _unitOfWork.LawyerSpecialization.GetAll()
                     .Where(ls => ls.LawyerId == oldLawyer.Id)
             );
 
 
             foreach (var specId in newLawyer.SelectedSpecialization.Distinct())
             {
-                _unitOfWork.lawyerSpecialization.Add(new LawyerSpecialization
+                _unitOfWork.LawyerSpecialization.Add(new LawyerSpecialization
                 {
                     LawyerId = oldLawyer.Id,
                     SpecializationId = specId
@@ -250,7 +250,7 @@ public class LawyerController : Controller
 
         if (System.IO.File.Exists(ImagePath)) System.IO.File.Delete(ImagePath);
 
-        var user = _unitOfWork.ApplicationUser.Get(a => a.LawyerId == id);
+        var user = _unitOfWork.ApplicationUser.Get(a => a.Lawyer.Id == id);
         _unitOfWork.ApplicationUser.Remove(user);
         _unitOfWork.Lawyer.Remove(LawyerFromDb);
         _unitOfWork.Save();
@@ -270,7 +270,7 @@ public class LawyerController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
         if (ModelState.IsValid && Lawyer.UserStatus == SD.UserStatusVerfied)
         {
             var newservice = new Service();
@@ -283,7 +283,7 @@ public class LawyerController : Controller
             newservice.Duration = service.Duration;
             newservice.LawyerId = Lawyer.Id;
 
-            _unitOfWork.service.Add(newservice);
+            _unitOfWork.Service.Add(newservice);
 
             _unitOfWork.Save();
             Lawyer.ServiceId = newservice.Id;
@@ -300,8 +300,8 @@ public class LawyerController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
-        var services = _unitOfWork.service.Get(s => s.Id == Lawyer.ServiceId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
+        var services = _unitOfWork.Service.Get(s => s.Id == Lawyer.ServiceId);
 
         return View(services);
     }
@@ -314,10 +314,10 @@ public class LawyerController : Controller
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-            var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
-            var newservice = _unitOfWork.service.Get(s => s.Id == Lawyer.ServiceId);
+            var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
+            var newservice = _unitOfWork.Service.Get(s => s.Id == Lawyer.ServiceId);
             newservice = service;
-            _unitOfWork.service.Update(newservice);
+            _unitOfWork.Service.Update(newservice);
             _unitOfWork.Save();
             return RedirectToAction("Index");
         }
@@ -331,10 +331,10 @@ public class LawyerController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
 
 
-        var serviceFromDb = _unitOfWork.service.Get(x => x.Id == Lawyer.ServiceId);
+        var serviceFromDb = _unitOfWork.Service.Get(x => x.Id == Lawyer.ServiceId);
 
 
         if (serviceFromDb == null)
@@ -349,10 +349,10 @@ public class LawyerController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.LawyerId);
+        var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == user.Lawyer.Id);
 
 
-        var serviceFromDb = _unitOfWork.service.Get(x => x.Id == Lawyer.ServiceId);
+        var serviceFromDb = _unitOfWork.Service.Get(x => x.Id == Lawyer.ServiceId);
 
 
         if (serviceFromDb == null)
@@ -361,7 +361,7 @@ public class LawyerController : Controller
 
         Lawyer.ServiceId = null;
         _unitOfWork.Lawyer.Update(Lawyer);
-        _unitOfWork.service.Remove(serviceFromDb);
+        _unitOfWork.Service.Remove(serviceFromDb);
 
         _unitOfWork.Save();
 
@@ -370,7 +370,7 @@ public class LawyerController : Controller
 
     public IActionResult Search()
     {
-        var SpecializationList = _unitOfWork.specializationnew.GetAll().ToList();
+        var SpecializationList = _unitOfWork.Specializationnew.GetAll().ToList();
 
 
         return View(SpecializationList);
@@ -379,7 +379,7 @@ public class LawyerController : Controller
     [HttpPost]
     public IActionResult SearchPost(Models.Specialization specialization)
     {
-        var lawyerspecialization = _unitOfWork.lawyerSpecialization.GetAll(l => l.SpecializationId == specialization.ID)
+        var lawyerspecialization = _unitOfWork.LawyerSpecialization.GetAll(l => l.SpecializationId == specialization.ID)
             .ToList();
         var lawyers = new List<Models.Lawyer>();
         foreach (var item in lawyerspecialization)

@@ -190,16 +190,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Acceptclient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWNjZXB0Y2xpZW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Acceptlawyer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWNjZXB0bGF3eWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/clientConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vY2xpZW50Q29uZmlybWF0aW9uLmNzaHRtbA==
+[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Clients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ2xpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Confirmation.cshtml]
@@ -222,12 +222,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTGF3eWVyQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Rejectclient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUmVqZWN0Y2xpZW50LmNzaHRtbA==
+[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Lawyers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTGF3eWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Rejectlawyer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUmVqZWN0bGF3eWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Admin/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/Views/Cart/AddToCart.cshtml]

@@ -22,7 +22,7 @@ public class ClientController : Controller
 
     public IActionResult Index()
     {
-        List<Models.Client> ClientList = _unitOfWork.Client.GetAll().ToList();
+        var ClientList = _unitOfWork.Client.GetAll().ToList();
         return View(ClientList);
     }
 
@@ -37,12 +37,12 @@ public class ClientController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
         return View(Client);
     }
 
     [HttpPost]
-    public IActionResult Edit(Models.Client newClient, IFormFile? file, IFormFile? file1, IFormFile? file2)
+    public IActionResult Edit(Models.Client newClient, IFormFile? file)
     {
         var oldClient = _unitOfWork.Client.Get(i => i.Id == newClient.Id);
         if (oldClient == null) return NotFound();
@@ -70,67 +70,11 @@ public class ClientController : Controller
                     file.CopyTo(fileStream);
                 }
 
-
                 newClient.ImageUrl = @"images\Client\Profile\" + fileName;
             }
             else
             {
                 newClient.ImageUrl = oldClient.ImageUrl;
-            }
-
-
-            if (file1 != null)
-            {
-                var fileName = Guid.NewGuid() + Path.GetExtension(file1.FileName);
-                var ClientImagePath = Path.Combine(wwwRootPath, @"images\Client\Cards");
-
-
-                if (!string.IsNullOrEmpty(oldClient.ImageUrl))
-                {
-                    var oldImagePath = Path.Combine(wwwRootPath, oldClient.ImageUrl.TrimStart('\\'));
-                    if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-                }
-
-
-                using (var fileStream = new FileStream(Path.Combine(ClientImagePath, fileName), FileMode.Create,
-                           FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous))
-                {
-                    file1.CopyTo(fileStream);
-                }
-
-
-                newClient.FrontCardImage = @"images\Client\Cards\" + fileName;
-            }
-            else
-            {
-                newClient.FrontCardImage = oldClient.FrontCardImage;
-            }
-
-            if (file2 != null)
-            {
-                var fileName = Guid.NewGuid() + Path.GetExtension(file2.FileName);
-                var ClientImagePath = Path.Combine(wwwRootPath, @"images\Client\Cards");
-
-
-                if (!string.IsNullOrEmpty(oldClient.ImageUrl))
-                {
-                    var oldImagePath = Path.Combine(wwwRootPath, oldClient.ImageUrl.TrimStart('\\'));
-                    if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-                }
-
-
-                using (var fileStream = new FileStream(Path.Combine(ClientImagePath, fileName), FileMode.Create,
-                           FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous))
-                {
-                    file2.CopyTo(fileStream);
-                }
-
-
-                newClient.BackCardImage = @"images\Client\Cards\" + fileName;
-            }
-            else
-            {
-                newClient.BackCardImage = oldClient.BackCardImage;
             }
 
 
@@ -177,7 +121,7 @@ public class ClientController : Controller
 
         if (System.IO.File.Exists(ImagePath)) System.IO.File.Delete(ImagePath);
 
-        var user = _unitOfWork.ApplicationUser.Get(a => a.ClientId == id);
+        var user = _unitOfWork.ApplicationUser.Get(a => a.Client.Id == id);
         _unitOfWork.ApplicationUser.Remove(user);
         _unitOfWork.Client.Remove(ClientFromDb);
         _unitOfWork.Save();
@@ -191,12 +135,12 @@ public class ClientController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
         var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == id);
         var rating = new Rating
         {
             LawyerId = Lawyer.Id,
-            ClientId = user.ClientId
+            ClientId = user.Client.Id
         };
         return View(rating);
     }
@@ -207,7 +151,7 @@ public class ClientController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
         var Lawyer = _unitOfWork.Lawyer.Get(l => l.Id == id);
         var newrating = new Rating();
 
@@ -242,7 +186,7 @@ public class ClientController : Controller
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.ClientId);
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
 
 
         var ratinglawyer = _unitOfWork.Rating.Get(l => l.ID == rating.ID);

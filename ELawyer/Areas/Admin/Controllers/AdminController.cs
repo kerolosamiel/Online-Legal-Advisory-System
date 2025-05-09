@@ -2,11 +2,14 @@
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models.ViewModels;
 using ELawyer.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ELawyer.Areas.Admin.Controllers;
 
+[Authorize(Roles = SD.AdminRole)] // This restricts all actions to admin users only
 public class AdminController : Controller
 {
     private readonly IEmailSender _emailSender;
@@ -23,26 +26,134 @@ public class AdminController : Controller
 
     public IWebHostEnvironment _webHostEnvironment { get; }
 
+    [Route("admin/dashboard")]
     public IActionResult Index()
     {
-        List<Models.Admin> AdminList = _unitOfWork.Admin.GetAll().ToList();
+        var clients = _unitOfWork.Client.GetAll().ToList();
+        var lawyers = _unitOfWork.Lawyer.GetAll().ToList();
+        var orders = _unitOfWork.ServiceOrder.GetAll().ToList();
+        // Get current month earnings
+        var currentMonthEarnings = orders
+            .Where(o => o.CreatedAt.Month == DateTime.Now.Month &&
+                        o.CreatedAt.Year == DateTime.Now.Year)
+            .Sum(o => o.Amount);
 
+        // Get previous month earnings
+        var previousMonthEarnings = orders
+            .Where(o => o.CreatedAt.Month == DateTime.Now.AddMonths(-1).Month &&
+                        o.CreatedAt.Year == DateTime.Now.AddMonths(-1).Year)
+            .Sum(o => o.Amount);
 
-        return View(AdminList);
+        // Calculate percentage change
+        decimal percentageChange = 0;
+        var increased = true;
+
+        if (previousMonthEarnings > 0)
+        {
+            percentageChange = (decimal)((currentMonthEarnings - previousMonthEarnings) / previousMonthEarnings) * 100;
+            increased = currentMonthEarnings >= previousMonthEarnings;
+        }
+
+        // Create dashboard view model with all required data
+        var dashboardData = new AdminDashboardVm
+        {
+            // Get total counts from database
+            TotalClients = clients.Count(),
+            TotalLawyers = lawyers.Count(),
+            TotalOrders = orders.Count(),
+            TotalEarnings = orders.Sum(o => o.Amount),
+            PendingApprovals = lawyers.Count(l => l.UserStatus == SD.UserStatusPending),
+            EarningsPercentageChange = Math.Round(percentageChange, 1),
+            EarningsIncreased = increased,
+
+            // Get 5 most recent lawyer registrations
+            RecentLawyers = _unitOfWork.Lawyer
+                .GetAll(includeproperties: "ApplicationUser")
+                .OrderByDescending(l => l.ApplicationUser.CreatedAt)
+                .Take(5)
+                .Select(l => new LawyerRegistrationVm
+                {
+                    Id = l.Id,
+                    Name = $"{l.ApplicationUser.FirstName} {l.ApplicationUser.LastName}",
+                    Email = l.ApplicationUser.Email,
+                    Status = l.UserStatus // Verification status
+                })
+                .ToList(),
+
+            RecentTransactions = orders
+                .OrderByDescending(o => o.CreatedAt)
+                .Take(10)
+                .Select(o => new TransactionVm
+                {
+                    Date = o.CreatedAt,
+                    ClientName = $"{o.Client.ApplicationUser.FirstName} {o.Client.ApplicationUser.LastName}",
+                    LawyerName = $"{o.Lawyer.ApplicationUser.FirstName} {o.Lawyer.ApplicationUser.LastName}",
+                    ServiceTitle = o.Service.Title,
+                    Amount = (decimal)o.Amount,
+                    PayedAt = o.Payment.PaidAt
+                })
+                .ToList(),
+
+            ClientList = new SelectList(clients.Select(c => new
+            {
+                c.Id,
+                Name = $"{c.ApplicationUser.FirstName} {c.ApplicationUser.LastName}"
+            }), "Id", "Name"),
+
+            LawyerList = new SelectList(lawyers.Select(l => new
+            {
+                l.Id,
+                Name = $"{l.ApplicationUser.FirstName} {l.ApplicationUser.LastName}"
+            }), "Id", "Name")
+        };
+
+        return View(dashboardData);
     }
 
+    [Route("admin/clients")]
+    public IActionResult Clients()
+    {
+        return View();
+    }
+
+    [Route("admin/lawyers")]
+    public IActionResult Lawyers()
+    {
+        return View();
+    }
+
+    [Route("admin/all-users")]
+    public IActionResult AllUsers()
+    {
+        return View();
+    }
+
+    [Route("admin/orders")]
+    public IActionResult Orders()
+    {
+        return View();
+    }
+
+    [Route("admin/Services")]
+    public IActionResult Services()
+    {
+        return View();
+    }
+
+    [Route("admin/details")]
     public IActionResult Details(int? id)
     {
         var Admin = _unitOfWork.Admin.Get(l => l.Id == id);
         return View(Admin);
     }
 
+    [Route("admin/edit")]
     public IActionResult Edit()
     {
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Admin = _unitOfWork.Admin.Get(l => l.Id == user.AdminId);
+        var Admin = _unitOfWork.Admin.Get(l => l.Id == user.Admin.Id);
         return View(Admin);
     }
 
@@ -96,14 +207,14 @@ public class AdminController : Controller
 
     public IActionResult Confirmation()
     {
-        var viewmodel = new ClientLawyerConfirmation();
+        var viewmodel = new LawyerConfirmation();
 
 
         return View(viewmodel);
     }
 
     [HttpPost]
-    public IActionResult Confirmation(ClientLawyerConfirmation viewmodel, IFormFile? file1, IFormFile? file2)
+    public IActionResult Confirmation(LawyerConfirmation viewmodel, IFormFile? file1, IFormFile? file2)
     {
         if (ModelState.IsValid)
         {
@@ -114,7 +225,7 @@ public class AdminController : Controller
 
             if (user.Role == SD.LawyerRole)
             {
-                var lawyer = _unitOfWork.Lawyer.Get(c => c.Id == user.LawyerId);
+                var lawyer = _unitOfWork.Lawyer.Get(c => c.Id == user.Lawyer.Id);
                 viewmodel.Lawyer = lawyer;
 
                 var wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -182,91 +293,11 @@ public class AdminController : Controller
                 var Admins = _unitOfWork.Admin.GetAll();
                 foreach (var item in Admins)
                 {
-                    var admin = _unitOfWork.ApplicationUser.Get(u => u.AdminId == item.Id);
+                    var admin = _unitOfWork.ApplicationUser.Get(u => u.Admin.Id == item.Id);
                     if (admin != null)
                         _emailSender.SendEmailAsync(admin.Email, "new identification- ELawyer",
                             "<p>you have new lawyer want to identification  </p>");
                 }
-
-                return RedirectToAction("Index");
-            }
-
-            if (user.Role == SD.ClientRole)
-            {
-                var client = _unitOfWork.Client.Get(c => c.Id == user.ClientId);
-                viewmodel.Client = client;
-
-                var wwwRootPath = _webHostEnvironment.WebRootPath;
-
-
-                if (file1 != null)
-                {
-                    var fileName = Guid.NewGuid() + Path.GetExtension(file1.FileName);
-                    var lawyerImagePath = Path.Combine(wwwRootPath, @"images\Lawyer\Cards");
-
-
-                    if (!string.IsNullOrEmpty(client.ImageUrl))
-                    {
-                        var oldImagePath = Path.Combine(wwwRootPath, client.ImageUrl.TrimStart('\\'));
-                        if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-                    }
-
-
-                    using (var fileStream = new FileStream(Path.Combine(lawyerImagePath, fileName), FileMode.Create,
-                               FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous))
-                    {
-                        file1.CopyTo(fileStream);
-                    }
-
-
-                    viewmodel.Client.FrontCardImage = @"images\Lawyer\Cards\" + fileName;
-                }
-                else
-                {
-                    viewmodel.Client.FrontCardImage = client.FrontCardImage;
-                }
-
-                if (file2 != null)
-                {
-                    var fileName = Guid.NewGuid() + Path.GetExtension(file2.FileName);
-                    var lawyerImagePath = Path.Combine(wwwRootPath, @"images\Client\Cards");
-
-
-                    if (!string.IsNullOrEmpty(client.ImageUrl))
-                    {
-                        var oldImagePath = Path.Combine(wwwRootPath, client.ImageUrl.TrimStart('\\'));
-                        if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-                    }
-
-
-                    using (var fileStream = new FileStream(Path.Combine(lawyerImagePath, fileName), FileMode.Create,
-                               FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous))
-                    {
-                        file2.CopyTo(fileStream);
-                    }
-
-
-                    viewmodel.Client.BackCardImage = @"images\Client\Cards\" + fileName;
-                }
-                else
-                {
-                    viewmodel.Client.BackCardImage = client.BackCardImage;
-                }
-
-                client.UserStatus = SD.UserStatusPending;
-                _unitOfWork.Client.Update(viewmodel.Client);
-                _unitOfWork.Save();
-
-
-                var Admins = _unitOfWork.Admin.GetAll();
-                foreach (var item in Admins)
-                {
-                    var admin = _unitOfWork.ApplicationUser.Get(u => u.AdminId == item.Id);
-                    if (admin != null)
-                        _emailSender.SendEmailAsync(admin.Email, "new identification- ELawyer",
-                            "<p>you have new lawyer want to identification  </p>");
-                }
-
 
                 return RedirectToAction("Index");
             }
@@ -275,26 +306,12 @@ public class AdminController : Controller
         return View(viewmodel);
     }
 
-    public IActionResult ClientConifrmation()
-    {
-        var claimsIdentity = (ClaimsIdentity)User.Identity;
-        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var Admins = _unitOfWork.Admin.GetAll();
-
-
-        List<Models.Client> ConfirmtList = _unitOfWork.Client.GetAll(c =>
-            c.BackCardImage != null && c.FrontCardImage != null && c.UserStatus != SD.UserStatusVerfied).ToList();
-
-
-        return View(ConfirmtList);
-    }
-
     public IActionResult LawyerConfirmation()
     {
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
         var Admins = _unitOfWork.Admin.GetAll();
-        List<Models.Lawyer> ConfirmtList = _unitOfWork.Lawyer.GetAll(l =>
+        var ConfirmtList = _unitOfWork.Lawyer.GetAll(l =>
             l.BackCardImage != null && l.FrontCardImage != null && l.UserStatus != SD.UserStatusVerfied).ToList();
 
         return View(ConfirmtList);
@@ -320,7 +337,7 @@ public class AdminController : Controller
         var lawyer = _unitOfWork.Lawyer.Get(c => c.Id == id);
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.LawyerId == lawyer.Id);
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Lawyer.Id == lawyer.Id);
         lawyer.UserStatus = SD.UserStatusVerfied;
         _unitOfWork.Lawyer.Update(lawyer);
         _unitOfWork.Save();
@@ -351,7 +368,7 @@ public class AdminController : Controller
 
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.LawyerId == lawyer.Id);
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Lawyer.Id == lawyer.Id);
 
         if (!string.IsNullOrEmpty(lawyer.FrontCardImage))
         {
@@ -397,62 +414,13 @@ public class AdminController : Controller
 
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.ClientId == client.Id);
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Client.Id == client.Id);
         client.UserStatus = SD.UserStatusVerfied;
         _unitOfWork.Client.Update(client);
         _unitOfWork.Save();
 
         _emailSender.SendEmailAsync(user.Email, "Your Identity has been Identificated - ELawyer",
             "<p>Your Identity has been Identificated successfully </p>");
-
-        return RedirectToAction("Index");
-    }
-
-    public IActionResult RejectClient(int? id)
-    {
-        if (id == null || id == 0)
-            return NotFound();
-
-        var clientFromDb = _unitOfWork.Client.Get(x => x.Id == id);
-
-
-        if (clientFromDb == null)
-            return NotFound();
-
-        return View(clientFromDb);
-    }
-
-    [HttpPost]
-    public IActionResult RejectClient(int id)
-    {
-        var wwwRootPath = _webHostEnvironment.WebRootPath;
-        var client = _unitOfWork.Client.Get(c => c.Id == id);
-
-        var claimsIdentity = (ClaimsIdentity)User.Identity;
-        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.ClientId == client.Id);
-
-        if (!string.IsNullOrEmpty(client.FrontCardImage))
-        {
-            var oldImagePath = Path.Combine(wwwRootPath, client.FrontCardImage.TrimStart('\\'));
-            if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-        }
-
-        if (!string.IsNullOrEmpty(client.BackCardImage))
-        {
-            var oldImagePath = Path.Combine(wwwRootPath, client.BackCardImage.TrimStart('\\'));
-            if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
-        }
-
-        client.FrontCardImage = null;
-        client.BackCardImage = null;
-        client.UserStatus = SD.UserStatusNotVerfied;
-        _unitOfWork.Client.Update(client);
-        _unitOfWork.Save();
-
-        _emailSender.SendEmailAsync(user.Email, "Your Identity has been rejected - ELawyer",
-            "<p>please try to upload your Identity card clearly  </p>");
-
 
         return RedirectToAction("Index");
     }
