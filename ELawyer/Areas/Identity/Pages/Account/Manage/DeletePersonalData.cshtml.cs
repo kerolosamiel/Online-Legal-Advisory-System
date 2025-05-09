@@ -74,21 +74,21 @@ public class DeletePersonalDataModel : PageModel
         if (!result.Succeeded) throw new InvalidOperationException("Unexpected error occurred deleting user.");
         if (user1.Role == SD.AdminRole)
         {
-            var admin = _unitOfWork.Admin.Get(a => a.Id == user1.AdminId);
+            var admin = _unitOfWork.Admin.Get(a => a.Id == user1.Admin.Id);
 
             _unitOfWork.Admin.Remove(admin);
             _unitOfWork.Save();
         }
         else if (user1.Role == SD.ClientRole)
         {
-            var client = _unitOfWork.Client.Get(a => a.Id == user1.ClientId);
+            var client = _unitOfWork.Client.Get(a => a.Id == user1.Client.Id);
 
             _unitOfWork.Client.Remove(client);
             _unitOfWork.Save();
         }
         else
         {
-            var lawyer = _unitOfWork.Lawyer.Get(a => a.Id == user1.LawyerId);
+            var lawyer = _unitOfWork.Lawyer.Get(a => a.Id == user1.Lawyer.Id);
 
             _unitOfWork.Lawyer.Remove(lawyer);
             _unitOfWork.Save();

@@ -38,7 +38,14 @@ namespace ELawyer.DataAccess.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
 
                     b.ToTable("Admins");
                 });
@@ -55,19 +62,11 @@ namespace ELawyer.DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("BackCardImage")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
                     b.Property<int?>("ClientRatingId")
                         .HasColumnType("int");
 
                     b.Property<int>("ClientType")
                         .HasColumnType("int");
-
-                    b.Property<string>("FrontCardImage")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("ImageUrl")
                         .HasMaxLength(200)
@@ -76,11 +75,18 @@ namespace ELawyer.DataAccess.Migrations
                     b.Property<int?>("NoOfLawyers")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("UserStatus")
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
 
                     b.ToTable("Clients");
                 });
@@ -209,11 +215,18 @@ namespace ELawyer.DataAccess.Migrations
                     b.Property<int?>("ServiceId")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("UserStatus")
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
 
                     b.ToTable("Lawyers");
                 });
@@ -250,7 +263,7 @@ namespace ELawyer.DataAccess.Migrations
                     b.Property<int>("LawyerId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("PaidAt")
+                    b.Property<DateTime>("PaidAt")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("Recievedat")
@@ -408,6 +421,9 @@ namespace ELawyer.DataAccess.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("LawyerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PaymentId")
                         .HasColumnType("int");
 
@@ -418,6 +434,10 @@ namespace ELawyer.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("LawyerId");
 
                     b.HasIndex("PaymentId")
                         .IsUnique();
@@ -934,12 +954,6 @@ namespace ELawyer.DataAccess.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<int?>("AdminId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ClientId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -956,26 +970,29 @@ namespace ELawyer.DataAccess.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<int?>("LawyerId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Role")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasIndex("AdminId")
-                        .IsUnique()
-                        .HasFilter("[AdminId] IS NOT NULL");
-
-                    b.HasIndex("ClientId")
-                        .IsUnique()
-                        .HasFilter("[ClientId] IS NOT NULL");
-
-                    b.HasIndex("LawyerId")
-                        .IsUnique()
-                        .HasFilter("[LawyerId] IS NOT NULL");
-
                     b.HasDiscriminator().HasValue("ApplicationUser");
+                });
+
+            modelBuilder.Entity("ELawyer.Models.Admin", b =>
+                {
+                    b.HasOne("ELawyer.Models.ApplicationUser", "ApplicationUser")
+                        .WithOne("Admin")
+                        .HasForeignKey("ELawyer.Models.Admin", "UserId");
+
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("ELawyer.Models.Client", b =>
+                {
+                    b.HasOne("ELawyer.Models.ApplicationUser", "ApplicationUser")
+                        .WithOne("Client")
+                        .HasForeignKey("ELawyer.Models.Client", "UserId");
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("ELawyer.Models.Consultation", b =>
@@ -1002,6 +1019,15 @@ namespace ELawyer.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Payment");
+                });
+
+            modelBuilder.Entity("ELawyer.Models.Lawyer", b =>
+                {
+                    b.HasOne("ELawyer.Models.ApplicationUser", "ApplicationUser")
+                        .WithOne("Lawyer")
+                        .HasForeignKey("ELawyer.Models.Lawyer", "UserId");
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("ELawyer.Models.LawyerSpecialization", b =>
@@ -1093,6 +1119,18 @@ namespace ELawyer.DataAccess.Migrations
 
             modelBuilder.Entity("ELawyer.Models.ServiceOrder", b =>
                 {
+                    b.HasOne("ELawyer.Models.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ELawyer.Models.Lawyer", "Lawyer")
+                        .WithMany()
+                        .HasForeignKey("LawyerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("ELawyer.Models.Payment", "Payment")
                         .WithOne("ServiceOrder")
                         .HasForeignKey("ELawyer.Models.ServiceOrder", "PaymentId")
@@ -1104,6 +1142,10 @@ namespace ELawyer.DataAccess.Migrations
                         .HasForeignKey("ServiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Client");
+
+                    b.Navigation("Lawyer");
 
                     b.Navigation("Payment");
 
@@ -1172,38 +1214,8 @@ namespace ELawyer.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ELawyer.Models.ApplicationUser", b =>
-                {
-                    b.HasOne("ELawyer.Models.Admin", "Admin")
-                        .WithOne("ApplicationUser")
-                        .HasForeignKey("ELawyer.Models.ApplicationUser", "AdminId");
-
-                    b.HasOne("ELawyer.Models.Client", "Client")
-                        .WithOne("ApplicationUser")
-                        .HasForeignKey("ELawyer.Models.ApplicationUser", "ClientId");
-
-                    b.HasOne("ELawyer.Models.Lawyer", "Lawyer")
-                        .WithOne("ApplicationUser")
-                        .HasForeignKey("ELawyer.Models.ApplicationUser", "LawyerId");
-
-                    b.Navigation("Admin");
-
-                    b.Navigation("Client");
-
-                    b.Navigation("Lawyer");
-                });
-
-            modelBuilder.Entity("ELawyer.Models.Admin", b =>
-                {
-                    b.Navigation("ApplicationUser")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("ELawyer.Models.Client", b =>
                 {
-                    b.Navigation("ApplicationUser")
-                        .IsRequired();
-
                     b.Navigation("Consultations");
 
                     b.Navigation("Rating");
@@ -1211,9 +1223,6 @@ namespace ELawyer.DataAccess.Migrations
 
             modelBuilder.Entity("ELawyer.Models.Lawyer", b =>
                 {
-                    b.Navigation("ApplicationUser")
-                        .IsRequired();
-
                     b.Navigation("LawyerSpecializations");
 
                     b.Navigation("Rating");
@@ -1240,6 +1249,18 @@ namespace ELawyer.DataAccess.Migrations
                     b.Navigation("LawyerSpecializations");
 
                     b.Navigation("SubSpecializations");
+                });
+
+            modelBuilder.Entity("ELawyer.Models.ApplicationUser", b =>
+                {
+                    b.Navigation("Admin")
+                        .IsRequired();
+
+                    b.Navigation("Client")
+                        .IsRequired();
+
+                    b.Navigation("Lawyer")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

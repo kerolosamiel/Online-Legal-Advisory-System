@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets/css/account/shared.css"
     },
     {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/admin/admin-responsive.css",
+      "PackagePath": "staticwebassets/css/admin/admin-responsive.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/admin/admin.css",
+      "PackagePath": "staticwebassets/css/admin/admin.css"
+    },
+    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",
       "PackagePath": "staticwebassets/css/public/normalize.css"
     },
@@ -491,6 +499,18 @@
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png",
       "PackagePath": "staticwebassets/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/blue-logo.png",
+      "PackagePath": "staticwebassets/images/Public/blue-logo.png"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/logo-white.png",
+      "PackagePath": "staticwebassets/images/Public/logo-white.png"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/main-logo.png",
+      "PackagePath": "staticwebassets/images/Public/main-logo.png"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/login.js",

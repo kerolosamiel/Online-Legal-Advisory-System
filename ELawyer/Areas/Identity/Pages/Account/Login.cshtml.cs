@@ -114,28 +114,38 @@ public class LoginModel : PageModel
                     // Your existing last login tracking code
                     var claimsIdentity = (ClaimsIdentity)User.Identity;
                     var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                    var userFromDb = _unitOfWork.ApplicationUser.Get(a => a.Id == userId, "Lawyer,Admin,Client");
-                    if (User.IsInRole(SD.AdminRole))
+                    var userFromDb = _unitOfWork.ApplicationUser.Get(
+                        u => u.Id == user.Id, $"{nameof(Admin)},{nameof(Lawyer)},{nameof(Client)}"
+                    );
+
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    if (roles.Contains(SD.AdminRole))
                     {
                         userFromDb.Admin.ApplicationUser.LastLogin = DateTime.Now;
                         _unitOfWork.Admin.Update(userFromDb.Admin);
+                        _unitOfWork.Save();
+
+                        return RedirectToAction("Index", "Admin");
                     }
 
-                    if (User.IsInRole(SD.ClientRole))
+                    if (roles.Contains(SD.ClientRole))
                     {
                         userFromDb.Client.ApplicationUser.LastLogin = DateTime.Now;
                         _unitOfWork.Client.Update(userFromDb.Client);
+                        _unitOfWork.Save();
+
+                        return LocalRedirect(returnUrl);
                     }
 
-                    if (User.IsInRole(SD.LawyerRole))
+                    if (roles.Contains(SD.LawyerRole))
                     {
                         userFromDb.Lawyer.ApplicationUser.LastLogin = DateTime.Now;
                         _unitOfWork.Lawyer.Update(userFromDb.Lawyer);
+                        _unitOfWork.Save();
+
+                        return LocalRedirect(returnUrl);
                     }
-
-                    _unitOfWork.Save();
-
-                    return LocalRedirect(returnUrl);
                 }
 
                 if (result.RequiresTwoFactor)

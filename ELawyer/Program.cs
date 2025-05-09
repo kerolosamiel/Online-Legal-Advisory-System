@@ -93,6 +93,9 @@ app.UseSession();
 SeedDatabase();
 app.MapRazorPages();
 app.MapControllerRoute(
+    "areas",
+    "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
     "default",
     "{controller=Home}/{action=Index}/{id?}");
 
