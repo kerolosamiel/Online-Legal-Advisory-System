@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/obj/Debug/net8.0/scopedcss/projectbundle/ELawyer.bundle.scp.css",
-      "PackagePath": "staticwebassets/ELawyer.bundle.scp.css"
-    },
-    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/about/about.css",
       "PackagePath": "staticwebassets/css/about/about.css"
     },
@@ -55,6 +51,14 @@
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/admin/admin.css",
       "PackagePath": "staticwebassets/css/admin/admin.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/admin/client-management-responsive.css",
+      "PackagePath": "staticwebassets/css/admin/client-management-responsive.css"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/admin/client-management.css",
+      "PackagePath": "staticwebassets/css/admin/client-management.css"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",
@@ -511,6 +515,14 @@
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/main-logo.png",
       "PackagePath": "staticwebassets/images/Public/main-logo.png"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/admin/admin.js",
+      "PackagePath": "staticwebassets/js/admin/admin.js"
+    },
+    {
+      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/admin/clientManagement.js",
+      "PackagePath": "staticwebassets/js/admin/clientManagement.js"
     },
     {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/login.js",

@@ -25,7 +25,7 @@ public class Client
 
 
     // Relationship
-    [ForeignKey(nameof(UserId))] public virtual ApplicationUser ApplicationUser { get; set; }
+    [ForeignKey(nameof(UserId))] public virtual ApplicationUser? ApplicationUser { get; set; } = new();
     public virtual ICollection<Consultation> Consultations { get; set; } = new HashSet<Consultation>();
     [ForeignKey(nameof(ClientRatingId))] public ICollection<Rating>? Rating { get; set; } = new HashSet<Rating>();
 }

@@ -33,7 +33,7 @@ public class Lawyer
     public virtual ICollection<LawyerSpecialization> LawyerSpecializations { get; set; } =
         new HashSet<LawyerSpecialization>();
 
-    [ForeignKey(nameof(UserId))] public virtual ApplicationUser ApplicationUser { get; set; }
+    [ForeignKey(nameof(UserId))] public virtual ApplicationUser? ApplicationUser { get; set; } = new();
     [ForeignKey(nameof(ServiceId))] public virtual ICollection<Service> Services { get; set; } = new HashSet<Service>();
 
     [ForeignKey(nameof(LawyerRatingId))]

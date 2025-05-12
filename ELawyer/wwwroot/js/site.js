@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const dropDownEle = document.querySelector(".dropdown");
 
-// Write your JavaScript code.
+dropDownEle.addEventListener("click", () => {
+    toggleClass(dropDownEle, "active")
+});
+
+document.addEventListener("click", (e) => {
+    if (!dropDownEle.contains(e.target)) {
+        dropDownEle.classList.remove("active");
+    }
+});
+
+function toggleClass(element, className) {
+    element.classList.toggle(className);
+}

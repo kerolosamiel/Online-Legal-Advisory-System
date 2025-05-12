@@ -13,6 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="Areas\Admin\Views\"/>
         <Folder Include="wwwroot\files\Lawyer\Attachments\"/>
         <Folder Include="wwwroot\images\Admin\"/>
         <Folder Include="wwwroot\images\Admin\Profile\"/>
@@ -23,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="EPPlus" Version="8.0.3"/>
         <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.15"/>
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.14"/>
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11"/>
@@ -52,6 +54,12 @@
         </Content>
         <Content Update="wwwroot\css\account\forget-c-responsive.css">
             <DependentUpon>forget-confirmation.css</DependentUpon>
+        </Content>
+        <Content Update="wwwroot\css\admin\admin-responsive.css">
+            <DependentUpon>admin.css</DependentUpon>
+        </Content>
+        <Content Update="wwwroot\css\admin\client-management-responsive.css">
+            <DependentUpon>client-management.css</DependentUpon>
         </Content>
     </ItemGroup>
 
@@ -87,6 +95,89 @@
         <_ContentIncludedByDefault Remove="Areas\Admin\Admin\Rejectlawyer.cshtml"/>
         <_ContentIncludedByDefault Remove="Areas\Admin\Admin\Services.cshtml"/>
         <_ContentIncludedByDefault Remove="Areas\Admin\Pages\_Page_Areas_Admin_Admin_Confirmation_cshtml\_ValidationScriptsPartial.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Acceptlawyer.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\AllUsers.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\ClientManagement\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Clients.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Confirmation.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\LawyerConfirmation.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Lawyers.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Orders.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Rejectlawyer.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Admin\Services.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\Pages\ClientManagement\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagement\Pages\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagement\Pages\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\Pages\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\Create.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\Delete.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\Details.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\Edit.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\Index.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\_ClientFilters.cshtml"/>
+        <_ContentIncludedByDefault Remove="Areas\Admin\ClientManagements\_ClientTable.cshtml"/>
+        <_ContentIncludedByDefault Remove="Views\Admin\ClientManagements\Index.cshtml"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Create.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Delete.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Details.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Edit.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Index.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\_ClientFilters.cshtml"/>
+        <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\_ClientTable.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Acceptlawyer.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\AllUsers.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Confirmation.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Details.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Edit.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Index.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\LawyerConfirmation.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Lawyers.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Orders.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Rejectlawyer.cshtml"/>
+        <AdditionalFiles Include="Views\Admin\Services.cshtml"/>
     </ItemGroup>
 
 </Project>

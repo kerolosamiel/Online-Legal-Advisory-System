@@ -11,5 +11,5 @@ public class Admin
     public string? UserId { get; set; }
 
     // Relationship
-    [ForeignKey(nameof(UserId))] public virtual ApplicationUser ApplicationUser { get; set; }
+    [ForeignKey(nameof(UserId))] public virtual ApplicationUser? ApplicationUser { get; set; } = new();
 }

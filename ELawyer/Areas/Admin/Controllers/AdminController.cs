@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models.ViewModels;
+using ELawyer.Models.ViewModels.Admin.Dashboard;
 using ELawyer.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -29,9 +30,12 @@ public class AdminController : Controller
     [Route("admin/dashboard")]
     public IActionResult Index()
     {
-        var clients = _unitOfWork.Client.GetAll().ToList();
-        var lawyers = _unitOfWork.Lawyer.GetAll().ToList();
-        var orders = _unitOfWork.ServiceOrder.GetAll().ToList();
+        var clients = _unitOfWork.Client.GetAll(c => c.ApplicationUser != null, "ApplicationUser").ToList();
+        var lawyers = _unitOfWork.Lawyer.GetAll(l => true, "ApplicationUser").ToList();
+        var orders = _unitOfWork.ServiceOrder
+            .GetAll(o => o.Lawyer.ApplicationUser != null && o.Client.ApplicationUser != null,
+                "Client.ApplicationUser,Lawyer.ApplicationUser,Service").ToList();
+
         // Get current month earnings
         var currentMonthEarnings = orders
             .Where(o => o.CreatedAt.Month == DateTime.Now.Month &&
@@ -67,8 +71,8 @@ public class AdminController : Controller
             EarningsIncreased = increased,
 
             // Get 5 most recent lawyer registrations
-            RecentLawyers = _unitOfWork.Lawyer
-                .GetAll(includeproperties: "ApplicationUser")
+            RecentLawyers = lawyers
+                .Where(l => l.ApplicationUser != null)
                 .OrderByDescending(l => l.ApplicationUser.CreatedAt)
                 .Take(5)
                 .Select(l => new LawyerRegistrationVm
@@ -76,44 +80,45 @@ public class AdminController : Controller
                     Id = l.Id,
                     Name = $"{l.ApplicationUser.FirstName} {l.ApplicationUser.LastName}",
                     Email = l.ApplicationUser.Email,
-                    Status = l.UserStatus // Verification status
+                    Status = l.UserStatus
                 })
                 .ToList(),
 
             RecentTransactions = orders
+                .Where(o => o.Client?.ApplicationUser != null && o.Lawyer?.ApplicationUser != null)
                 .OrderByDescending(o => o.CreatedAt)
                 .Take(10)
                 .Select(o => new TransactionVm
                 {
                     Date = o.CreatedAt,
-                    ClientName = $"{o.Client.ApplicationUser.FirstName} {o.Client.ApplicationUser.LastName}",
-                    LawyerName = $"{o.Lawyer.ApplicationUser.FirstName} {o.Lawyer.ApplicationUser.LastName}",
-                    ServiceTitle = o.Service.Title,
+                    ClientName =
+                        $"{o.Client.ApplicationUser.FirstName} {o.Client.ApplicationUser.LastName}",
+                    LawyerName =
+                        $"{o.Lawyer.ApplicationUser.FirstName} {o.Lawyer.ApplicationUser.LastName}",
+                    ServiceTitle = o.Service?.Title ?? "N/A",
                     Amount = (decimal)o.Amount,
-                    PayedAt = o.Payment.PaidAt
+                    PayedAt = o.Payment?.PaidAt
                 })
                 .ToList(),
 
             ClientList = new SelectList(clients.Select(c => new
             {
                 c.Id,
-                Name = $"{c.ApplicationUser.FirstName} {c.ApplicationUser.LastName}"
+                Name = c.ApplicationUser != null
+                    ? $"{c.ApplicationUser.FirstName} {c.ApplicationUser.LastName}"
+                    : "Unknown Client"
             }), "Id", "Name"),
 
             LawyerList = new SelectList(lawyers.Select(l => new
             {
                 l.Id,
-                Name = $"{l.ApplicationUser.FirstName} {l.ApplicationUser.LastName}"
+                Name = l.ApplicationUser != null
+                    ? $"{l.ApplicationUser.FirstName} {l.ApplicationUser.LastName}"
+                    : "Unknown Lawyer"
             }), "Id", "Name")
         };
 
         return View(dashboardData);
-    }
-
-    [Route("admin/clients")]
-    public IActionResult Clients()
-    {
-        return View();
     }
 
     [Route("admin/lawyers")]

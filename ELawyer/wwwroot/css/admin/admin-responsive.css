@@ -1,0 +1,17 @@
+@media (max-width: 992px) {
+    .admin-sidebar {
+        margin-left: -250px;
+    }
+
+    .admin-sidebar.active {
+        margin-left: 0;
+    }
+
+    .admin-main {
+        margin-left: 0;
+    }
+
+    .admin-main.active {
+        margin-left: 250px;
+    }
+}

@@ -1,0 +1,67 @@
+.navbar .logo {
+    max-width: 200px;
+    max-height: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links ul li a {
+    color: var(--white);
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+    transition: .3s ease;
+}
+
+.navbar .nav-links ul li a .line {
+    width: 0;
+    height: .2rem;
+    background: var(--second-color);
+    border-radius: .2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+
+.navbar .nav-links ul li a:hover .line {
+    width: 50%;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: var(--second-color);
+}
+
+.navbar .nav-links ul .dropdown-menu {
+    background: var(--dark);
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s ease;
+    top: 200%;
+    border: 2px solid rgba(0, 0, 0, .15);
+}
+
+.navbar .nav-links ul .dropdown-menu li a {
+    transition: .3s ease;
+}
+
+.navbar .nav-links ul .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.dropdown-item:focus, .dropdown-item:hover li a {
+    color: var(--second-color) !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: unset;
+}
+
+.navbar .nav-links ul .dropdown.active a.nav-link {
+    color: var(--second-color);
+}
+
+.navbar .nav-links ul .dropdown.active a.nav-link .line {
+    width: 0 !important;
+}

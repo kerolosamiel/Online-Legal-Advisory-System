@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Justivia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/admin/admin.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/admin/admin-responsive.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/public/normalize.css" asp-append-version="true"/>
+
+    @await RenderSectionAsync("Styles", false)
 </head>
-<body>
+<body class="admin-body">
 
-@RenderBody()
+<header>
+    <nav class="admin-topbar navbar navbar-expand">
+        <div class="container-fluid">
+            <div class="hamburger">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                          d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </div>
 
+            <partial name="_LoginPartial"/>
+        </div>
+    </nav>
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/images/Public/logo-white.png" alt="Admin Logo" class="admin-logo"/>
+            </a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="Index">
+                        <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fas fa-users-cog me-2"></i> Manage Users
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Create User</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-area="Admin"
+                               asp-controller="ClientManagements"
+                               asp-action="Index">Clients</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="Lawyers">Lawyers</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="AllUsers">
+                                All Users
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="LawyerConfirmation">
+                        <i class="fas fa-user-check me-2"></i> Lawyer Approvals
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="Orders">
+                        <i class="fas fa-shopping-cart me-2"></i> Orders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="Services">
+                        <i class="fas fa-concierge-bell me-2"></i> Services
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</header>
+
+
+<main class="admin-main">
+    @RenderBody()
+</main>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/admin/admin.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", false)
 </body>
 </html>

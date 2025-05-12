@@ -1,9 +1,200 @@
-﻿@model ELawyer.Models.ViewModels.AdminDashboardVm
-
+﻿@using ELawyer.Utility
+@model ELawyer.Models.ViewModels.Admin.Dashboard.AdminDashboardVm
 
 @{
-    ViewData["Title"] = "List of Clients";
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Admin Dashboard";
 }
 
-<h2 class="mb-4">Clients</h2>
+<!-- Main Content -->
+<section class="admin-section flex-1 overflow-auto p-6">
+    <!-- Stats Cards -->
+    <div class="admin-cards grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <!-- Total Clients Card -->
+        <div
+            class="admin-card bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500 flex flex-column justify-between">
+            <div class="flex justify-between">
+                <div>
+                    <p class="txt-muted">Total Clients</p>
+                    <h3 class="text-3xl font-bold mt-2">@Model.TotalClients</h3>
+                </div>
+                <div class="bg-blue-100 p-3 rounded-full flex justify-center items-center icon">
+                    <i class="fas fa-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <a asp-action="Clients" class="text-blue-600 hover:underline mt-4 block">View All</a>
+        </div>
+        <!-- Total Lawyers Card -->
+        <div
+            class="admin-card bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500 flex flex-column justify-between">
+            <div class="flex justify-between">
+                <div>
+                    <p class="txt-muted">Total Lawyers</p>
+                    <h3 class="text-3xl font-bold mt-2">@Model.TotalLawyers</h3>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full flex justify-center items-center icon">
+                    <i class="fas fa-gavel text-green-500 text-xl"></i>
+                </div>
+            </div>
+            <a asp-controller="ClientManagements" asp-action="Index" class="text-green-600 hover:underline mt-4 block">View
+                All</a>
+        </div>
 
+        <!-- Total Earnings Card -->
+        <div
+            class="admin-card bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500 flex flex-column justify-between">
+            <div class="flex justify-between">
+                <div>
+                    <p class="txt-muted">Total Earnings</p>
+                    <h3 class="text-3xl font-bold mt-2">$@Model.TotalEarnings.ToString("N2")</h3>
+                    <p class="text-sm @(Model.EarningsIncreased ? "text-green-500" : "text-red-500") mt-1">
+                        <i class="fas @(Model.EarningsIncreased ? "fa-arrow-up" : "fa-arrow-down")"></i>
+                        @Math.Abs(Model.EarningsPercentageChange)% from last month
+                    </p>
+                </div>
+                <div class="bg-purple-100 p-3 rounded-full flex justify-center items-center icon">
+                    <i class="fas fa-dollar-sign text-purple-500 text-xl"></i>
+                </div>
+            </div>
+            <a asp-action="Payments" class="text-purple-600 hover:underline mt-4 block">View Report</a>
+        </div>
+
+        <!-- Pending Approvals Card -->
+        <div
+            class="admin-card bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500 flex flex-column justify-between">
+            <div class="flex justify-between">
+                <div>
+                    <p class="txt-muted">Pending Approvals</p>
+                    <h3 class="text-3xl font-bold mt-2">@Model.PendingApprovals</h3>
+                </div>
+                <div class="bg-yellow-100 p-3 rounded-full flex justify-center items-center icon">
+                    <i class="fas fa-clock text-yellow-500 text-xl"></i>
+                </div>
+            </div>
+            <a asp-action="LawyerConfirmation" class="text-yellow-600 hover:underline mt-4 block">Review Now</a>
+        </div>
+    </div>
+
+    <!-- Recent Transactions Section -->
+    <div class="transactions-container rounded-xl shadow-md p-6 mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+            <h2 class="text-xl font-bold text-gray-800">Recent Transactions</h2>
+            <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                <div class="relative flex-1">
+                    <select asp-for="SelectedClientId" asp-items="Model.ClientList"
+                            class="w-full bg-gray-100 border-0 rounded-lg pl-4 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option disabled selected class="txt-muted">Filter</option>
+                        <option value="">Filter by Client</option>
+                    </select>
+                </div>
+                <div class="relative flex-1">
+                    <select asp-for="SelectedLawyerId" asp-items="Model.LawyerList"
+                            class="w-full bg-gray-100 border-0 rounded-lg pl-4 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option disabled selected class="txt-muted">Filter</option>
+                        <option value="">Filter by Lawyer</option>
+                    </select>
+                </div>
+                <button type="submit"
+                        class="button px-4 py-2">
+                    <i class="fas fa-filter mr-2"></i>Apply Filters
+                </button>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Client
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Lawyer
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Service
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Amount
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Date
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">Payed
+                        At
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                @foreach (var transaction in Model.RecentTransactions)
+                {
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">@transaction.ClientName</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@transaction.LawyerName</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@transaction.ServiceTitle</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-green-600">
+                            $@transaction.Amount</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@transaction.Date.ToString("d")</td>
+                        <td class="px-6 py-4 whitespace-nowrap"> @transaction.PayedAt </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Recent Lawyer Registrations -->
+    <div class="recent-container rounded-xl shadow-md p-6">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">Recent Lawyer Registrations</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Name
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Email
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Status
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium txt-muted uppercase tracking-wider">
+                        Actions
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                @foreach (var lawyer in Model.RecentLawyers)
+                {
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">@lawyer.Name</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@lawyer.Email</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                              @(lawyer.Status == SD.UserStatusVerfied ? "bg-green-100 text-green-800" :
+                                                                                       lawyer.Status == SD.UserStatusPending ? "bg-yellow-100 text-yellow-800" :
+                                                                                       "bg-red-100 text-red-800")">
+                                @lawyer.Status
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            @if (lawyer.Status != SD.UserStatusVerfied)
+                            {
+                                <a asp-action="AcceptLawyer" asp-route-id="@lawyer.Id"
+                                   class="text-green-600 hover:text-green-900 mr-3">Approve</a>
+                            }
+                            <a asp-action="RejectLawyer" asp-route-id="@lawyer.Id"
+                               class="text-red-600 hover:text-red-900">Reject</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdn.tailwindcss.com"></script>
+}

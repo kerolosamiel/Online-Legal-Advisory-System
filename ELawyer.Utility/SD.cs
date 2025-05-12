@@ -9,6 +9,8 @@ public static class SD
     public const string UserStatusVerfied = "Verfied";
     public const string UserStatusPending = "Pending";
     public const string UserStatusNotVerfied = "NotVerfied";
+    public const string UserStatusActive = "Active";
+    public const string UserStatusInactive = "InActive";
 
     public const string AdminProfilePath = @"\images\Admin\Profile";
     public const string LawyerProfilePath = @"images\Lawyer\Profile";

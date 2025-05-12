@@ -19,56 +19,109 @@
 
 @*Navigation Bar*@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ELawyer</a>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow d-flex gap- p-0">
+        <a class="logo" asp-area="" asp-controller="Home" asp-action="Index">
+            <img src="~/images/Public/logo-white.png" alt="Logo"/>
+        </a>
 
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
-                <!-- Always Visible -->
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                </li>
-
+        <div class="nav-links navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1 justify-content-center gap-4">
+                @* Check if the user logedin or not *@
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
+                    /* Check the role of the user */
                     @if (User.IsInRole(SD.AdminRole))
                     {
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="ClientConifrmation">
-                                ClientConfirmation
+                            <a class="nav-link position-relative" asp-area="" asp-controller="Admin" asp-action="Index">
+                                Dashboard
+                                <div class="line position-absolute"></div>
                             </a>
+
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="LawyerConfirmation">
-                                LawyerConfirmation
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link position-relative dropdown-toggle" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Manage Users
+                                <div class="line position-absolute"></div>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Client" asp-action="Index">
-                                Clients
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item" asp-area="Identity" asp-page="/account/Register">Create User</a>
+                            <ul class="dropdown-menu d-flex flex-column">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" asp-area="Identity" asp-page="/account/Register">
+                                        Create User
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="Clients">Clients</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="AllUsers">All Users</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="Lawyers">Lawyers</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Admin"
+                                       asp-action="LawyerConfirmation">
+                                        Lawyer Confirmation Requests
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Admin"
+                                       asp-action="ClientConfirmation">
+                                        Client Confirmation Requests
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="dropdown-item" asp-area="" asp-controller="Cart" asp-action="ShowServieOrders">ShowServieOrders</a>
+                            <a class="nav-link position-relative" asp-controller="Admin" asp-action="Orders">
+                                Orders
+                                <div class="line position-absolute"></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" asp-controller="Admin" asp-action="Services">
+                                Services
+                                <div class="line position-absolute"></div>
+                            </a>
                         </li>
                     }
                     else if (User.IsInRole(SD.LawyerRole))
                     {
                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowClienConsultation">
                                 ShowClientConsultation
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                        </li>
                     }
                     else if (User.IsInRole(SD.ClientRole))
                     {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowLawyerResponse">
                                 ShowLawyerResponse
@@ -84,10 +137,22 @@
                                 ShowInvoices
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                        </li>
                     }
                 }
                 else
                 {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+
                     <li class="nav-item dropdown hover-dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="lawyersDropdown" role="button">
                             Browse Lawyers
@@ -123,15 +188,15 @@
                             Services
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                    </li>
                 }
-
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
-                </li>
             </ul>
             <partial name="_LoginPartial"/>
         </div>

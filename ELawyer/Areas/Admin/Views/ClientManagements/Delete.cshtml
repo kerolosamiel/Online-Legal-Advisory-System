@@ -1,0 +1,29 @@
+@model ELawyer.Models.ViewModels.Admin.Client.ClientDetailsVm
+@{
+    ViewData["Title"] = "حذف العميل";
+    Layout = "_AdminLayout";
+}
+
+<div class="delete-confirmation">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h3 class="card-title">@ViewData["Title"]</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-warning">
+                <h5>Are you sure you want to delete the following client?</h5>
+                <dl class="row">
+                    <dt class="col-sm-4">Name</dt>
+                    <dd class="col-sm-8">@Model.FullName</dd>
+                </dl>
+            </div>
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id"/>
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Delete
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

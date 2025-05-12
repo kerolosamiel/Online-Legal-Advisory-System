@@ -1,0 +1,69 @@
+@model ELawyer.Models.ViewModels.Admin.Client.ClientListVm
+@{
+    ViewData["Title"] = "إدارة العملاء";
+    Layout = "_AdminLayout";
+}
+
+<section class="container mx-auto p-6">
+    <!-- Header Section -->
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">@ViewData["Title"]</h1>
+        <a asp-controller="ClientManagements" asp-area="Admin" asp-action="Create"
+           class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all">
+            <i class="fas fa-plus mr-2"></i>Add new client
+        </a>
+    </div>
+
+    <!-- Filters -->
+    <partial name="_ClientFilters" model="Model.Filter"/>
+
+    <!-- Clients Table -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="p-4">
+            @if (Model?.Clients.Any() == true)
+            {
+                <partial name="_ClientTable" model="Model.Clients"/>
+            }
+            else
+            {
+                <p class="text-gray-600 text-center py-4">Data not found</p>
+            }
+        </div>
+
+        <!-- Pagination -->
+        @if (Model?.Clients?.TotalPages > 1)
+        {
+            <nav class="bg-gray-50 px-4 py-3">
+                <ul class="flex justify-center space-x-2">
+                    @if (Model.Clients.HasPreviousPage)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex - 1 })"
+                               class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                                Previous
+                            </a>
+                        </li>
+                    }
+                    @for (var i = 1; i <= Model.Clients.TotalPages; i++)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", new { page = i })"
+                               class="px-3 py-2 @(i == Model.Clients.PageIndex ? "bg-blue-500 text-white" : "text-gray-600 hover:bg-gray-100") rounded">
+                                @i
+                            </a>
+                        </li>
+                    }
+                    @if (Model.Clients.HasNextPage)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex + 1 })"
+                               class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                                Next
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</section>

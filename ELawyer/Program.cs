@@ -4,6 +4,7 @@ using ELawyer.DataAccess.Data;
 using ELawyer.DataAccess.DbInitilizer;
 using ELawyer.DataAccess.Repository;
 using ELawyer.DataAccess.Repository.IRepository;
+using ELawyer.Services.Admin;
 using ELawyer.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -16,8 +17,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("Legal"))
+        .EnableSensitiveDataLogging()
 );
-
 
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //    options.UseSqlServer(
@@ -65,7 +66,8 @@ builder.Services.AddAuthentication().AddFacebook(option =>
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(100); });
 builder.Services.AddScoped<IDbInitilizer, DbInitializer>();
-
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IExcelExportService, ExcelExportService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 /*builder.Services.AddScoped<IEmailSender, EmailSender>();*/

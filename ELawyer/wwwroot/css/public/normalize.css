@@ -42,6 +42,7 @@ html {
     --warning: #FFC107; /* Pending statuses or alerts */
     --white: #FFFFFF;
     --dark: #4b5060; /* For Borders or something like this*/
+    --light-dark: #757575;
 }
 
 
@@ -84,7 +85,7 @@ input:focus-visible {
 }
 
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--dark);
     color: var(--white);
 }
 

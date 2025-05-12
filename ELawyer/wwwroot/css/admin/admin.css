@@ -1,4 +1,214 @@
+/* Admin Header*/
+header {
+    background: var(--dark);
+}
+
+.admin-topbar.active {
+    margin: 0;
+    width: 100%;
+}
+
+.admin-topbar {
+    padding: 0.75rem 1.5rem;
+    margin-left: 15.625rem;
+    width: calc(100% - 15.625rem);
+    transition: 0.6s ease;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.admin-sidebar.active {
+    left: -100%;
+}
+
+.admin-sidebar {
+    width: 15.625rem;
+    background-color: var(--dark);
+    color: var(--white);
+    transition: 0.5s ease;
+    transition-delay: 0s;
+    position: fixed;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-dark);
+}
+
+.admin-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar-nav {
+    padding: 1rem 0;
+}
+
+.sidebar-nav .nav-link {
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    margin: 0.625rem 0;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+    color: white;
+    background-color: var(--light-dark);
+    border-left-color: var(--second-color);
+}
+
+.sidebar-nav .nav-link i {
+    width: 1.25rem;
+    text-align: center;
+}
+
+.sidebar-nav .dropdown-menu {
+    background-color: var(--light-dark);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav .dropdown-item {
+    color: var(--white);
+    padding: 0.625rem 1.5rem 0.625rem 2.75rem;
+}
+
+.sidebar-nav .dropdown-item:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Burger Icon */
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3rem;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger.active svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger.active svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+
+/* Admin dashboard */
 .icon {
     width: 3rem;
     height: 4rem;
+}
+
+.admin-section .transactions-container h2,
+.admin-section .recent-container h2 {
+    color: var(--primary-color);
+}
+
+.admin-section .transactions-container select:focus {
+    outline: none;
+    border: none;
+    outline-offset: unset;
+    --tw-ring-opacity: unset;
+    --tw-ring-color: unset;
+    --tw-ring-offset-shadow: unset;
+    --tw-ring-shadow: unset;
+    box-shadow: unset;
+}
+
+.admin-section .transactions-container select {
+    appearance: none; /* Standard */
+    -webkit-appearance: none; /* Safari/Chrome */
+    -moz-appearance: none; /* Firefox */
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 2px solid var(--dark) !important;
+    border-radius: 2rem;
+    background: var(--accent);
+    outline: none;
+    cursor: pointer;
+}
+
+.admin-section .transactions-container button {
+    width: 10rem;
+}
+
+.admin-section .admin-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--dark) !important;
+    transition: all 0.3s;
+}
+
+.admin-section .admin-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-5px);
+}
+
+.admin-section .transactions-container,
+.admin-section .recent-container {
+    background-color: var(--accent);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #c5c5c5 !important;
+}
+
+.admin-section .transactions-container th,
+.admin-section .recent-container th {
+    background-color: var(--dark) !important;
+    color: var(--white);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.admin-section .transactions-container td,
+.admin-section .recent-container td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Admin main */
+.admin-main {
+    display: flex;
+    min-height: 100vh;
+    margin-left: 15.625rem;
+    transition: all 0.3s;
+}
+
+.admin-main.active {
+    margin: 0;
 }

@@ -103,46 +103,41 @@ public class RegisterModel : PageModel
         {
             var user = await CreateUserAsync();
 
-            await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
-            await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-
             var wwwRootPath = WebHostEnvironment.WebRootPath;
 
 
             if (Input.Role == SD.AdminRole)
             {
-                if (user.Admin == null) user.Admin = new Models.Admin();
-
+                user.Admin = new Models.Admin
+                {
+                    ApplicationUser = user
+                };
 
                 user.Role = SD.AdminRole;
-                user.Admin.ApplicationUser.FirstName = Input.FirstName;
-                user.Admin.ApplicationUser.LastName = Input.LastName;
                 user.Admin.Address = Input.Address;
-                user.Admin.ApplicationUser.CreatedAt = DateTime.Now;
             }
 
             if (Input.Role == SD.ClientRole)
             {
-                if (user.Client == null) user.Client = new Models.Client();
-
+                user.Client = new Models.Client
+                {
+                    ApplicationUser = user
+                };
 
                 user.Role = SD.ClientRole;
-                user.Client.ApplicationUser.FirstName = Input.FirstName;
-                user.Client.ApplicationUser.LastName = Input.LastName;
                 user.Client.Address = Input.Address;
-                user.Client.ApplicationUser.CreatedAt = DateTime.Now;
             }
 
             if (Input.Role == SD.LawyerRole)
             {
-                if (user.Lawyer == null) user.Lawyer = new Models.Lawyer();
-
+                user.Lawyer = new Models.Lawyer
+                {
+                    ApplicationUser = user
+                };
 
                 user.Role = SD.LawyerRole;
-                user.Lawyer.ApplicationUser.FirstName = Input.FirstName;
-                user.Lawyer.ApplicationUser.LastName = Input.LastName;
+                user.Lawyer.UserStatus = SD.UserStatusNotVerfied;
                 user.Lawyer.Address = Input.Address;
-                user.Lawyer.ApplicationUser.CreatedAt = DateTime.Now;
             }
 
 
@@ -197,6 +192,11 @@ public class RegisterModel : PageModel
             // Generate unique username
             Input.UserName = await GenerateUniqueUsername(Input.FirstName, Input.LastName);
             await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
+            await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+
+            user.FirstName = Input.FirstName;
+            user.LastName = Input.LastName;
+            user.CreatedAt = DateTime.Now;
 
             return user;
         }
@@ -204,7 +204,7 @@ public class RegisterModel : PageModel
         {
             throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
                                                 $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                                                $"override the register page in /Areas/Identity/Pages/account/Register.cshtml");
+                                                $"override the register page in /Areas/Identity/Views/account/Register.cshtml");
         }
     }
 
@@ -217,7 +217,7 @@ public class RegisterModel : PageModel
 
     private async Task<string> GenerateUniqueUsername(string firstName, string lastName)
     {
-        var baseUsername = $"{firstName.ToLower()}_{lastName.ToLower()}";
+        var baseUsername = $"{firstName.ToLower()}_{lastName.ToLower()}".Replace(" ", "_");
         var username = baseUsername;
         var counter = 1;
 
