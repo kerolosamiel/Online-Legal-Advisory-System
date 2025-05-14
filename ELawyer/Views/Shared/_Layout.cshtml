@@ -90,22 +90,23 @@
                     }
                     else if (User.IsInRole(SD.LawyerRole))
                     {
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowClienConsultation">
-                                ShowClientConsultation
+                        <li>
+                            <a class="dropdown-item px-4 py-2 hover:bg-[var(--accent)] rounded"
+                               asp-controller="Lawyer" asp-action="Index">
+                                <i class="fas fa-user-tie mr-2"></i>Lawyers
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        <li>
+                            <a class="dropdown-item px-4 py-2 hover:bg-[var(--accent)] rounded"
+                               asp-controller="Lawyer" asp-action="Edit">
+                                <i class="fas fa-edit mr-2"></i>Edit Profile
+                            </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                        <li>
+                            <a class="dropdown-item px-4 py-2 hover:bg-[var(--accent)] rounded"
+                               asp-controller="Lawyer" asp-action="AddService">
+                                <i class="fas fa-plus-circle mr-2"></i>Add Service
+                            </a>
                         </li>
                     }
                     else if (User.IsInRole(SD.ClientRole))

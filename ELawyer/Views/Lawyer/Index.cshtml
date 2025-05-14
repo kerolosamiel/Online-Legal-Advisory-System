@@ -1,66 +1,42 @@
-﻿@using ELawyer.Utility
-@model List<Lawyer>
-
+﻿@model IEnumerable<Lawyer>
 
 @{
-    ViewData["Title"] = "List of Lawyers";
+    ViewData["Title"] = "Top Legal Professionals";
 }
 
-<h2 class="mb-4">Lawyers</h2>
+<div class="cw mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold font-['Merriweather'] mb-8 text-[var(--primary-color)]">
+        Meet Our Verified Lawyers
+    </h1>
 
-<div class="d-flex justify-content-between">
-    <a asp-action="Search" class="btn btn-danger btn-sm">Search</a>
-</div>
-<div class="row">
-
-    @foreach (var lawyer in Model)
-    {
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-text">
-                    <div>
-
-                        <img src="@lawyer.ImageUrl" class="card-img-top rounded"/>
-
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        @foreach (var lawyer in Model)
+        {
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-200 relative">
+                    <img src="@lawyer.ImageUrl" class="w-full h-full object-cover"
+                         alt="@lawyer.ApplicationUser.FirstName">
+                    <div
+                        class="absolute bottom-4 right-4 bg-[var(--second-color)] text-white px-4 py-1 rounded-full text-sm">
+                        ★ @lawyer.AverageRateing.ToString()
                     </div>
-                    <div>
-                        <label> Name: @lawyer.ApplicationUser.FirstName </label>
-
-                    </div>
-                    <div>
-                        <label>LastName: @lawyer.ApplicationUser.LastName</label>
-
-                    </div>
-                    <div>
-                        <label> ConsultationFee: @lawyer.ConsultationFee</label>
-
-                    </div>
-
-                    <div>
-                        <label>ExperienceYears: @lawyer.ExperienceYears </label>
-
-                    </div>
-                    <div>
-                        @foreach (var item in lawyer.LawyerSpecializations)
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">@lawyer.ApplicationUser.FirstName @lawyer.ApplicationUser.LastName</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        @foreach (var spec in lawyer.LawyerSpecializations)
                         {
-                            <div>@item.Specialization.Name</div>
+                            <span class="px-3 py-1 bg-[var(--accent)] text-sm rounded-full">
+                                @spec.Specialization.Name
+                            </span>
                         }
                     </div>
-
+                    <a asp-action="Details" asp-route-id="@lawyer.Id"
+                       class="inline-block w-full text-center bg-[var(--primary-color)] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition">
+                        View Profile
+                    </a>
                 </div>
-
-
-                <div class="d-flex justify-content-between">
-
-
-                    <a asp-action="Details" asp-route-id="@lawyer.Id" class="btn btn-info btn-sm">Details</a>
-                    @if (User.IsInRole(SD.AdminRole))
-                    {
-                        <a asp-action="Delete" asp-route-id="@lawyer.Id" class="btn btn-danger btn-sm">Delete</a>
-                    }
-                </div>
-
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>

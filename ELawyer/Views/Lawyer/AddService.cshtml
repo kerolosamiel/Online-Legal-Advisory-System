@@ -1,56 +1,40 @@
-﻿@model ELawyer.Models.Service
+﻿@model Service
 
-@{
-    ViewData["Title"] = "AddService";
-}
+<div class="cw mx-auto px-4 py-12">
+    <div class="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+        <h1 class="text-3xl font-bold font-['Merriweather'] mb-8">Add New Service</h1>
 
-<h1>AddService</h1>
+        <form asp-action="AddService" class="space-y-6">
+            <div>
+                <label asp-for="Title" class="block text-sm font-medium mb-2"></label>
+                <input asp-for="Title"
+                       class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--second-color)]">
+            </div>
 
-<h4>Service</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddService">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
+            <div>
+                <label asp-for="Description" class="block text-sm font-medium mb-2"></label>
+                <textarea asp-for="Description" rows="4"
+                          class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--second-color)]"></textarea>
             </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label asp-for="ServiceType" class="block text-sm font-medium mb-2"></label>
+                    <select asp-for="ServiceType"
+                            class="w-full px-4 py-2 border rounded-lg">
+                    </select>
+                </div>
+
+                <div>
+                    <label asp-for="Duration" class="block text-sm font-medium mb-2"></label>
+                    <input asp-for="Status" class="w-full px-4 py-2 border rounded-lg">
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="ServiceType" class="control-label"></label>
-                <input asp-for="ServiceType" class="form-control" />
-                <span asp-validation-for="ServiceType" class="text-danger"></span>
-            </div>
-          
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
-          
-            <div class="form-group">
-                <label asp-for="Duration" class="control-label"></label>
-                <input asp-for="Duration" class="form-control" />
-                <span asp-validation-for="Duration" class="text-danger"></span>
-            </div>
-          
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+
+            <button type="submit"
+                    class="w-full bg-[var(--second-color)] text-white py-3 rounded-lg hover:bg-opacity-90 transition">
+                Publish Service
+            </button>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
