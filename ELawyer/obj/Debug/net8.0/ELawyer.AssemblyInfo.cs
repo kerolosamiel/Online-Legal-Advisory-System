@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a3159beaf5c83000827247a252eacee8b057f90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f61eadd510d318da9a3d0d4e2b5b0c17bec36406")]
 [assembly: System.Reflection.AssemblyProductAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ELawyer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

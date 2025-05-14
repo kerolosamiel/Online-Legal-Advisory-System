@@ -66,8 +66,8 @@ public class IndexModel : PageModel
                 throw new Exception("User is not associated with a lawyer profile.");
 
             var lawyerId = userEntity.Lawyer.Id;
-            var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == lawyerId);
-            var lawyerService = _unitOfWork.Service.Get(s => s.Id == lawyer.ServiceId, "ApplicationUser");
+            var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == lawyerId, "ApplicationUser");
+            var lawyerService = _unitOfWork.Service.Get(s => s.Id == lawyer.ServiceId, "Lawyer");
 
             Input = new InputModel
             {

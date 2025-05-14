@@ -509,10 +509,6 @@
       "PackagePath": "staticwebassets/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
     },
     {
-      "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/.png",
-      "PackagePath": "staticwebassets/images/Public/.png"
-    },
-    {
       "Id": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/Profile-Avatar.png",
       "PackagePath": "staticwebassets/images/Public/Profile-Avatar.png"
     },

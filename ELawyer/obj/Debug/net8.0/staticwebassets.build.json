@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4dg5QU86yIOSeQkPmFuuT005Q69qGTsy9HFMw1O2nAE=",
+  "Hash": "dEfJLYar3yySyYd+rcyTt7U+r8vsBnhZSKde22MEEUs=",
   "Source": "ELawyer",
   "BasePath": "_content/ELawyer",
   "Mode": "Default",
@@ -3568,25 +3568,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
-    },
-    {
-      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/.png",
-      "SourceId": "ELawyer",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
-      "BasePath": "_content/ELawyer",
-      "RelativePath": "images/Public/.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Public//.png"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/blue-logo.png",
