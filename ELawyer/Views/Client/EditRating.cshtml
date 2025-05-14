@@ -1,42 +1,24 @@
-﻿@model ELawyer.Models.Rating
-
+﻿@model Rating
 @{
-    ViewData["Title"] = "EditRating";
+    ViewData["Title"] = "Edit Rating";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>EditRating</h1>
+<link rel="stylesheet" href="~/css/Client/client.css" asp-append-version="true"/>
 
-<h4>Rating</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="EditRatingPost" asp-route-id="ID">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ID" />
-            <div class="form-group">
-                <label asp-for="Comment" class="control-label"></label>
-                <input asp-for="Comment" class="form-control" />
-                <span asp-validation-for="Comment" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Rate" class="control-label"></label>
-                <input asp-for="Rate" class="form-control" />
-                <span asp-validation-for="Rate" class="text-danger"></span>
-            </div>
-           
-           
-            
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="max-w-xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold text-center text-indigo-700 mb-6">Edit Your Rating</h2>
+
+    <form asp-action="EditRatingPost" method="post" class="bg-white shadow rounded-lg p-6">
+        <input type="hidden" asp-for="ID"/>
+        <div class="mb-4">
+            <label asp-for="Rate" class="block text-gray-700 font-medium mb-2">Rating</label>
+            <input asp-for="Rate" type="number" min="1" max="5" class="w-full px-4 py-2 border rounded-lg"/>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Comment" class="block text-gray-700 font-medium mb-2">Comment</label>
+            <textarea asp-for="Comment" class="w-full px-4 py-2 border rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Update</button>
+    </form>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

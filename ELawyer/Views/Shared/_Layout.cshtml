@@ -24,7 +24,7 @@
             <img src="~/images/Public/logo-white.png" alt="Logo"/>
         </a>
 
-        <div class="nav-links navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <div class="nav-links navbar-collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1 justify-content-center gap-4">
                 @* Check if the user logedin or not *@
                 @if (User.Identity?.IsAuthenticated ?? false)
@@ -32,7 +32,7 @@
                     /* Check the role of the user */
                     @if (User.IsInRole(SD.AdminRole))
                     {
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link position-relative" asp-area="" asp-controller="Admin" asp-action="Index">
                                 Dashboard
                                 <div class="line position-absolute"></div>
@@ -86,7 +86,7 @@
                                 Services
                                 <div class="line position-absolute"></div>
                             </a>
-                        </li>
+                        </li>*@
                     }
                     else if (User.IsInRole(SD.LawyerRole))
                     {
@@ -115,27 +115,30 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowLawyerResponse">
-                                ShowLawyerResponse
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowInvoices">
-                                ShowInvoices
+                            <a class="nav-link" asp-controller="Client" asp-action="Index">
+                                Lawyers
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                            <a class="nav-link" asp-controller="Client" asp-action="Edit">
+                                Edit Info
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                            <a class="nav-link" asp-controller="Cart" asp-action="ShowLawyerResponse">
+                                Lawyer Responses
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Client" asp-controller="Cart" asp-action="Cartitem">
-                                <i class="bi bi-cart"></i> Cart
+                            <a class="nav-link" asp-controller="About" asp-action="Index">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Cart" asp-action="CartItem">
+                                <i class="fa fa-shopping-cart"></i> Cart
                             </a>
                         </li>
                     }

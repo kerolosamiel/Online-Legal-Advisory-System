@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ELawyer.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61fac9cf5e5a42bf8e7adf8066a7b9a6757e8c62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8aa16485da4dddc2298ffdf99b87948e2f326ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("ELawyer.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ELawyer.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

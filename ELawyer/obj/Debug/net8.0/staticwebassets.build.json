@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i23PgXbX3UIxI5CQmR7+gtci/fkQQsCVHJ7yZnigNdU=",
+  "Hash": "4dg5QU86yIOSeQkPmFuuT005Q69qGTsy9HFMw1O2nAE=",
   "Source": "ELawyer",
   "BasePath": "_content/ELawyer",
   "Mode": "Default",
@@ -1440,6 +1440,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/admin/client-management.css"
+    },
+    {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/Client/client.css",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "css/Client/client.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Client/client.css"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/css/public/normalize.css",
@@ -3551,6 +3570,25 @@
       "OriginalItemSpec": "wwwroot/images/Lawyer/Profile/75af1e03-e2d2-4439-ac5f-94ef4845d81b.png"
     },
     {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/.png",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "images/Public/.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Public//.png"
+    },
+    {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/blue-logo.png",
       "SourceId": "ELawyer",
       "SourceType": "Discovered",
@@ -3606,6 +3644,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Public/main-logo.png"
+    },
+    {
+      "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/images/Public/Profile-Avatar.png",
+      "SourceId": "ELawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/",
+      "BasePath": "_content/ELawyer",
+      "RelativePath": "images/Public/Profile-Avatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Public/Profile-Avatar.png"
     },
     {
       "Identity": "/home/perer/Projects/Online-Legal-Advisory-System/ELawyer/wwwroot/js/admin/admin.js",

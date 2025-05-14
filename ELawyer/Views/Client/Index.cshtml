@@ -4,6 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<link rel="stylesheet" href="~/css/Client/client.css" asp-append-version="true"/>
+
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold text-center mb-8 text-indigo-700">Lawyer</h1>
 
@@ -11,8 +13,10 @@
         @foreach (var lawyer in Model)
         {
             <div class="bg-white rounded-xl shadow-md p-6 border hover:shadow-lg transition">
-                <img src="~/@lawyer.ImageUrl" alt="Profile" class="rounded-full w-24 h-24 mx-auto mb-4 object-cover">
-                <h2 class="text-xl font-semibold text-center text-gray-800">@lawyer.ApplicationUser.FirstName @lawyer.ApplicationUser.FirstName</h2>
+                <img
+                    src="~/@(string.IsNullOrEmpty(lawyer.ImageUrl) ? "images/Public/Profile-Avatar.png" : lawyer.ImageUrl)"
+                    alt="Profile" class="rounded-full w-24 h-24 mx-auto mb-4 object-cover">
+                <h2 class="text-xl font-semibold text-center text-gray-800">@lawyer.ApplicationUser.FirstName @lawyer.ApplicationUser.LastName</h2>
                 <p class="text-center text-gray-500">@lawyer.ApplicationUser.Email</p>
                 <div class="mt-4 flex justify-center gap-4 text-sm">
                     <a href="@Url.Action("Details", new { id = lawyer.Id })" class="text-blue-600 hover:underline">Details</a>

@@ -33,23 +33,23 @@ public class ClientController : Controller
 
     public IActionResult Details(int? id)
     {
-        var client = _unitOfWork.Client.Get(l => l.Id == id);
-        return View(client);
+        var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == id, "ApplicationUser");
+        return View(lawyer);
     }
 
     public IActionResult Edit()
     {
         var claimsIdentity = (ClaimsIdentity)User.Identity;
         var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id);
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId, "Client");
+        var Client = _unitOfWork.Client.Get(l => l.Id == user.Client.Id, "ApplicationUser");
         return View(Client);
     }
 
     [HttpPost]
     public IActionResult Edit(Models.Client newClient, IFormFile? file)
     {
-        var oldClient = _unitOfWork.Client.Get(i => i.Id == newClient.Id);
+        var oldClient = _unitOfWork.Client.Get(i => i.Id == newClient.Id, "ApplicationUser");
         if (oldClient == null) return NotFound();
 
         if (ModelState.IsValid)
@@ -67,7 +67,6 @@ public class ClientController : Controller
                     var oldImagePath = Path.Combine(wwwRootPath, oldClient.ImageUrl.TrimStart('\\'));
                     if (System.IO.File.Exists(oldImagePath)) System.IO.File.Delete(oldImagePath);
                 }
-
 
                 using (var fileStream = new FileStream(Path.Combine(ClientImagePath, fileName), FileMode.Create,
                            FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous))
@@ -93,42 +92,39 @@ public class ClientController : Controller
         return View(newClient);
     }
 
-
-    public IActionResult Delete(int? id)
+    [HttpGet]
+    public IActionResult Delete()
     {
-        if (id == null || id == 0)
+        var claimsIdentity = (ClaimsIdentity)User.Identity;
+        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId, "Client");
+
+        if (user?.Client == null)
             return NotFound();
 
-        var ClientFromDb = _unitOfWork.Client.Get(x => x.Id == id);
-
-
-        if (ClientFromDb == null)
-            return NotFound();
-
-        return View(ClientFromDb);
+        return View(user.Client);
     }
 
     [HttpPost]
     [ActionName("Delete")]
-    public IActionResult DeletePost(int? id)
+    public IActionResult DeleteConfirmed()
     {
-        var ClientFromDb = _unitOfWork.Client.Get(x => x.Id == id);
+        var claimsIdentity = (ClaimsIdentity)User.Identity;
+        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId, "Client");
 
-
-        if (ClientFromDb == null)
+        if (user?.Client == null)
             return NotFound();
 
-        var imageToBeDeleted = ClientFromDb.ImageUrl;
+        var client = user.Client;
 
-        var ImagePath =
-            Path.Combine(_webHostEnvironment.WebRootPath,
-                imageToBeDeleted.TrimStart('\\'));
+        var imageToBeDeleted = client.ImageUrl;
+        var imagePath = Path.Combine(_webHostEnvironment.WebRootPath, imageToBeDeleted.TrimStart('\\'));
+        if (System.IO.File.Exists(imagePath))
+            System.IO.File.Delete(imagePath);
 
-        if (System.IO.File.Exists(ImagePath)) System.IO.File.Delete(ImagePath);
-
-        var user = _unitOfWork.ApplicationUser.Get(a => a.Client.Id == id);
+        _unitOfWork.Client.Remove(client);
         _unitOfWork.ApplicationUser.Remove(user);
-        _unitOfWork.Client.Remove(ClientFromDb);
         _unitOfWork.Save();
 
         return RedirectToAction(nameof(Index));

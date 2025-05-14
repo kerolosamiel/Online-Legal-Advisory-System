@@ -1,69 +1,37 @@
 ﻿@model Client
-
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>Edit</h1>
-
-<h4>Client</h4>
-<hr/>
-<div class="row">
+<link rel="stylesheet" href="~/css/Client/client.css" asp-append-version="true"/>
 
 
-    <div class="col-md-4">
-        <form asp-action="Edit" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id"/>
-            <div class="form-group">
-                <label asp-for="ApplicationUser.FirstName" class="control-label"></label>
-                <input asp-for="ApplicationUser.FirstName" class="form-control"/>
-                <span asp-validation-for="ApplicationUser.FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ApplicationUser.LastName" class="control-label"></label>
-                <input asp-for="ApplicationUser.LastName" class="form-control"/>
-                <span asp-validation-for="ApplicationUser.LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"> </label>
-                <input asp-for="ImageUrl" class="form-control" type="file" name="file"/>
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control"/>
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ApplicationUser.CreatedAt" class="control-label"></label>
-                <input asp-for="ApplicationUser.CreatedAt" class="form-control" disabled/>
-                <span asp-validation-for="ApplicationUser.CreatedAt" class="text-danger"></span>
-            </div>
+<div class="max-w-2xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold text-center text-indigo-700 mb-6">Edit Profile</h2>
 
-
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" type="file" name="file"/>
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="ClientType" class="control-label"></label>
-                <input asp-for="ClientType" class="form-control"/>
-                <span asp-validation-for="ClientType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary"/>
-            </div>
-        </form>
-    </div>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data" class="bg-white shadow rounded-lg p-6">
+        <input type="hidden" asp-for="Id"/>
+        <div class="mb-4">
+            <label asp-for="ApplicationUser.FirstName" class="block text-gray-700 font-medium mb-2"></label>
+            <input asp-for="ApplicationUser.FirstName"
+                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+        </div>
+        <div class="mb-4">
+            <label asp-for="ApplicationUser.LastName" class="block text-gray-700 font-medium mb-2"></label>
+            <input asp-for="ApplicationUser.LastName"
+                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+        </div>
+        <div class="mb-4">
+            <label asp-for="ApplicationUser.Email" class="block text-gray-700 font-medium mb-2"></label>
+            <input asp-for="ApplicationUser.Email"
+                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                   readonly/>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2">Upload New Image</label>
+            <input type="file" name="file" class="w-full text-sm text-gray-600"/>
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">Update
+        </button>
+    </form>
 </div>
-
-
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
