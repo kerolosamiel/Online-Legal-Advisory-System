@@ -1,12 +1,15 @@
 ﻿using System.Security.Claims;
 using ELawyer.DataAccess.Repository.IRepository;
-using ELawyer.Models.ViewModels;
+using ELawyer.Models;
 using ELawyer.Models.ViewModels.Admin.Dashboard;
+using ELawyer.Models.ViewModels.Admin.Users;
 using ELawyer.Utility;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace ELawyer.Areas.Admin.Controllers;
 
@@ -15,14 +18,18 @@ public class AdminController : Controller
 {
     private readonly IEmailSender _emailSender;
 
-
+    private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public AdminController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment, IEmailSender emailSender)
+    public AdminController(IUnitOfWork unitOfWork, UserManager<IdentityUser> user,
+        IWebHostEnvironment webHostEnvironment, IEmailSender emailSender, RoleManager<IdentityRole> roleManager)
     {
         _unitOfWork = unitOfWork;
         _webHostEnvironment = webHostEnvironment;
         _emailSender = emailSender;
+        _userManager = user;
+        _roleManager = roleManager;
     }
 
     public IWebHostEnvironment _webHostEnvironment { get; }
@@ -121,28 +128,122 @@ public class AdminController : Controller
         return View(dashboardData);
     }
 
-    [Route("admin/lawyers")]
+
+    [Route("admin/users/lawyers")]
     public IActionResult Lawyers()
     {
-        return View();
+        var lawyers = _unitOfWork.Lawyer.GetAll(l => true, "ApplicationUser"
+        ).ToList();
+
+        return View(lawyers);
     }
 
-    [Route("admin/all-users")]
-    public IActionResult AllUsers()
+    [Produces("text/html")]
+    [HttpGet("admin/all-users")]
+    public async Task<IActionResult> AllUsers([FromQuery] UserFilter filter)
     {
-        return View();
+        try
+        {
+            var users = await GetUsers(filter);
+            return View("AllUsers", users);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
     }
 
     [Route("admin/orders")]
     public IActionResult Orders()
     {
-        return View();
+        var orders = _unitOfWork.ServiceOrder.GetAll(s => true,
+            "Service,Client.ApplicationUser,Lawyer.ApplicationUser,Payment"
+        ).ToList();
+        return View(orders);
     }
 
-    [Route("admin/Services")]
+    [Route("admin/orders/delete/{id}")]
+    public IActionResult DeleteOrder(int id)
+    {
+        var order = _unitOfWork.ServiceOrder.Get(o => o.Id == id);
+        if (order == null) return NotFound();
+        return View(order);
+    }
+
+    [HttpPost("admin/orders/delete/{id}")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteOrderConfirmed(int id)
+    {
+        var order = _unitOfWork.ServiceOrder.Get(o => o.Id == id);
+        if (order != null)
+        {
+            _unitOfWork.ServiceOrder.Remove(order);
+            _unitOfWork.Save();
+        }
+
+        return RedirectToAction("Index");
+    }
+
+    [Route("admin/services")]
     public IActionResult Services()
     {
-        return View();
+        var services = _unitOfWork.Service
+            .GetAll(s => true, "Lawyer")
+            .ToList();
+        return View(services);
+    }
+
+    [Route("admin/services/edit/{id}")]
+    public IActionResult EditService(int id)
+    {
+        var service = _unitOfWork.Service.Get(s => s.Id == id);
+        if (service == null) return NotFound();
+
+        ViewBag.Lawyers = _unitOfWork.Lawyer.GetAll().Select(l => new SelectListItem
+        {
+            Text = $"{l.ApplicationUser?.FirstName} {l.ApplicationUser?.LastName}",
+            Value = l.Id.ToString()
+        });
+        return View(service);
+    }
+
+    [HttpPost("admin/services/edit/{id}")]
+    [ValidateAntiForgeryToken]
+    public IActionResult EditService(int id, Service service)
+    {
+        if (id != service.Id) return NotFound();
+
+        if (ModelState.IsValid)
+        {
+            _unitOfWork.Service.Update(service);
+            _unitOfWork.Save();
+            return RedirectToAction("Index");
+        }
+
+        return View(service);
+    }
+
+    [Route("admin/services/delete/{id}")]
+    public IActionResult DeleteService(int id)
+    {
+        var service = _unitOfWork.Service.Get(s => s.Id == id);
+        if (service == null) return NotFound();
+        return View(service);
+    }
+
+    // حذف خدمة (POST)
+    [HttpPost("admin/services/delete/{id}")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteServiceConfirmed(int id)
+    {
+        var service = _unitOfWork.Service.Get(s => s.Id == id);
+        if (service != null)
+        {
+            _unitOfWork.Service.Remove(service);
+            _unitOfWork.Save();
+        }
+
+        return RedirectToAction("Index");
     }
 
     [Route("admin/details")]
@@ -152,14 +253,79 @@ public class AdminController : Controller
         return View(Admin);
     }
 
-    [Route("admin/edit")]
-    public IActionResult Edit()
+    [HttpGet("admin/users/edit/{id}")]
+    public async Task<IActionResult> EditUser(string id)
     {
-        var claimsIdentity = (ClaimsIdentity)User.Identity;
-        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
-        var Admin = _unitOfWork.Admin.Get(l => l.Id == user.Admin.Id);
-        return View(Admin);
+        try
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null) return NotFound();
+
+            var roles = await _userManager.GetRolesAsync(user);
+            var allRoles = _roleManager.Roles.Select(r => r.Name).ToList();
+
+            var model = new UserEditVm
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                Role = roles.FirstOrDefault() ?? ""
+            };
+
+            ViewBag.Roles = new SelectList(allRoles, model.Role);
+            return View(model);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error: {ex.Message}");
+        }
+    }
+
+    [HttpPost("admin/users/edit/{id}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditUser(string id, UserEditVm model)
+    {
+        try
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null) return NotFound();
+
+            user.UserName = model.UserName;
+            user.Email = model.Email;
+            await _userManager.UpdateAsync(user);
+
+            var currentRoles = await _userManager.GetRolesAsync(user);
+            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+            await _userManager.AddToRoleAsync(user, model.Role);
+
+            return RedirectToAction("AllUsers");
+        }
+        catch (Exception ex)
+        {
+            ViewBag.Roles = new SelectList(new List<string> { "Admin", "Client" }, model.Role);
+            ModelState.AddModelError("", $"Error: {ex.Message}");
+            return View(model);
+        }
+    }
+
+    [HttpPost("admin/users/delete/{id}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteUser(string id)
+    {
+        try
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null) return NotFound();
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded) throw new Exception("Failed to delete user");
+
+            return RedirectToAction("AllUsers");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error: {ex.Message}");
+        }
     }
 
     [HttpPost]
@@ -210,6 +376,7 @@ public class AdminController : Controller
         return View(newadmin);
     }
 
+    /*
     public IActionResult Confirmation()
     {
         var viewmodel = new LawyerConfirmation();
@@ -310,6 +477,7 @@ public class AdminController : Controller
 
         return View(viewmodel);
     }
+    */
 
     public IActionResult LawyerConfirmation()
     {
@@ -398,35 +566,43 @@ public class AdminController : Controller
         return RedirectToAction("Index");
     }
 
-    public IActionResult Acceptclient(int? id)
+    /* Helper methods */
+    public async Task<List<UserItemVm>> GetUsers(UserFilter filter)
     {
-        if (id == null || id == 0)
-            return NotFound();
+        var usersQuery = _userManager.Users.AsQueryable();
 
-        var clientFromDb = _unitOfWork.Client.Get(x => x.Id == id);
+        // Filter by role
+        if (!string.IsNullOrEmpty(filter.Role))
+        {
+            var usersInRole = await _userManager.GetUsersInRoleAsync(filter.Role);
+            var userIds = usersInRole.Select(u => u.Id).ToHashSet();
+            usersQuery = usersQuery.Where(u => userIds.Contains(u.Id));
+        }
 
+        // Filter by search term
+        if (!string.IsNullOrEmpty(filter.SearchTerm))
+            usersQuery = usersQuery.Where(u =>
+                u.UserName.Contains(filter.SearchTerm) ||
+                u.Email.Contains(filter.SearchTerm));
 
-        if (clientFromDb == null)
-            return NotFound();
+        // Execute query first to avoid multiple active readers
+        var usersList = await usersQuery.ToListAsync();
 
-        return View(clientFromDb);
-    }
+        // Now get roles for each user
+        var result = new List<UserItemVm>();
 
-    [HttpPost]
-    public IActionResult AcceptClient(int id)
-    {
-        var client = _unitOfWork.Client.Get(c => c.Id == id);
+        foreach (var user in usersList)
+        {
+            var roles = await _userManager.GetRolesAsync(user);
+            result.Add(new UserItemVm
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                Role = string.Join(", ", roles)
+            });
+        }
 
-        var claimsIdentity = (ClaimsIdentity)User.Identity;
-        var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var user = _unitOfWork.ApplicationUser.Get(u => u.Client.Id == client.Id);
-        client.UserStatus = SD.UserStatusVerfied;
-        _unitOfWork.Client.Update(client);
-        _unitOfWork.Save();
-
-        _emailSender.SendEmailAsync(user.Email, "Your Identity has been Identificated - ELawyer",
-            "<p>Your Identity has been Identificated successfully </p>");
-
-        return RedirectToAction("Index");
+        return result;
     }
 }

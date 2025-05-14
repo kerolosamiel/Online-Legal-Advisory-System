@@ -1,0 +1,32 @@
+@model ELawyer.Models.ViewModels.Admin.Users.UserEditVm
+
+@{
+    ViewData["Title"] = "Edit User";
+    Layout = "_AdminLayout";
+}
+
+<div class="container">
+    <h2>Edit User</h2>
+    <form method="post">
+        <input type="hidden" asp-for="Id"/>
+        <div class="form-group">
+            <label asp-for="UserName"></label>
+            <input asp-for="UserName" class="form-control"/>
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" readonly/>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label asp-for="Role"></label>
+                <select asp-for="Role" asp-items="ViewBag.Roles" class="form-control">
+                </select>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="AllUsers" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

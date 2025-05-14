@@ -1,0 +1,37 @@
+@model Service
+
+@{
+    ViewData["Title"] = "Edit Service";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h2>Edit Service</h2>
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="Id"/>
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control"/>
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ServiceType"></label>
+            <select asp-for="ServiceType" class="form-control"
+                    asp-items="Html.GetEnumSelectList<ServiceTypes>()"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Status"></label>
+            <select asp-for="Status" class="form-control" asp-items="Html.GetEnumSelectList<ServiceStatus>()"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="LawyerId">Lawyer</label>
+            <select asp-for="LawyerId" class="form-control" asp-items="ViewBag.Lawyers"></select>
+        </div>
+        <button type="submit" class="btn btn-warning">Update</button>
+    </form>
+</div>

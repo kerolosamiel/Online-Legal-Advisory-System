@@ -20,4 +20,5 @@ public interface IUnitOfWork
 
     IServiceOrderRepository ServiceOrder { get; }
     void Save();
+    Task SaveAsync();
 }

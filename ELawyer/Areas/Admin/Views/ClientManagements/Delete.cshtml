@@ -1,6 +1,7 @@
-@model ELawyer.Models.ViewModels.Admin.Client.ClientDetailsVm
+@model ClientDetailsVm
+
 @{
-    ViewData["Title"] = "حذف العميل";
+    ViewData["Title"] = "Remove Client";
     Layout = "_AdminLayout";
 }
 
@@ -17,12 +18,9 @@
                     <dd class="col-sm-8">@Model.FullName</dd>
                 </dl>
             </div>
-            <form asp-action="Delete" method="post">
-                <input type="hidden" asp-for="Id"/>
-                <button type="submit" class="btn btn-danger">
-                    <i class="fas fa-trash"></i> Delete
-                </button>
-                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            <form asp-controller="ClientManagements" asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                @Html.AntiForgeryToken()
+                <button type="submit">Delete</button>
             </form>
         </div>
     </div>

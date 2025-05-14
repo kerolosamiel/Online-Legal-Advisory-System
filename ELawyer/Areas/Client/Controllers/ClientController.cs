@@ -1,11 +1,14 @@
 ﻿using System.Security.Claims;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
+using ELawyer.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ELawyer.Areas.Client.Controllers;
 
+[Authorize(Roles = SD.ClientRole)]
 public class ClientController : Controller
 {
     private readonly IEmailSender _emailSender;
@@ -22,8 +25,10 @@ public class ClientController : Controller
 
     public IActionResult Index()
     {
-        var ClientList = _unitOfWork.Client.GetAll().ToList();
-        return View(ClientList);
+        var lawyerList = _unitOfWork.Lawyer
+            .GetAll(l => true, "ApplicationUser")
+            .ToList();
+        return View(lawyerList);
     }
 
     public IActionResult Details(int? id)

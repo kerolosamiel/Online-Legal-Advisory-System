@@ -13,7 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Areas\Admin\Views\"/>
         <Folder Include="wwwroot\files\Lawyer\Attachments\"/>
         <Folder Include="wwwroot\images\Admin\"/>
         <Folder Include="wwwroot\images\Admin\Profile\"/>
@@ -167,17 +166,7 @@
         <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\Index.cshtml"/>
         <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\_ClientFilters.cshtml"/>
         <AdditionalFiles Include="Areas\Admin\Views\ClientManagements\_ClientTable.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Acceptlawyer.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\AllUsers.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Confirmation.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Details.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Edit.cshtml"/>
         <AdditionalFiles Include="Views\Admin\Index.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\LawyerConfirmation.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Lawyers.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Orders.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Rejectlawyer.cshtml"/>
-        <AdditionalFiles Include="Views\Admin\Services.cshtml"/>
     </ItemGroup>
 
 </Project>

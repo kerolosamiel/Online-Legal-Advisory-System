@@ -1,39 +1,101 @@
+/* Client management */
+/* Section */
 .client-management {
-    padding: 2rem;
+    padding: 2.25rem 0;
 }
 
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+
+/* Head */
+.client-management-container .head h1 {
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 2.75rem;
+    color: var(--primary-color);
 }
 
-.section-title {
-    color: #2c3e50;
-    font-weight: 700;
-}
-
-.status-badge {
-    padding: 0.25rem 0.75rem;
+/* Filtration section*/
+.filters-container {
+    width: 70%;
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px var(--white);
     border-radius: 1rem;
-    font-size: 0.875rem;
+    padding: 1.5rem;
 }
 
-.status-badge.active {
-    background: #d4edda;
-    color: #155724;
+.filters-container form input,
+.filters-container form select {
+    min-width: 10rem;
+    padding: .8rem 1rem;
+    border: 2px solid var(--dark);
+    border-radius: 2rem;
+    background: var(--accent);
 }
 
-.status-badge.inactive {
-    background: #f8d7da;
-    color: #721c24;
+.filters-container form .button {
+    width: 10rem;
 }
 
-.actions {
-    white-space: nowrap;
+/* Table */
+
+.table-container {
+    width: 90%;
 }
 
-.actions .btn {
-    margin: 0 0.25rem;
+.table-container .table table thead {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.table-container .table table tbody span.active {
+    color: var(--success);
+}
+
+.table-container .table table tbody span.inactive {
+    color: var(--danger);
+}
+
+.table-container .table table tbody .action {
+    gap: 0.8rem;
+}
+
+.table-container .table table tbody .action a {
+    color: var(--main-text-color);
+    letter-spacing: 0.5px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.table-container .table table tbody .action a .line {
+    width: 0;
+    height: .12rem;
+    background: var(--second-color);
+    border-radius: .12rem;
+    bottom: -.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+
+.table-container .table table tbody .action a:hover .line {
+    width: 50%;
+}
+
+.table-container .table table tbody .action a:hover {
+    color: var(--second-color);
+}
+
+.table-container .button {
+    width: 10rem;
+}
+
+/* pagination */
+
+.client-management-container .pagination a {
+    border: 1px solid var(--dark);
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.client-management-container .pagination a.inactive {
+    opacity: .6;
 }

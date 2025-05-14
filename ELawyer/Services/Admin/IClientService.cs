@@ -8,8 +8,8 @@ public interface IClientService
     Task<ClientDetailsVm> GetClientDetails(int id);
     Task<List<ClientItemVm>> GetClientsForExport(ClientFilter filter);
     Task<ClientEditVm> GetClientForEdit(int id);
-    Task<int> CreateClient(ClientCreateVm model);
+    Task<ClientDetailsVm> GetClientForDelete(int id);
     Task<bool> UpdateClient(ClientEditVm model);
     Task<bool> ToggleClientStatus(int id);
-    Task DeleteClient(int id);
+    Task DeleteClient(ClientDetailsVm id);
 }

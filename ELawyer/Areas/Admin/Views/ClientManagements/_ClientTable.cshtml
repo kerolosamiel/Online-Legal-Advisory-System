@@ -1,40 +1,49 @@
-@model ELawyer.Models.ViewModels.Admin.Client.PaginatedList<ELawyer.Models.ViewModels.Admin.Client.ClientItemVm>
+@model PaginatedList<ClientItemVm>
 
-<table class="table table-hover">
-    <thead class="table-primary">
+<table class="w-100 text-center mb-4 overflow-scroll">
+    <thead>
     <tr>
-        <th>Full Name</th>
-        <th>Email</th>
-        <th>Create At</th>
-        <th>Status</th>
-        <th>Transactions</th>
+        <th class="px-6 py-3 text-xs uppercase">Name</th>
+        <th class="px-6 py-3 text-xs uppercase">Email</th>
+        <th class="px-6 py-3 text-xs uppercase">Phone</th>
+        <th class="px-6 py-3 text-xs uppercase">Status</th>
+        <th class="px-6 py-3 text-xs uppercase">Actions</th>
     </tr>
     </thead>
-    <tbody>
+    <tbody class="divide-y">
+
     @foreach (var client in Model)
     {
         <tr>
-            <td>@client.FullName</td>
-            <td>@client.Email</td>
-            <td>@client.RegistrationDate</td>
-            <td>
-                <span class="status-badge @(client.Status == "Active" ? "active" : "inactive")">
-                    @client.Status
-                </span>
+            <td class="px-6 py-4">@client.FullName</td>
+            <td class="px-6 py-4">@client.Email</td>
+            <td class="px-6 py-4">
+                @(string.IsNullOrEmpty(client.Phone) ? "Phone number not found" : client.Phone)
             </td>
-            <td class="actions">
-                <a asp-action="Details" asp-route-id="@client.Id" class="btn btn-info btn-sm">
-                    <i class="fas fa-eye"></i>
+            <td class="px-6 py-4">
+                    <span
+                        class="px-2 py-1 text-sm @(client.IsActive ? "active" : "inactive")">
+                        @(client.IsActive ? "Active" : "Inactive")
+                    </span>
+            </td>
+            <td class="action px-6 py-4 d-flex justify-content-center flex-wrap">
+                <a asp-action="Edit" asp-route-id="@client.Id" class="mr-3 text-decoration-none position-relative">
+                    Edit
+                    <div class="line position-absolute"></div>
                 </a>
-                <a asp-action="Edit" asp-route-id="@client.Id" class="btn btn-warning btn-sm">
-                    <i class="fas fa-edit"></i>
-                </a>
-                <form asp-action="Delete" method="post" class="d-inline">
-                    <input type="hidden" name="id" value="@client.Id"/>
-                    <button type="submit" class="btn btn-danger btn-sm">
-                        <i class="fas fa-trash"></i>
+
+                <form asp-controller="ClientManagements" asp-action="ToggleStatus" asp-route-id="@client.Id"
+                      method="post">
+                    <button type="submit" class="position-relative">
+                        Toggle Status
+                        <div class="line position-absolute"></div>
                     </button>
                 </form>
+                
+                <a asp-action="Delete" asp-route-id="@client.Id" class="mr-3 text-decoration-none position-relative">
+                    Delete
+                    <div class="line position-absolute"></div>
+                </a>
             </td>
         </tr>
     }

@@ -21,7 +21,7 @@ public class ClientRepository : Repository<Client>, IClientRepository
         if (client != null)
         {
             client.ApplicationUser.FirstName = obj.ApplicationUser.FirstName;
-            client.ApplicationUser.FirstName = obj.ApplicationUser.LastName;
+            client.ApplicationUser.LastName = obj.ApplicationUser.LastName;
             client.Address = obj.Address;
             client.Address = obj.Address;
             client.ImageUrl = obj.ImageUrl;

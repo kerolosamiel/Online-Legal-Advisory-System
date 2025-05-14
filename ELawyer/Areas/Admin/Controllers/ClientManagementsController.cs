@@ -8,6 +8,7 @@ namespace ELawyer.Areas.Admin.Controllers;
 
 [Area("Admin")]
 [Authorize(Roles = SD.AdminRole)]
+[Route("admin")]
 public class ClientManagementsController : Controller
 {
     private readonly IClientService _clientService;
@@ -19,7 +20,7 @@ public class ClientManagementsController : Controller
         _excelExportService = excelExportService;
     }
 
-    /*[Route("admin/clients")]*/
+    [Route("clients")]
     [HttpGet]
     public async Task<IActionResult> Index(ClientFilter filter, int page = 1, int pageSize = 10)
     {
@@ -27,7 +28,7 @@ public class ClientManagementsController : Controller
         {
             var result = await _clientService.GetClientsWithPagination(filter, page, pageSize);
 
-            if (result?.Clients == null || result.Clients.Count == 0) ViewBag.Message = "No clients found.";
+            if (result.Clients.Count == 0) ViewBag.Message = "No clients found.";
 
             return View(result);
         }
@@ -37,13 +38,13 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("details/{id}")]
     public async Task<IActionResult> Details(int id)
     {
         try
         {
             var client = await _clientService.GetClientDetails(id);
-            return client != null ? View(client) : NotFound();
+            return View(client);
         }
         catch
         {
@@ -51,37 +52,13 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpGet]
-    public IActionResult Create()
-    {
-        return View(new ClientCreateVm());
-    }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(ClientCreateVm model)
-    {
-        if (!ModelState.IsValid) return View(model);
-
-        try
-        {
-            await _clientService.CreateClient(model);
-            return RedirectToAction(nameof(Index));
-        }
-        catch
-        {
-            ModelState.AddModelError("", "Error creating client");
-            return View(model);
-        }
-    }
-
-    [HttpGet("{id}")]
+    [HttpGet("edit/{id}")]
     public async Task<IActionResult> Edit(int id)
     {
         try
         {
             var client = await _clientService.GetClientForEdit(id);
-            return client != null ? View(client) : NotFound();
+            return View(client);
         }
         catch
         {
@@ -89,7 +66,7 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpPost("{id}")]
+    [HttpPost("edit/{id}")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, ClientEditVm model)
     {
@@ -108,14 +85,14 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpPost("{id}")]
+    [HttpPost("toggle-status/{id}")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> ToggleStatus(int id)
     {
         try
         {
             var result = await _clientService.ToggleClientStatus(id);
-            return result ? RedirectToAction(nameof(Index)) : NotFound();
+            return result ? RedirectToAction("Index") : NotFound();
         }
         catch
         {
@@ -123,13 +100,28 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpPost("{id}")]
-    [ValidateAntiForgeryToken]
+    [HttpGet("delete/{id}")]
     public async Task<IActionResult> Delete(int id)
     {
         try
         {
-            await _clientService.DeleteClient(id);
+            var client = await _clientService.GetClientForDelete(id);
+            return View(client);
+        }
+        catch
+        {
+            return StatusCode(500, "Internal server error");
+        }
+    }
+
+
+    [HttpPost("delete/{id}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Delete(ClientDetailsVm model)
+    {
+        try
+        {
+            await _clientService.DeleteClient(model);
             return RedirectToAction(nameof(Index));
         }
         catch
@@ -138,7 +130,7 @@ public class ClientManagementsController : Controller
         }
     }
 
-    [HttpPost]
+    [HttpPost("export-excel")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> ExportToExcel(ClientFilter filter)
     {

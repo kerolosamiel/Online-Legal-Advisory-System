@@ -55,7 +55,7 @@
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Admin" asp-action="Clients">Clients</a>
+                                    <a class="dropdown-item" asp-controller="ClientManagements" asp-action="Index">Clients</a>
                                 </li>
 
                                 <li>
@@ -67,16 +67,8 @@
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Admin"
-                                       asp-action="LawyerConfirmation">
-                                        Lawyer Confirmation Requests
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" asp-area="" asp-controller="Admin"
-                                       asp-action="ClientConfirmation">
-                                        Client Confirmation Requests
+                                    <a class="dropdown-item" asp-controller="Admin" asp-action="LawyerConfirmation">
+                                        Lawyer Confirmation
                                     </a>
                                 </li>
                             </ul>
@@ -128,11 +120,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Client" asp-controller="Cart" asp-action="Cartitem">
-                                <i class="bi bi-cart"></i> &nbsp;
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ShowInvoices">
                                 ShowInvoices
                             </a>
@@ -144,6 +131,12 @@
 
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Client" asp-controller="Cart" asp-action="Cartitem">
+                                <i class="bi bi-cart"></i> Cart
+                            </a>
                         </li>
                     }
                 }
@@ -216,6 +209,7 @@
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 
 @await RenderSectionAsync("Scripts", false)

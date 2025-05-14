@@ -1,69 +1,101 @@
-@model ELawyer.Models.ViewModels.Admin.Client.ClientListVm
+@model ClientListVm
+
 @{
-    ViewData["Title"] = "إدارة العملاء";
+    ViewData["Title"] = "Client Management";
     Layout = "_AdminLayout";
 }
 
-<section class="container mx-auto p-6">
-    <!-- Header Section -->
-    <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-bold text-gray-800">@ViewData["Title"]</h1>
-        <a asp-controller="ClientManagements" asp-area="Admin" asp-action="Create"
-           class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all">
-            <i class="fas fa-plus mr-2"></i>Add new client
-        </a>
-    </div>
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/admin/client-management.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/admin/client-management-responsive.css" asp-append-version="true"/>
+}
 
-    <!-- Filters -->
-    <partial name="_ClientFilters" model="Model.Filter"/>
-
-    <!-- Clients Table -->
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-        <div class="p-4">
-            @if (Model?.Clients.Any() == true)
-            {
-                <partial name="_ClientTable" model="Model.Clients"/>
-            }
-            else
-            {
-                <p class="text-gray-600 text-center py-4">Data not found</p>
-            }
+<section class="client-management section-muted d-flex justify-content-center position-relative w-100">
+    <div
+        class="client-management-container cw position-relative d-flex flex-column gap-3 align-items-center w-100">
+        <!-- Header Section -->
+        <div class="head text-center mb-6">
+            <h1 class="text-2xl font-bold">@ViewData["Title"]</h1>
         </div>
 
-        <!-- Pagination -->
-        @if (Model?.Clients?.TotalPages > 1)
-        {
-            <nav class="bg-gray-50 px-4 py-3">
-                <ul class="flex justify-center space-x-2">
-                    @if (Model.Clients.HasPreviousPage)
-                    {
-                        <li>
-                            <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex - 1 })"
-                               class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded">
-                                Previous
-                            </a>
-                        </li>
-                    }
-                    @for (var i = 1; i <= Model.Clients.TotalPages; i++)
-                    {
-                        <li>
-                            <a href="@Url.Action("Index", new { page = i })"
-                               class="px-3 py-2 @(i == Model.Clients.PageIndex ? "bg-blue-500 text-white" : "text-gray-600 hover:bg-gray-100") rounded">
-                                @i
-                            </a>
-                        </li>
-                    }
-                    @if (Model.Clients.HasNextPage)
-                    {
-                        <li>
-                            <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex + 1 })"
-                               class="px-3 py-2 text-gray-600 hover:bg-gray-100 rounded">
-                                Next
-                            </a>
-                        </li>
-                    }
-                </ul>
-            </nav>
-        }
+        <!-- Filters -->
+        @await Html.PartialAsync("_ClientFilters", Model.Filter)
+
+        <!-- Clients Table -->
+        <div class="table-container rounded-lg">
+            <div class="table p-4 w-100">
+                @if (Model.Clients.Any())
+                {
+                    @await Html.PartialAsync("_ClientTable", Model.Clients)
+                }
+                else
+                {
+                    <p class="text-center py-4">Data not found</p>
+                }
+
+                <a asp-area="Identity" asp-page="/Account/Register"
+                   class="button d-inline-flex align-items-center justify-content-center gap-1 text-decoration-none">
+                    <i class="fas fa-plus mr-2"></i>Add new
+                </a>
+            </div>
+
+            <!-- Pagination -->
+            @if (Model.Clients.TotalPages >= 1)
+            {
+                <nav class="pagination d-flex justify-content-center">
+                    <ul class="d-flex justify-center space-x-2 list-unstyled gap-4">
+                        @if (Model.Clients.HasPreviousPage)
+                        {
+                            <li>
+                                <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex - 1 })"
+                                   class="px-3 py-2 rounded text-decoration-none">
+                                    Previous
+                                </a>
+                            </li>
+                        }
+
+                        @if (!Model.Clients.HasPreviousPage)
+                        {
+                            <li>
+                                <a class="px-3 py-2 rounded text-decoration-none inactive">
+                                    Previous
+                                </a>
+                            </li>
+                        }
+
+
+                        @for (var i = 1; i <= Model.Clients.TotalPages; i++)
+                        {
+                            <li>
+                                <a href="@Url.Action("Index", new { page = i })"
+                                   class="px-3 py-2 @(i == Model.Clients.PageIndex ? "active" : "") rounded text-decoration-none">
+                                    @i
+                                </a>
+                            </li>
+                        }
+
+                        @if (Model.Clients.HasNextPage)
+                        {
+                            <li>
+                                <a href="@Url.Action("Index", new { page = Model.Clients.PageIndex + 1 })"
+                                   class="px-3 py-2 rounded text-decoration-none">
+                                    Next
+                                </a>
+                            </li>
+                        }
+
+                        @if (!Model.Clients.HasNextPage)
+                        {
+                            <li>
+                                <a class="px-3 py-2 rounded text-decoration-none inactive">
+                                    Next
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </div>
     </div>
 </section>

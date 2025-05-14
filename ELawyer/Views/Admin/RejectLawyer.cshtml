@@ -1,0 +1,25 @@
+@model Lawyer
+
+@{
+    ViewData["Title"] = "Reject Lawyer Verification";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h3>Are you sure you want to reject this verification?</h3>
+    <hr/>
+
+    <dl class="row">
+        <dt class="col-sm-2">Name:</dt>
+        <dd class="col-sm-10">@Model.ApplicationUser?.FirstName @Model.ApplicationUser?.LastName</dd>
+
+        <dt class="col-sm-2">Email:</dt>
+        <dd class="col-sm-10">@Model.ApplicationUser?.Email</dd>
+    </dl>
+
+    <form asp-action="RejectLawyer">
+        <input type="hidden" asp-for="Id"/>
+        <button type="submit" class="btn btn-danger">Confirm Rejection</button>
+        <a asp-action="LawyerConfirmation" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+@model IEnumerable<ServiceOrder>
+
+@{
+    ViewData["Title"] = "Orders Management";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h2>All Orders</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Service</th>
+            <th>Client</th>
+            <th>Lawyer</th>
+            <th>Amount</th>
+            <th>Scheduled At</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.Service?.Title</td>
+                <td>@order.Client?.ApplicationUser?.FirstName</td>
+                <td>@order.Lawyer?.ApplicationUser?.FirstName</td>
+                <td>@order.Amount</td>
+                <td>@order.ScheduledAt.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@order.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

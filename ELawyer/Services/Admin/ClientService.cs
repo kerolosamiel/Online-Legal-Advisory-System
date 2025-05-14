@@ -1,17 +1,19 @@
 using ELawyer.DataAccess.Repository.IRepository;
-using ELawyer.Models;
 using ELawyer.Models.ViewModels.Admin.Client;
 using ELawyer.Utility;
+using Microsoft.AspNetCore.Identity;
 
 namespace ELawyer.Services.Admin;
 
 public class ClientService : IClientService
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public ClientService(IUnitOfWork unitOfWork)
+    public ClientService(IUnitOfWork unitOfWork, UserManager<IdentityUser> userManager)
     {
         _unitOfWork = unitOfWork;
+        _userManager = userManager;
     }
 
     public Task<ClientListVm> GetClientsWithPagination(ClientFilter filter, int page, int pageSize)
@@ -25,6 +27,10 @@ public class ClientService : IClientService
                 (c.ApplicationUser.FirstName + " " + c.ApplicationUser.LastName).Contains(filter.SearchTerm)
             );
 
+        if (filter.IsActive.HasValue)
+            query = query.Where(c =>
+                c.UserStatus == (filter.IsActive.Value ? SD.UserStatusActive : SD.UserStatusInactive));
+
         var totalCount = query.Count();
 
         var clients = query
@@ -35,8 +41,10 @@ public class ClientService : IClientService
                 Id = c.Id,
                 FullName = $"{c.ApplicationUser.FirstName} {c.ApplicationUser.LastName}",
                 Email = c.ApplicationUser.Email,
+                Phone = c.ApplicationUser.PhoneNumber,
                 RegistrationDate = c.ApplicationUser.CreatedAt,
-                Status = c.UserStatus
+                Status = c.UserStatus,
+                IsActive = c.UserStatus == SD.UserStatusActive
             })
             .ToList();
 
@@ -68,30 +76,20 @@ public class ClientService : IClientService
         });
     }
 
-    public Task<int> CreateClient(ClientCreateVm model)
+    public Task<ClientDetailsVm> GetClientForDelete(int id)
     {
-        var applicationUser = new ApplicationUser
+        var client = _unitOfWork.Client
+            .GetAll(c => c.Id == id, "ApplicationUser")
+            .FirstOrDefault();
+
+        if (client == null)
+            throw new KeyNotFoundException("Client not found");
+
+        return Task.FromResult(new ClientDetailsVm
         {
-            FirstName = model.FirstName,
-            LastName = model.LastName,
-            Email = model.Email,
-            PhoneNumber = model.Phone,
-            CreatedAt = DateTime.UtcNow
-        };
-
-        _unitOfWork.ApplicationUser.Add(applicationUser);
-        _unitOfWork.Save();
-
-        var client = new Client
-        {
-            UserId = applicationUser.Id,
-            UserStatus = SD.UserStatusActive // حالة افتراضية
-        };
-
-        _unitOfWork.Client.Add(client);
-        _unitOfWork.Save();
-
-        return Task.FromResult(client.Id);
+            Id = client.Id,
+            FullName = $"{client.ApplicationUser.FirstName} {client.ApplicationUser.LastName}"
+        });
     }
 
     public Task<bool> UpdateClient(ClientEditVm model)
@@ -105,7 +103,7 @@ public class ClientService : IClientService
 
         client.ApplicationUser.FirstName = model.FirstName;
         client.ApplicationUser.LastName = model.LastName;
-        client.ApplicationUser.Email = model.Email;
+        client.ApplicationUser.Email = client.ApplicationUser.Email;
         client.ApplicationUser.PhoneNumber = model.Phone;
 
         _unitOfWork.ApplicationUser.Update(client.ApplicationUser);
@@ -134,35 +132,22 @@ public class ClientService : IClientService
         return Task.FromResult(true);
     }
 
-    public Task DeleteClient(int id)
-    {
-        var client = _unitOfWork.Client
-            .GetAll()
-            .FirstOrDefault(c => c.Id == id);
-        if (client != null)
-        {
-            _unitOfWork.Client.Remove(client);
-            _unitOfWork.Save();
-
-            return Task.FromResult(true);
-        }
-
-        return Task.FromResult(false);
-    }
-
     public Task<ClientEditVm> GetClientForEdit(int id)
     {
         var client = _unitOfWork.Client
-            .GetAll(c => c.Id == id)
+            .GetAll(c => c.Id == id, "ApplicationUser")
             .FirstOrDefault();
+
+        if (client == null)
+            return Task.FromResult(new ClientEditVm());
 
         return Task.FromResult(new ClientEditVm
         {
             Id = client.Id,
-            FirstName = client.ApplicationUser.FirstName,
-            LastName = client.ApplicationUser.LastName,
-            Email = client.ApplicationUser.Email,
-            Phone = client.ApplicationUser.PhoneNumber
+            FirstName = client.ApplicationUser?.FirstName,
+            LastName = client.ApplicationUser?.LastName,
+            Email = client.ApplicationUser?.Email,
+            Phone = client.ApplicationUser?.PhoneNumber
         });
     }
 
@@ -186,5 +171,36 @@ public class ClientService : IClientService
                 Status = c.UserStatus
             })
             .ToList());
+    }
+
+    public Task DeleteClient(ClientDetailsVm model)
+    {
+        var client = _unitOfWork.Client
+            .GetAll()
+            .FirstOrDefault(c => c.Id == model.Id);
+        if (client != null)
+        {
+            _unitOfWork.Client.Remove(client);
+            _unitOfWork.Save();
+
+            return Task.FromResult(true);
+        }
+
+        return Task.FromResult(false);
+    }
+
+    private async Task<string> GenerateUniqueUsername(string firstName, string lastName)
+    {
+        var baseUsername = $"{firstName.ToLower()}_{lastName.ToLower()}".Replace(" ", "_");
+        var username = baseUsername;
+        var counter = 1;
+
+        while (await _userManager.FindByNameAsync(username) != null)
+        {
+            username = $"{baseUsername}{counter}";
+            counter++;
+        }
+
+        return username;
     }
 }

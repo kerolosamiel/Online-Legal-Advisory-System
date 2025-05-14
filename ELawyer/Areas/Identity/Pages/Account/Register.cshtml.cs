@@ -126,6 +126,7 @@ public class RegisterModel : PageModel
 
                 user.Role = SD.ClientRole;
                 user.Client.Address = Input.Address;
+                user.Client.UserStatus = SD.UserStatusActive;
             }
 
             if (Input.Role == SD.LawyerRole)

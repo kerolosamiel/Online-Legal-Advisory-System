@@ -6,6 +6,7 @@
 using System.ComponentModel.DataAnnotations;
 using ELawyer.DataAccess.Repository.IRepository;
 using ELawyer.Models;
+using ELawyer.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -54,24 +55,43 @@ public class IndexModel : PageModel
         var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
         Username = userName;
-        var User1 = _unitOfWork.ApplicationUser.Get(u => u.Id == user.Id);
+        var userEntity = _unitOfWork.ApplicationUser.Get(u => u.Id == user.Id, "Lawyer,Client");
 
-        var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == User1.Lawyer.Id);
-        var lawyerService = lawyer != null ? _unitOfWork.Service.Get(s => s.Id == lawyer.ServiceId) : null;
+        if (userEntity == null)
+            throw new Exception("User not found.");
 
-
-        var client = _unitOfWork.Client.Get(l => l.Id == User1.Client.Id);
-
-
-        // جلب الخدمة الخاصة بالمحامي (خدمة واحدة فقط)
-
-        Input = new InputModel
+        if (userEntity.Role == SD.LawyerRole)
         {
-            PhoneNumber = phoneNumber,
-            Client = client,
-            Lawyer = lawyer,
-            LawyerService = lawyerService
-        };
+            if (userEntity.Lawyer == null)
+                throw new Exception("User is not associated with a lawyer profile.");
+
+            var lawyerId = userEntity.Lawyer.Id;
+            var lawyer = _unitOfWork.Lawyer.Get(l => l.Id == lawyerId);
+            var lawyerService = _unitOfWork.Service.Get(s => s.Id == lawyer.ServiceId, "ApplicationUser");
+
+            Input = new InputModel
+            {
+                PhoneNumber = phoneNumber,
+                Lawyer = lawyer,
+                LawyerService = lawyerService
+            };
+        }
+        else if (userEntity.Role == SD.ClientRole)
+        {
+            var client = _unitOfWork.Client.Get(c => c.Id == userEntity.Client.Id);
+            Input = new InputModel
+            {
+                PhoneNumber = phoneNumber,
+                Client = client
+            };
+        }
+        else
+        {
+            Input = new InputModel
+            {
+                PhoneNumber = phoneNumber
+            };
+        }
     }
 
     public async Task<IActionResult> OnGetAsync()
@@ -136,46 +156,12 @@ public class IndexModel : PageModel
     /// </summary>
     public class InputModel
     {
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [Phone]
         [Display(Name = "Phone number")]
         public string PhoneNumber { get; set; }
 
-        //public string FrontCardImage { get; set; }
-
-        //public string BackCardImage { get; set; }
-        ////disabled
-        //public string UserStatus { get; set; }
-        //public string AccountStatus { get; set; }
-
-
-        ////Lawyer
-
-        //public string LinceseNumber { get; set; }
-
-        //public int ExperienceYears { get; set; }
-
-        //public string Linkedin { get; set; }
-
-        //public int ConsultationFee { get; set; }
-
-        //public string About { get; set; }
-
-
-        //// client 
-        //public string ClientType { get; set; }
-
-
-        //public List<int> Specialization { get; set; }
-        //[ValidateNever]
-        //public IEnumerable<SelectListItem> SpecializationList { get; set; } = Enumerable.Empty<SelectListItem>();
         public Models.Client Client { get; set; }
         public Models.Lawyer Lawyer { get; set; }
-
-        // خاصية واحدة للخدمة بدلاً من قائمة
         public Service LawyerService { get; set; }
     }
 }
