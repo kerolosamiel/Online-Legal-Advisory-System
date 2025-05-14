@@ -135,7 +135,7 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="About" asp-action="Index">About</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Cart" asp-action="CartItem">
                                 <i class="fa fa-shopping-cart"></i> Cart
@@ -205,9 +205,34 @@
 </main>
 
 @*Footer*@
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2025 - ELawyer - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+<!-- Footer -->
+<footer class="bg-[var(--dark)] text-[var(--white)] py-12">
+    <div class="cw mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+            <h4 class="text-xl font-bold mb-4 font-['Merriweather']">LegalConnect</h4>
+            <p class="text-[var(--secondary-text-color)]">Empowering legal professionals worldwide since 2023</p>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Services</h5>
+            <ul class="space-y-2 text-[var(--secondary-text-color)]">
+                <li><a href="#" class="hover:text-[var(--second-color)] transition">For Lawyers</a></li>
+                <li><a href="#" class="hover:text-[var(--second-color)] transition">For Clients</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Company</h5>
+            <ul class="space-y-2 text-[var(--secondary-text-color)]">
+                <li><a href="#" class="hover:text-[var(--second-color)] transition">About</a></li>
+                <li><a href="#" class="hover:text-[var(--second-color)] transition">Careers</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Connect</h5>
+            <div class="flex space-x-4">
+                <a href="#" class="text-[var(--second-color)] hover:text-[var(--white)]">LinkedIn</a>
+                <a href="#" class="text-[var(--second-color)] hover:text-[var(--white)]">Twitter</a>
+            </div>
+        </div>
     </div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
